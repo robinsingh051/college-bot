@@ -1,0 +1,112 @@
+version: "2.0"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: q1 path
+    steps:
+      - intent: q1
+      - action: utter_q1
+
+  - story: q2 path
+    steps:
+      - intent: q2
+      - action: utter_q2
+
+  - story: q3 path
+    steps:
+      - intent: q3
+      - action: utter_q3
+
+  - story: q3 path
+    steps:
+      - intent: q4
+      - action: utter_q4
+
+  - story: q5 path
+    steps:
+      - intent: q5
+      - action: utter_q5
+
+  - story: q6 path
+    steps:
+      - intent: q6
+      - action: utter_q6
+
+  - story: q7 path
+    steps:
+      - intent: q7
+      - action: utter_q7
+
+  - story: q8 path
+    steps:
+      - intent: q8
+      - action: utter_q8
+
+  - story: q9 path
+    steps:
+      - intent: q9
+      - action: utter_q9
+
+  - story: q10 path
+    steps:
+      - intent: q10
+      - action: utter_q10
+
+  - story: q11 path
+    steps:
+      - intent: q11
+      - action: utter_q11
+
+  - story: q12 path
+    steps:
+      - intent: q12
+      - action: utter_q12
+
+  - story: q13 path
+    steps:
+      - intent: q13
+      - action: utter_q13
+
+  - story: q14 path
+    steps:
+      - intent: q14
+      - action: utter_q14
+
+  - story: q15 path
+    steps:
+      - intent: q15
+      - action: utter_q15
+
+  - story: q16 path
+    steps:
+      - intent: q16
+      - action: utter_q16
+
+  - story: q17 path
+    steps:
+      - intent: q17
+      - action: utter_q17
+
+  - story: q18 path
+    steps:
+      - intent: q18
+      - action: utter_q18
+
+  - story: q19 path
+    steps:
+      - intent: q19
+      - action: utter_q19
+
+  - story: q20 path
+    steps:
+      - intent: q20
+      - action: utter_q20
+
+  - story: q21 path
+    steps:
+      - intent: q21
+      - action: utter_q21

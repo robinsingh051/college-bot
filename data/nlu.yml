@@ -1,0 +1,142 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: q1
+    examples: |
+      - What is AI & ML?
+
+  - intent: q2
+    examples: |
+      - Is it hard to learn AI or ML?
+
+  - intent: q3
+    examples: |
+      - I have heard about AI. What is it?
+
+  - intent: q4
+    examples: |
+      - Am I already using AI?
+
+  - intent: q5
+    examples: |
+      - What is machine learning?
+
+  - intent: q6
+    examples: |
+      - What are some examples of machine learning?
+
+  - intent: q7
+    examples: |
+      - What (the hell) is Machine Learning? And how it differs from Artificial Intelligence?
+
+  - intent: q8
+    examples: |
+      - What is the difference between ML and AI?
+
+  - intent: q9
+    examples: |
+      - What kind of advice can you give someone who want to start his journey with ML/AI/Data Science?
+
+  - intent: q10
+    examples: |
+      - How do I get started in machine learning?
+
+  - intent: q11
+    examples: |
+      - What are the AI basics I need to know?
+
+  - intent: q12
+    examples: |
+      - How are artificial intelligence and machine learning related?
+
+  - intent: q13
+    examples: |
+      - How are artificial intelligence and machine learning related?
+
+  - intent: q14
+    examples: |
+      - What does a Machine Learning Engineer do?
+
+  - intent: q15
+    examples: |
+      - What kind of jobs or career opportunities are present in the Machine Learning domain?
+
+  - intent: q16
+    examples: |
+      - What kind of salary can I expect as a Machine Learning Professional?
+
+  - intent: q17
+    examples: |
+      - Which companies hire Machine Learning Engineers?
+
+  - intent: q18
+    examples: |
+      - Where is AI used? Examples
+
+  - intent: q19
+    examples: |
+      - What are the applications of Machine Learning?
+
+  - intent: q20
+    examples: |
+      - What is the best coding language to learn Machine Learning?
+
+  - intent: q21
+    examples: |
+      - We hear that Machine Learning and Artificial Intelligence are somewhere near us. Where can we find AI/ML in everyday life?

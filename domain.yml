@@ -1,0 +1,135 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - q1
+  - q2
+  - q3
+  - q4
+  - q5
+  - q6
+  - q7
+  - q8
+  - q9
+  - q10
+  - q11
+  - q12
+  - q13
+  - q14
+  - q15
+  - q16
+  - q17
+  - q18
+  - q19
+  - q20
+  - q21
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_q1:
+    - text:
+        "AI and Machine Learning (ML) technology have become a major part of the armoury for many industries whether it be private companies, financial services, healthcare, or governments.
+        These data-driven tools are used to make ever more important decisions that can have a far-reaching impact on individuals and societies."
+
+  utter_q2:
+    - text: "No. We have excellent faculty members and instructors with us who will make the course very easy to learn and understand. Anyone who wants to learn machine learning and make a career in it can easily learn AI and ML. As a subject, Machine Learning is a fusion of concepts from Mathematics, Computer Science, and Statistics."
+
+  utter_q3:
+    - text: "Artificial Intelligence (AI) is the branch of computer science that emphasizes the development of intelligence machines, thinking and working like humans. For example, speech recognition, problem-solving, learning and planning."
+
+  utter_q4:
+    - text:
+        "Yes. Almost everyone who has a computer, smartphone, or other smart device is already using AI to make life easier:
+        1.	Siri and Cortana act as your personal assistants using voice processing
+        2.	Facebook recommends photo tags using image recognition
+        3.	Amazon recommends products using machine learning algorithms
+        4.	Waze suggests optimal driving routes using a combination of predictive models, forecasting, and optimisation techniques"
+
+  utter_q5:
+    - text: "Machine learning is the core driver of AI. It’s the concept of having computers learn from data with minimal programming."
+
+  utter_q6:
+    - text: "Machine learning works with structured data to detect patterns that provide insight. Everyday examples are personalised recommendations from services like Amazon or Netflix. In the financial arena, machine learning predicts bad loans, finds risky applicants, and generates credit scores."
+
+  utter_q7:
+    - text: "The main difference between machine learning and artificial intelligence is that the former is a subset of the latter. To put it simply, AI encompasses all machine learning but not all artificial intelligence practices are associated with machine learning."
+
+  utter_q8:
+    - text: "The main difference between machine learning and artificial intelligence is that the former is a subset of the latter. To put it simply, AI encompasses all machine learning but not all artificial intelligence practices are associated with machine learning."
+
+  utter_q9:
+    - text:
+        "Step 1.	Set concrete goals or deadlines. Machine learning is a rich field that's expanding every year.
+        Step 2.	Walk before you run.
+        Step 3.	Alternate between practice and theory.
+        Step 4.	Write a few algorithms from scratch.
+        Step 5.	Seek different perspectives.
+        Step 6.	Tie each algorithm to value.
+        Step 7.	Don't believe the hype.
+        Step 8.	Ignore the show-offs."
+
+  utter_q10:
+    - text:
+        "Step 1: Adjust Mindset. Believe you can practice and apply machine learning.
+        Step 2: Pick a Process. Use a systemic process to work through problems.
+        Step 3: Pick a Tool. Select a tool for your level and map it onto your process.
+        Step 4: Practice on Datasets.
+        Step 5: Build a Portfolio.
+        If you're an absolute beginner, start with some introductory Python courses and when you're a bit more confident, move into data science, machine learning and AI."
+
+  utter_q11:
+    - text: "1.	Knowledge of Programming Language. ...
+        2.	Good Knowledge of Mathematics. ...
+        3.	Learn the Concept of Machine Learning. ...
+        4.	Knowledge of Data Structure and Algorithms."
+
+  utter_q12:
+    - text: "Artificial intelligence is a technology that enables a machine to simulate human behavior. Machine learning is a subset of AI which allows a machine to automatically learn from past data without programming explicitly. The goal of AI is to make a smart computer system like humans to solve complex problems."
+
+  utter_q13:
+    - text: "In a nutshell, Machine learning helps us automate rules or decision-making processes with the help of mathematics, code, and data. Various Industries are now using Machine Learning Algorithms to increase their revenue by making predictions about their customer's behavior and upcoming trends in the market. Automatic Recommendations in your mobile keyboard and e-commerce websites, Google Voice Assistant, Self-driving Cars, and stock prediction are some examples that are built using machine learning."
+
+  utter_q14:
+    - text: "A machine learning engineer is a highly qualified professional who uses machine learning and software development skills to build and design scalable machine learning systems that can automate predictive models. They shall have good knowledge of system design, Machine Learning Algorithms, Development and Statistics."
+
+  utter_q15:
+    - text: "In Machine Learning, there are a variety of job roles that can be assigned depending on industry needs. Once you finish B.E. AI&ML course, you will possess an in-demand set of skills critical to today's career opportunities, which include: Machine Learning Scientist, Machine Learning Engineer, Human-Centered Machine Learning Designer, Research Analyst, Data Analytics, Analytics Lead/Manager/Consultant, Statistical Programming Specialist, Hadoop Developer, and many more."
+
+  utter_q16:
+    - text: "As a fresher in Machine Learning Engineer, you can expect to earn between Rs. 4-8 lakhs per annum. An experienced professional data scientist (3-5 years experience) makes more than Rs. 10 lakhs per annum by virtue of their skills and expertise. Their skill development and learning capabilities largely determine their salary increases."
+
+  utter_q17:
+    - text: "Almost all of the big companies like Google, Amazon, Facebook, Netflix have a requirement of good Machine Learning engineers. Machine learning is being applied in almost all the industries where data can be used to make predictions be it healthcare, IT, finance."
+
+  utter_q18:
+    - text: "AI is used in all industries, from marketing to supply chain, finance, food-processing sector. According to a McKinsey survey, financial services and high tech communication are leading the AI fields."
+
+  utter_q19:
+    - text: "Some of the major applications of machine learning include speech recognition, self-driving cars, product recommendations, stock market trading, online fraud detection, email spam filtering, chatbots and voice assistance."
+
+  utter_q20:
+    - text: "Python and R are the most used languages in Machine learning."
+
+  utter_q21:
+    - text:
+        "Almost everyone who has a computer, smartphone, or other smart device is already using AI to make life easier:
+        1.	Siri and Cortana act as your personal assistants using voice processing
+        2.	Facebook recommends photo tags using image recognition
+        3.	Amazon recommends products using machine learning algorithms
+        4.	Waze suggests optimal driving routes using a combination of predictive models, forecasting, and optimisation techniques"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
