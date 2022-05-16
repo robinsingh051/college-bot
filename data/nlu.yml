@@ -31,112 +31,259 @@ nlu:
       - bye bye
       - see you later
 
-  - intent: affirm
-    examples: |
-      - yes
-      - y
-      - indeed
-      - of course
-      - that sounds good
-      - correct
-
-  - intent: deny
-    examples: |
-      - no
-      - n
-      - never
-      - I don't think so
-      - don't like that
-      - no way
-      - not really
-
   - intent: bot_challenge
     examples: |
       - are you a bot?
       - are you a human?
       - am I talking to a bot?
       - am I talking to a human?
+      - what is your work
+      - who are you
 
   - intent: q1
     examples: |
       - What is AI & ML?
+      - what is a and m
+      - what is ai and ml
+      - what is artificial intelligence and machine learning
 
   - intent: q2
     examples: |
-      - Is it hard to learn AI or ML?
+      - Is it hard to learn AI or ML
+      - is it hard to learn a
+      - is machine learning difficult to learn
+      - is artificial intelligence difficult to learn
+      - ai and machine learning is difficult to understand
 
   - intent: q3
     examples: |
       - I have heard about AI. What is it?
+      - what is ai
+      - what is a
+      - what is artificial intelligence
 
   - intent: q4
     examples: |
-      - Am I already using AI?
+      - Am I already using AI
+      - examples of artificial intelligence
+      - daily life exaples of ai
+      - examples of ai
+      - examples of a
 
   - intent: q5
     examples: |
-      - What is machine learning?
+      - I have heard about ml. What is it?
+      - What is machine learning
+      - what is ml
+      - what is m
 
   - intent: q6
     examples: |
       - What are some examples of machine learning?
+      - examples of ml
+      - examples of m
+      - examples of machine learning
 
   - intent: q7
     examples: |
       - What (the hell) is Machine Learning? And how it differs from Artificial Intelligence?
+      - how machine learning is different from artificial intelligence
+      - how ml is different from ai
+      - how ai is different from ml
+      - how m is different from a
+      - how a is different from m
 
   - intent: q8
     examples: |
       - What is the difference between ML and AI?
+      - what is difference between a and m
+      - what is difference between m and a
+      - what is difference between artificial intelligence and machine learning
 
   - intent: q9
     examples: |
       - What kind of advice can you give someone who want to start his journey with ML/AI/Data Science?
+      - advice to start career in ml/ai/data science
+      - how to start career in ml/ai/data science
+      - how can a become machine learning engineer
+      - how can a become artificial intelligence engineer
+      - how can a become data scientist
 
   - intent: q10
     examples: |
       - How do I get started in machine learning?
+      - how should i start learning machine learning
+      - what should i do to start my career in ml
+      - what should i do to start my career in machine learning
+      - how to start learning machine learning
+      - how to start learning ml
+      - how to start learning m
 
   - intent: q11
     examples: |
       - What are the AI basics I need to know?
+      - what are the basics of ai
+      - ai basics
+      - a basics
+      - what are the basics of a
 
   - intent: q12
     examples: |
       - How are artificial intelligence and machine learning related?
+      - how ai is related to ml
+      - relation between ai and ml
+      - how a is related to m
+      - relation between a and m
+      - how a is related to ml
+      - relation between a and ml
 
   - intent: q13
     examples: |
-      - How are artificial intelligence and machine learning related?
+      - where machine learning is used
+      - where ml is used
+      - where m is used
 
   - intent: q14
     examples: |
       - What does a Machine Learning Engineer do?
+      - What does a M Engineer do?
+      - What does a Ml do?
+      - job of machine learning engineer
 
   - intent: q15
     examples: |
       - What kind of jobs or career opportunities are present in the Machine Learning domain?
+      - what are the career opportunities for machine learning domain
+      - career options for ml
+      - jobs available for ml
+      - jobs available for m
 
   - intent: q16
     examples: |
       - What kind of salary can I expect as a Machine Learning Professional?
+      - machine learning engineer salary
+      - ml engineer expected salary
+      - expected salary for ml engineer
 
   - intent: q17
     examples: |
       - Which companies hire Machine Learning Engineers?
+      - in which companies i can work as Machine Learning Engineers
 
   - intent: q18
     examples: |
       - Where is AI used? Examples
+      - ai examples
+      - a examples
+      - artificial intelligence examples
+      - examples of ai
+      - examples of a
+      - examples of artificial intelligence
 
   - intent: q19
     examples: |
       - What are the applications of Machine Learning?
+      - applications of ml
+      - applications of m
+      - where m is used
+      - whare ml is used
+      - where machine learning is used
 
   - intent: q20
     examples: |
       - What is the best coding language to learn Machine Learning?
+      - programming language for ml
+      - programming language for machine learning
+      - language used for ml
 
   - intent: q21
     examples: |
       - We hear that Machine Learning and Artificial Intelligence are somewhere near us. Where can we find AI/ML in everyday life?
+
+  - intent: q22
+    examples: |
+      - Courses offered in Cambridge.
+      - what are the courses available in cambridge
+
+  - intent: q23
+    examples: |
+      - About Campus Facility
+      - what are the facilities available in the campus
+      - give inforamtion about various facilities available in campus
+
+  - intent: q24
+    examples: |
+      - About Teaching methodology and about Academics.
+      - information about the acdemics
+      - faculty information
+      - information of teaching staff
+      - how good the teaching staff is
+      - give me information of academics
+      - academics information
+
+  - intent: q25
+    examples: |
+      - About Specialization courses
+
+  - intent: q26
+    examples: |
+      - About Fees for different courses
+      - what is the fee structure for different courses
+      - how much is the fee
+      - fee structure
+      - fees structure
+
+  - intent: q27
+    examples: |
+      - Placement Activities and Placement offers.
+      - what are the Placement Activities
+      - placement stats
+      - how many students placed last year
+
+  - intent: q28
+    examples: |
+      - Highest and Average Packages
+      - what is the highest packages offered last year
+      - what is the average package of the last year
+      - what is average package
+      - average package 
+      - what is highest package
+      - highest package
+
+  - intent: q29
+    examples: |
+      - CET Cutoff Rank for different courses
+      - what is the cet cutoff for different courses offered
+      - how much rank i should have in cet for differet courses
+      - cet cutoff
+      - cet cut off
+      - cet cut of
+      - cet cutof
+
+  - intent: q30
+    examples: |
+      - comedk Cutoff Rank for different courses
+      - what is the comedk cutoff for different courses offered
+      - how much rank i should have in comedk for differet courses
+      - comedk cutoff
+      - comedk cut off
+      - comedk cut of
+      - comedk cutof
+      - comed cutoff
+      - comed cut off
+      - comed cut of
+      - comed cutof
+
+  - intent: q31
+    examples: |
+      - Difference between VTU and Private University.
+      - what is difference between vtu and private university.
+      - how private universities are different than vtu
+
+  - intent: q32
+    examples: |
+      - Difference between Cambridge Main campus and North Campus
+      - what is difference between cambridge main campus and north campus
+      - how cambridge main campus is different than north campus
+      - difference between main campus and north campus
+      - difference between main and north campus

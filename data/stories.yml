@@ -21,7 +21,7 @@ stories:
       - intent: q3
       - action: utter_q3
 
-  - story: q3 path
+  - story: q4 path
     steps:
       - intent: q4
       - action: utter_q4
@@ -110,3 +110,58 @@ stories:
     steps:
       - intent: q21
       - action: utter_q21
+
+  - story: q22 path
+    steps:
+      - intent: q22
+      - action: utter_q22
+
+  - story: q23 path
+    steps:
+      - intent: q23
+      - action: utter_q23
+
+  - story: q24 path
+    steps:
+      - intent: q24
+      - action: utter_q24
+
+  - story: q25 path
+    steps:
+      - intent: q25
+      - action: utter_q25
+
+  - story: q26 path
+    steps:
+      - intent: q26
+      - action: utter_q26
+
+  - story: q27 path
+    steps:
+      - intent: q27
+      - action: utter_q27
+
+  - story: q28 path
+    steps:
+      - intent: q28
+      - action: utter_q28
+
+  - story: q29 path
+    steps:
+      - intent: q29
+      - action: utter_q29
+
+  - story: q30 path
+    steps:
+      - intent: q30
+      - action: utter_q30
+
+  - story: q31 path
+    steps:
+      - intent: q31
+      - action: utter_q31
+
+  - story: q32 path
+    steps:
+      - intent: q32
+      - action: utter_q32
