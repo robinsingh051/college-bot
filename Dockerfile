@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.8
 
 RUN python -m pip install rasa==3.1
 
