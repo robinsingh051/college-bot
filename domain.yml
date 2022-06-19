@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.1"
 
 intents:
   - greet
@@ -36,6 +36,46 @@ intents:
   - q30
   - q31
   - q32
+  - q33
+  - q34
+  - q35
+  - q36
+  - q37
+  - q38
+  - q39
+  - q40
+  - q41
+  - q42
+  - q43
+  - q44
+  - q45
+  - q46
+  - q47
+  - q48
+  - q49
+  - q50
+  - q51
+  - q52
+  - q53
+  - q54
+  - q55
+  - q56
+  - q57
+  - q58
+  - q59
+  - q60
+  - q61
+  - q62
+  - q63
+  - q64
+  - q65
+  - q66
+  - q68
+  - q70
+  - q71
+  - q72
+  - q73
+  - q74
 
 responses:
   utter_greet:
@@ -172,8 +212,138 @@ responses:
   utter_q32:
     - text: "Technically there is no difference between Main campus and north campus. For those who prefer to be closer to the city, main campus is better. For those who love serene pollution free environment, north campus is preferable."
 
+  utter_q33:
+    - text: The Cambridge Institute of Technology was started in 2007 in KR Puram, Bengaluru by Umesh Educational Trust.
+
+  utter_q34:
+    - text: Yes. CIT is a private engineering college.
+
+  utter_q35:
+    - text: Yes. CIT is a part of group of institutions where we have a ICSE school, one science and arts college and two engineering colleges.
+
+  utter_q36:
+    - text: One of the engineering colleges is in KR Puram, Bengaluru and other is near Devanahalli (10 kilometer from Kempe Gowda International Airport)
+
+  utter_q37:
+    - text: Byappanahalli metro station is 5 km from the college. KR Puram railway station is less than 2 km from the college.
+
+  utter_q38:
+    - text: Yes. There are more than 10 buses which cover the length and breadth of the city.
+
+  utter_q39:
+    - text: www.cambridge.edu.in
+
+  utter_q40:
+    - text: Yes. The college has hostels for boys and girls separately on campus.
+
+  utter_q41:
+    - text: The vision of the college is to become a premier institute transforming our students to be global professionals.
+
+  utter_q42:
+    - text: The missions of the college are to
+        1. Develop competent Human Resources, and create state-of-the-art infrastructure to impart quality education and to support research.
+        2. Adopt tertiary approach in teaching  learning pedagogy that transforms students to become competent professionals and entrepreneurs.
+        3. Nurture and train students to develop the qualities of global professionals.
+
+  utter_q43:
+    - text: The college bagged the following awards and achievements
+        1. CIT is rated in the “Diamond” category by QSI-gauge.
+        2. CIT is ranked 7th in the emerging private engineering colleges at the national level by The week magazine.
+        3. CIT is ranked 10th in the private engineering colleges at the state level by The week magazine.
+        4. CIT is awarded as the best emerging engineering college in the south India by ASSOCHAM
+        5. CIT is ranked 68th across the country by Data quest.
+        6. CIT is ranked 25th across the country by Silicon valley.
+        7. 4 star rating from MIC-AICTE, which is the highest rating
+
+  utter_q44:
+    - text: The college has sprawling area of 16 acres with lot of trees.
+
+  utter_q45:
+    - text: There are many grounds including cricket ground and indoor games for tennis along with well equipped Gymnasium also.
+
+  utter_q46:
+    - text: Yes, the college is recognized by AICTE and the AICTE code is  1-6142911
+
+  utter_q47:
+    - text: Yes, however soon we will become an autonomous college, then also affiliated to VTU.
+
+  utter_q48:
+    - text: Yes. Kindly visit our website engg.cambridge.edu.in
+
+  utter_q49:
+    - text: It will become autonomous in next year.
+
+  utter_q50:
+    - text: There are three ways to get admission in the college. You can take either CET or COMED-K or approach the management for management quota.
+
+  utter_q51:
+    - text: There are 7 UG engineering department, one MBA department and one MCA department apart from the basic sciences department.
+
+  utter_q52:
+    - text: CIT has AI and ML, Computer science, Electrical and Electronics, Electronics and communication, Information science, Mechanical and Civil engineering departments.
+
+  utter_q53:
+    - text: The CET rank required to get admission in AI and ML department is 28283.
+
+  utter_q54:
+    - text: The CET rank required to get admission in EEE department is 41780.
+
+  utter_q55:
+    - text: The CET rank required to get admission in ECE department is 37593.
+
+  utter_q56:
+    - text: The CET rank required to get admission in ISE department is 32382.
+
+  utter_q57:
+    - text: The CET rank required to get admission in CSE department is 21328.
+
+  utter_q58:
+    - text: The CET rank required to get admission in mechanical department is 49610.
+
+  utter_q59:
+    - text: The CET rank required to get admission in civil department is 40512.
+
+  utter_q60:
+    - text: There are 60 seats in AI and ML department.
+
+  utter_q61:
+    - text: There are 180 seats in CSE department.
+
+  utter_q62:
+    - text: There are 120 seats in ISE department.
+
+  utter_q63:
+    - text: There are 60 seats in EEE department.
+
+  utter_q64:
+    - text: There are 180 seats in ECE department.
+
+  utter_q65:
+    - text: There are 60 seats in mechanical department.
+
+  utter_q66:
+    - text: There are 60 seats in civil department.
+
+  utter_q68:
+    - text: It varies from department to department. We also have scholarships.
+
+  utter_q70:
+    - text: Yes. Kindly contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
+
+  utter_q71:
+    - text: Yes. Kindly contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
+
+  utter_q72:
+    - text: Yes. The college is NAAC accredited with B+ grade. We have applied now again and hope to get A+.
+
+  utter_q73:
+    - text: Yes. college is NBA accredited
+
+  utter_q74:
+    - text: The college is elevated to “Promising” Category in ARIIA ranking.
+
   utter_default:
-    - text: I am unable to understand, can you please reframe the sentence?
+    - text: I am unable to understand, can you please reframe the sentence
 
 session_config:
   session_expiration_time: 60

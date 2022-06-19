@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.1"
 
 stories:
   - story: happy path
@@ -165,3 +165,203 @@ stories:
     steps:
       - intent: q32
       - action: utter_q32
+
+  - story: q33 path
+    steps:
+      - intent: q33
+      - action: utter_q33
+
+  - story: q34 path
+    steps:
+      - intent: q34
+      - action: utter_q34
+
+  - story: q35 path
+    steps:
+      - intent: q35
+      - action: utter_q35
+
+  - story: q36 path
+    steps:
+      - intent: q36
+      - action: utter_q36
+
+  - story: q37 path
+    steps:
+      - intent: q37
+      - action: utter_q37
+
+  - story: q38 path
+    steps:
+      - intent: q38
+      - action: utter_q38
+
+  - story: q39 path
+    steps:
+      - intent: q39
+      - action: utter_q39
+
+  - story: q40 path
+    steps:
+      - intent: q40
+      - action: utter_q40
+
+  - story: q41 path
+    steps:
+      - intent: q41
+      - action: utter_q41
+
+  - story: q42 path
+    steps:
+      - intent: q42
+      - action: utter_q42
+
+  - story: q43 path
+    steps:
+      - intent: q43
+      - action: utter_q43
+
+  - story: q44 path
+    steps:
+      - intent: q44
+      - action: utter_q44
+
+  - story: q45 path
+    steps:
+      - intent: q45
+      - action: utter_q45
+
+  - story: q46 path
+    steps:
+      - intent: q46
+      - action: utter_q46
+
+  - story: q47 path
+    steps:
+      - intent: q47
+      - action: utter_q47
+
+  - story: q48 path
+    steps:
+      - intent: q48
+      - action: utter_q48
+
+  - story: q49 path
+    steps:
+      - intent: q49
+      - action: utter_q49
+
+  - story: q50 path
+    steps:
+      - intent: q50
+      - action: utter_q50
+
+  - story: q51 path
+    steps:
+      - intent: q51
+      - action: utter_q51
+
+  - story: q52 path
+    steps:
+      - intent: q52
+      - action: utter_q52
+
+  - story: q53 path
+    steps:
+      - intent: q53
+      - action: utter_q53
+
+  - story: q54 path
+    steps:
+      - intent: q54
+      - action: utter_q54
+
+  - story: q55 path
+    steps:
+      - intent: q55
+      - action: utter_q55
+
+  - story: q56 path
+    steps:
+      - intent: q56
+      - action: utter_q56
+
+  - story: q57 path
+    steps:
+      - intent: q57
+      - action: utter_q57
+
+  - story: q58 path
+    steps:
+      - intent: q58
+      - action: utter_q58
+
+  - story: q59 path
+    steps:
+      - intent: q59
+      - action: utter_q59
+
+  - story: q60 path
+    steps:
+      - intent: q60
+      - action: utter_q60
+
+  - story: q61 path
+    steps:
+      - intent: q61
+      - action: utter_q61
+
+  - story: q62 path
+    steps:
+      - intent: q62
+      - action: utter_q62
+
+  - story: q63 path
+    steps:
+      - intent: q63
+      - action: utter_q63
+
+  - story: q64 path
+    steps:
+      - intent: q64
+      - action: utter_q64
+
+  - story: q65 path
+    steps:
+      - intent: q65
+      - action: utter_q65
+
+  - story: q66 path
+    steps:
+      - intent: q66
+      - action: utter_q66
+
+  - story: q68 path
+    steps:
+      - intent: q68
+      - action: utter_q68
+
+  - story: q70 path
+    steps:
+      - intent: q70
+      - action: utter_q70
+
+  - story: q71 path
+    steps:
+      - intent: q71
+      - action: utter_q71
+
+  - story: q72 path
+    steps:
+      - intent: q72
+      - action: utter_q72
+
+  - story: q73 path
+    steps:
+      - intent: q73
+      - action: utter_q73
+
+  - story: q74 path
+    steps:
+      - intent: q74
+      - action: utter_q74

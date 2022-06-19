@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.1"
 
 nlu:
   - intent: greet
@@ -204,6 +204,8 @@ nlu:
     examples: |
       - Courses offered in Cambridge.
       - what are the courses available in cambridge
+      - courses offered
+      - courses available
 
   - intent: q23
     examples: |
@@ -287,3 +289,235 @@ nlu:
       - how cambridge main campus is different than north campus
       - difference between main campus and north campus
       - difference between main and north campus
+
+  - intent: q33
+    examples: |
+      - When was the college started
+      - in which year this college started
+      - year of start of college
+
+  - intent: q34
+    examples: |
+      - Is it a private engineering college
+      - this college is private
+
+  - intent: q35
+    examples: |
+      - Is CIT a part of group of institutions
+      - Is cambridge a part of group of institutions
+      - Is cambridge institute of technology a part of group of institutions
+
+  - intent: q36
+    examples: |
+      - Where are the two engineering colleges
+      - location of other colleges
+
+  - intent: q37
+    examples: |
+      - Which is the nearest metro station to the main campus
+      - is there any metro station nearby
+
+  - intent: q38
+    examples: |
+      - Does college have buses
+      - is bus available for students
+      - bus facility
+      - does college provide transportation facility
+
+  - intent: q39
+    examples: |
+      - What is website of the college
+      - link of college website
+      - college website
+
+  - intent: q40
+    examples: |
+      - Does the college have hostel facility on campus
+      - Is there hostel in college
+
+  - intent: q41
+    examples: |
+      - What is the vision of the college
+      - does college have any vision
+
+  - intent: q42
+    examples: |
+      - What is the mission of the college
+      - does college have any vision
+
+  - intent: q43
+    examples: |
+      - what are acheivements of college
+      - What are the milestones achieved by the college
+
+  - intent: q44
+    examples: |
+      - How big is the campus
+      - area span of campus
+
+  - intent: q45
+    examples: |
+      - do the students play any sports
+      - Is there a sports facility
+      - what sports is played in college
+
+  - intent: q46
+    examples: |
+      - Is the college recognized by AICTE
+      - what is college AICTE code
+      - does the college have a AICTE code
+      - does AICTE recognize cambridge
+
+  - intent: q47
+    examples: |
+      - Is the college affiliated to VTU
+
+  - intent: q48
+    examples: |
+      - id there any site for online application facility
+      - Is there an online application facility
+
+  - intent: q49
+    examples: |
+      - When will the college become autonomous
+      - is the college planning to become autonomous
+
+  - intent: q50
+    examples: |
+      - How can I join the college
+      - can i join through management quota
+      - can i join through COMED-K
+      - what are the ways to join the college
+
+  - intent: q51
+    examples: |
+      - How many departments are there in the college
+      - what is number of departments in cambridge
+
+  - intent: q52
+    examples: |
+      - Which engineering departments are there in the college
+      - What are the branches of engineering in the college
+      - engineering branches
+      - tell the branches available
+
+  - intent: q53
+    examples: |
+      - What is the CET rank required to join AI and ML department in the college
+      - CET cut off for AI ML branch
+      - AI ML course cut off
+      - what rank is needed to join AI ML
+
+  - intent: q54
+    examples: |
+      - What is the CET rank required to join EEE department in the college
+      - CET cut off for EEE branch
+      - EEE course cut off
+      - what rank is needed to join EEE
+
+  - intent: q55
+    examples: |
+      - What is the CET rank required to join ECE department in the college
+      - CET cut off for ECE branch
+      - ECE course cut off
+      - what rank is needed to join ECE
+
+  - intent: q56
+    examples: |
+      - What is the CET rank required to join ISE department in the college
+      - CET cut off for ISE branch
+      - ISE course cut off
+      - what rank is needed to join ISE
+
+  - intent: q57
+    examples: |
+      - What is the CET rank required to join CSE department in the college
+      - CET cut off for CSE branch
+      - CSE course cut off
+      - what rank is needed to join CSE
+
+  - intent: q58
+    examples: |
+      - What is the CET rank required to join Mechanical department in the college
+      - CET cut off for mechanical branch
+      - mechanical course cut off
+      - what rank is needed to join mechanical
+
+  - intent: q59
+    examples: |
+      - What is the CET rank required to join civil department in the college
+      - CET cut off for civil branch
+      - civil course cut off
+      - what rank is needed to join civil
+
+  - intent: q60
+    examples: |
+      - How many seats are there in AI and ML department
+      - number of seats in AI and ML department
+
+  - intent: q61
+    examples: |
+      - How many seats are there in CSE department
+      - number of seats in CSE department
+      - seats available in cse
+      - seats in computer science
+      - available seats in cse
+
+  - intent: q62
+    examples: |
+      - How many seats are there in ISE department
+      - number of seats in ISE department
+
+  - intent: q63
+    examples: |
+      - How many seats are there in EEE department
+      - number of seats in EEE department
+
+  - intent: q64
+    examples: |
+      - How many seats are there in ECE department
+      - number of seats in ECE department
+
+  - intent: q65
+    examples: |
+      - How many seats are there in mechanical department
+      - number of seats in mechanical department
+
+  - intent: q66
+    examples: |
+      - How many seats are there in civil departments
+      - number of seats in civil department
+
+  - intent: q68
+    examples: |
+      - What is the fee structure in the college
+      - fees in cambridge
+
+  - intent: q70
+    examples: |
+      - Is there any fee reduction for high CET rankers
+      - Will high CET rank holders get any fee reduction
+      - fees relaxation for cet rank holders
+      - fees concession for cet rankers
+
+  - intent: q71
+    examples: |
+      - Can the fee be paid online
+      - can we pay the fee online 
+      - does the college accept online mode of payment
+      - online payment
+
+  - intent: q72
+    examples: |
+      - Is the college NAAC accredited
+      - what is the college's NAAC accreditation
+
+  - intent: q73
+    examples: |
+      - Is the college NBA accredited
+      - does the college have NBA accreditation
+
+  - intent: q74
+    examples: |
+      - What is the ARIIA ranking
+      - which category is the college in the ARIIA ranking
