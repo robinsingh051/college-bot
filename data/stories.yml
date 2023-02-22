@@ -66,11 +66,6 @@ stories:
       - intent: q12
       - action: utter_q12
 
-  - story: q13 path
-    steps:
-      - intent: q13
-      - action: utter_q13
-
   - story: q14 path
     steps:
       - intent: q14
@@ -130,11 +125,6 @@ stories:
     steps:
       - intent: q25
       - action: utter_q25
-
-  - story: q26 path
-    steps:
-      - intent: q26
-      - action: utter_q26
 
   - story: q27 path
     steps:
@@ -220,11 +210,6 @@ stories:
     steps:
       - intent: q43
       - action: utter_q43
-
-  - story: q44 path
-    steps:
-      - intent: q44
-      - action: utter_q44
 
   - story: q45 path
     steps:
@@ -365,3 +350,14 @@ stories:
     steps:
       - intent: q74
       - action: utter_q74
+
+  - story: interactive_story_1
+    steps:
+      - intent: q18
+      - action: utter_q18
+      - intent: q41
+      - action: utter_q41
+      - intent: q42
+      - action: utter_q42
+      - intent: q4
+      - action: utter_q4

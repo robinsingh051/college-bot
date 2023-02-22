@@ -1,91 +1,361 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
-
 stories:
-- story: happy path 1
-  steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-- story: happy path 2
-  steps:
-  - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+  - story: q1 path
+    steps:
+      - intent: q1
+      - action: utter_q1
 
-- story: sad path 1
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+  - story: q2 path
+    steps:
+      - intent: q2
+      - action: utter_q2
 
-- story: sad path 2
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+  - story: q3 path
+    steps:
+      - intent: q3
+      - action: utter_q3
 
-- story: sad path 3
-  steps:
-  - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+  - story: q4 path
+    steps:
+      - intent: q4
+      - action: utter_q4
 
-- story: say goodbye
-  steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+  - story: q5 path
+    steps:
+      - intent: q5
+      - action: utter_q5
 
-- story: bot challenge
-  steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
+  - story: q6 path
+    steps:
+      - intent: q6
+      - action: utter_q6
+
+  - story: q7 path
+    steps:
+      - intent: q7
+      - action: utter_q7
+
+  - story: q8 path
+    steps:
+      - intent: q8
+      - action: utter_q8
+
+  - story: q9 path
+    steps:
+      - intent: q9
+      - action: utter_q9
+
+  - story: q10 path
+    steps:
+      - intent: q10
+      - action: utter_q10
+
+  - story: q11 path
+    steps:
+      - intent: q11
+      - action: utter_q11
+
+  - story: q12 path
+    steps:
+      - intent: q12
+      - action: utter_q12
+
+  - story: q14 path
+    steps:
+      - intent: q14
+      - action: utter_q14
+
+  - story: q15 path
+    steps:
+      - intent: q15
+      - action: utter_q15
+
+  - story: q16 path
+    steps:
+      - intent: q16
+      - action: utter_q16
+
+  - story: q17 path
+    steps:
+      - intent: q17
+      - action: utter_q17
+
+  - story: q18 path
+    steps:
+      - intent: q18
+      - action: utter_q18
+
+  - story: q19 path
+    steps:
+      - intent: q19
+      - action: utter_q19
+
+  - story: q20 path
+    steps:
+      - intent: q20
+      - action: utter_q20
+
+  - story: q21 path
+    steps:
+      - intent: q21
+      - action: utter_q21
+
+  - story: q22 path
+    steps:
+      - intent: q22
+      - action: utter_q22
+
+  - story: q23 path
+    steps:
+      - intent: q23
+      - action: utter_q23
+
+  - story: q24 path
+    steps:
+      - intent: q24
+      - action: utter_q24
+
+  - story: q25 path
+    steps:
+      - intent: q25
+      - action: utter_q25
+
+  - story: q27 path
+    steps:
+      - intent: q27
+      - action: utter_q27
+
+  - story: q28 path
+    steps:
+      - intent: q28
+      - action: utter_q28
+
+  - story: q29 path
+    steps:
+      - intent: q29
+      - action: utter_q29
+
+  - story: q30 path
+    steps:
+      - intent: q30
+      - action: utter_q30
+
+  - story: q31 path
+    steps:
+      - intent: q31
+      - action: utter_q31
+
+  - story: q32 path
+    steps:
+      - intent: q32
+      - action: utter_q32
+
+  - story: q33 path
+    steps:
+      - intent: q33
+      - action: utter_q33
+
+  - story: q34 path
+    steps:
+      - intent: q34
+      - action: utter_q34
+
+  - story: q35 path
+    steps:
+      - intent: q35
+      - action: utter_q35
+
+  - story: q36 path
+    steps:
+      - intent: q36
+      - action: utter_q36
+
+  - story: q37 path
+    steps:
+      - intent: q37
+      - action: utter_q37
+
+  - story: q38 path
+    steps:
+      - intent: q38
+      - action: utter_q38
+
+  - story: q39 path
+    steps:
+      - intent: q39
+      - action: utter_q39
+
+  - story: q40 path
+    steps:
+      - intent: q40
+      - action: utter_q40
+
+  - story: q41 path
+    steps:
+      - intent: q41
+      - action: utter_q41
+
+  - story: q42 path
+    steps:
+      - intent: q42
+      - action: utter_q42
+
+  - story: q43 path
+    steps:
+      - intent: q43
+      - action: utter_q43
+
+  - story: q45 path
+    steps:
+      - intent: q45
+      - action: utter_q45
+
+  - story: q46 path
+    steps:
+      - intent: q46
+      - action: utter_q46
+
+  - story: q47 path
+    steps:
+      - intent: q47
+      - action: utter_q47
+
+  - story: q48 path
+    steps:
+      - intent: q48
+      - action: utter_q48
+
+  - story: q49 path
+    steps:
+      - intent: q49
+      - action: utter_q49
+
+  - story: q50 path
+    steps:
+      - intent: q50
+      - action: utter_q50
+
+  - story: q51 path
+    steps:
+      - intent: q51
+      - action: utter_q51
+
+  - story: q52 path
+    steps:
+      - intent: q52
+      - action: utter_q52
+
+  - story: q53 path
+    steps:
+      - intent: q53
+      - action: utter_q53
+
+  - story: q54 path
+    steps:
+      - intent: q54
+      - action: utter_q54
+
+  - story: q55 path
+    steps:
+      - intent: q55
+      - action: utter_q55
+
+  - story: q56 path
+    steps:
+      - intent: q56
+      - action: utter_q56
+
+  - story: q57 path
+    steps:
+      - intent: q57
+      - action: utter_q57
+
+  - story: q58 path
+    steps:
+      - intent: q58
+      - action: utter_q58
+
+  - story: q59 path
+    steps:
+      - intent: q59
+      - action: utter_q59
+
+  - story: q60 path
+    steps:
+      - intent: q60
+      - action: utter_q60
+
+  - story: q61 path
+    steps:
+      - intent: q61
+      - action: utter_q61
+
+  - story: q62 path
+    steps:
+      - intent: q62
+      - action: utter_q62
+
+  - story: q63 path
+    steps:
+      - intent: q63
+      - action: utter_q63
+
+  - story: q64 path
+    steps:
+      - intent: q64
+      - action: utter_q64
+
+  - story: q65 path
+    steps:
+      - intent: q65
+      - action: utter_q65
+
+  - story: q66 path
+    steps:
+      - intent: q66
+      - action: utter_q66
+
+  - story: q68 path
+    steps:
+      - intent: q68
+      - action: utter_q68
+
+  - story: q70 path
+    steps:
+      - intent: q70
+      - action: utter_q70
+
+  - story: q71 path
+    steps:
+      - intent: q71
+      - action: utter_q71
+
+  - story: q72 path
+    steps:
+      - intent: q72
+      - action: utter_q72
+
+  - story: q73 path
+    steps:
+      - intent: q73
+      - action: utter_q73
+
+  - story: q74 path
+    steps:
+      - intent: q74
+      - action: utter_q74
+
+  - story: interactive_story_1
+    steps:
+      - intent: q18
+      - action: utter_q18
+      - intent: q41
+      - action: utter_q41
+      - intent: q42
+      - action: utter_q42
+      - intent: q4
+      - action: utter_q4

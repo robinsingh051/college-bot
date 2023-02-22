@@ -1,13 +1,21 @@
-FROM python:3.8
+FROM python:3.7.7-stretch AS BASE
 
-RUN python -m pip install rasa==3.1
+RUN apt-get update \
+    && apt-get --assume-yes --no-install-recommends install \
+        build-essential \
+        curl \
+        git \
+        jq \
+        libgomp1 \
+        vim
 
-WORKDIR '/app'
+WORKDIR /app
 
-COPY . .
+RUN pip install --no-cache-dir --upgrade pip
 
-RUN rasa train
+RUN pip install rasa==3.1
 
-USER 1001
-
-CMD rasa run --enable-api --port $PORT
+ADD config.yml config.yml
+ADD domain.yml domain.yml
+ADD credentials.yml credentials.yml
+ADD endpoints.yml endpoints.yml

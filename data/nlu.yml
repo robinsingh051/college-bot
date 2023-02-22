@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
   - intent: greet
     examples: |
@@ -16,10 +15,9 @@ nlu:
       - goodmorning
       - goodevening
       - good afternoon
-
+      - ./stop
   - intent: goodbye
     examples: |
-      - good afternoon
       - cu
       - good by
       - cee you later
@@ -30,7 +28,6 @@ nlu:
       - see you around
       - bye bye
       - see you later
-
   - intent: bot_challenge
     examples: |
       - are you a bot?
@@ -39,29 +36,25 @@ nlu:
       - am I talking to a human?
       - what is your work
       - who are you
-
   - intent: q1
     examples: |
       - What is AI & ML?
       - what is a and m
       - what is ai and ml
       - what is artificial intelligence and machine learning
-
   - intent: q2
     examples: |
-      - Is it hard to learn AI or ML
+      - Is it hard to learn Artificial Intelligence or Machine learning
       - is it hard to learn a
       - is machine learning difficult to learn
       - is artificial intelligence difficult to learn
       - ai and machine learning is difficult to understand
-
   - intent: q3
     examples: |
-      - I have heard about AI. What is it?
+      - I have heard about artificial intelligence. What is it?
       - what is ai
       - what is a
       - what is artificial intelligence
-
   - intent: q4
     examples: |
       - Am I already using AI
@@ -69,21 +62,18 @@ nlu:
       - daily life exaples of ai
       - examples of ai
       - examples of a
-
   - intent: q5
     examples: |
-      - I have heard about ml. What is it?
+      - I have heard about machine learning. What is it?
       - What is machine learning
       - what is ml
       - what is m
-
   - intent: q6
     examples: |
       - What are some examples of machine learning?
       - examples of ml
       - examples of m
       - examples of machine learning
-
   - intent: q7
     examples: |
       - What (the hell) is Machine Learning? And how it differs from Artificial Intelligence?
@@ -92,23 +82,25 @@ nlu:
       - how ai is different from ml
       - how m is different from a
       - how a is different from m
-
   - intent: q8
     examples: |
       - What is the difference between ML and AI?
       - what is difference between a and m
       - what is difference between m and a
       - what is difference between artificial intelligence and machine learning
-
+      - are ai and ml different
+      - are a and m different
   - intent: q9
     examples: |
       - What kind of advice can you give someone who want to start his journey with ML/AI/Data Science?
       - advice to start career in ml/ai/data science
       - how to start career in ml/ai/data science
+      - how to start career in data science
+      - how to start career in machine learning
+      - how to start career in artificial intelligence
       - how can a become machine learning engineer
       - how can a become artificial intelligence engineer
       - how can a become data scientist
-
   - intent: q10
     examples: |
       - How do I get started in machine learning?
@@ -118,7 +110,6 @@ nlu:
       - how to start learning machine learning
       - how to start learning ml
       - how to start learning m
-
   - intent: q11
     examples: |
       - What are the AI basics I need to know?
@@ -126,7 +117,10 @@ nlu:
       - ai basics
       - a basics
       - what are the basics of a
-
+      - pre knowledge required for ai 
+      - what are ai ml basics
+      - pre knowledge required for a 
+      - what are a m basics
   - intent: q12
     examples: |
       - How are artificial intelligence and machine learning related?
@@ -136,20 +130,12 @@ nlu:
       - relation between a and m
       - how a is related to ml
       - relation between a and ml
-
-  - intent: q13
-    examples: |
-      - where machine learning is used
-      - where ml is used
-      - where m is used
-
   - intent: q14
     examples: |
       - What does a Machine Learning Engineer do?
       - What does a M Engineer do?
       - What does a Ml do?
       - job of machine learning engineer
-
   - intent: q15
     examples: |
       - What kind of jobs or career opportunities are present in the Machine Learning domain?
@@ -157,6 +143,10 @@ nlu:
       - career options for ml
       - jobs available for ml
       - jobs available for m
+      - opportunities for an ai ml engineer
+      - opportunities for an a m engineer
+      - opportunities for an machine learning engineer
+      - opportunities for an artificial intelligence engineer
 
   - intent: q16
     examples: |
@@ -164,22 +154,15 @@ nlu:
       - machine learning engineer salary
       - ml engineer expected salary
       - expected salary for ml engineer
-
   - intent: q17
     examples: |
       - Which companies hire Machine Learning Engineers?
       - in which companies i can work as Machine Learning Engineers
-
   - intent: q18
     examples: |
-      - Where is AI used? Examples
-      - ai examples
-      - a examples
-      - artificial intelligence examples
-      - examples of ai
-      - examples of a
-      - examples of artificial intelligence
-
+      - Where is AI used
+      - where is a used
+      - where is artificial intelligence used
   - intent: q19
     examples: |
       - What are the applications of Machine Learning?
@@ -188,31 +171,28 @@ nlu:
       - where m is used
       - whare ml is used
       - where machine learning is used
-
   - intent: q20
     examples: |
       - What is the best coding language to learn Machine Learning?
       - programming language for ml
       - programming language for machine learning
       - language used for ml
-
   - intent: q21
     examples: |
-      - We hear that Machine Learning and Artificial Intelligence are somewhere near us. Where can we find AI/ML in everyday life?
-
+      - We hear that Machine Learning and Artificial Intelligence are somewhere near us. Where can we find artificial intelligence in everyday life?
   - intent: q22
     examples: |
       - Courses offered in Cambridge.
       - what are the courses available in cambridge
       - courses offered
       - courses available
-
   - intent: q23
     examples: |
+      - how big the campus is
+      - college campus size
       - About Campus Facility
       - what are the facilities available in the campus
       - give inforamtion about various facilities available in campus
-
   - intent: q24
     examples: |
       - About Teaching methodology and about Academics.
@@ -222,36 +202,25 @@ nlu:
       - how good the teaching staff is
       - give me information of academics
       - academics information
-
   - intent: q25
     examples: |
       - About Specialization courses
-
-  - intent: q26
-    examples: |
-      - About Fees for different courses
-      - what is the fee structure for different courses
-      - how much is the fee
-      - fee structure
-      - fees structure
-
   - intent: q27
     examples: |
       - Placement Activities and Placement offers.
       - what are the Placement Activities
       - placement stats
+      - placement statistics
       - how many students placed last year
-
   - intent: q28
     examples: |
       - Highest and Average Packages
       - what is the highest packages offered last year
       - what is the average package of the last year
       - what is average package
-      - average package 
+      - average package
       - what is highest package
       - highest package
-
   - intent: q29
     examples: |
       - CET Cutoff Rank for different courses
@@ -261,7 +230,22 @@ nlu:
       - cet cut off
       - cet cut of
       - cet cutof
-
+      - c t cutoff
+      - c t cut off
+      - sethi cut off
+      - sethi cutoff
+      - CET Cut-off Rank for different courses
+      - what is the cet cut-off for different courses offered
+      - how much rank i should have in cet for differet courses
+      - cet cut-off
+      - cet cut-off
+      - cet cut-of
+      - cet cut-of
+      - c t cut-off
+      - c t cut-off
+      - sethi cut-off
+      - how much rank i should have in sethi
+      - how much rank i should have in c t
   - intent: q30
     examples: |
       - comedk Cutoff Rank for different courses
@@ -275,186 +259,190 @@ nlu:
       - comed cut off
       - comed cut of
       - comed cutof
-
   - intent: q31
     examples: |
       - Difference between VTU and Private University.
       - what is difference between vtu and private university.
       - how private universities are different than vtu
-
   - intent: q32
     examples: |
       - Difference between Cambridge Main campus and North Campus
       - what is difference between cambridge main campus and north campus
-      - how cambridge main campus is different than north campus
+      - how cambridge main campus is different from north campus
       - difference between main campus and north campus
       - difference between main and north campus
-
   - intent: q33
     examples: |
       - When was the college started
       - in which year this college started
       - year of start of college
-
+      - where is the college located
+      - college location
   - intent: q34
     examples: |
       - Is it a private engineering college
       - this college is private
-
   - intent: q35
     examples: |
       - Is CIT a part of group of institutions
       - Is cambridge a part of group of institutions
       - Is cambridge institute of technology a part of group of institutions
-
   - intent: q36
     examples: |
+      - north campus location
+      - where is the north campus located
+      - where are the branches of cambridge 
       - Where are the two engineering colleges
       - location of other colleges
-
   - intent: q37
     examples: |
       - Which is the nearest metro station to the main campus
       - is there any metro station nearby
-
   - intent: q38
     examples: |
       - Does college have buses
       - is bus available for students
       - bus facility
       - does college provide transportation facility
-
   - intent: q39
     examples: |
       - What is website of the college
       - link of college website
       - college website
-
   - intent: q40
     examples: |
       - Does the college have hostel facility on campus
       - Is there hostel in college
-
   - intent: q41
     examples: |
       - What is the vision of the college
       - does college have any vision
-
+      - does the college have any vision
   - intent: q42
     examples: |
       - What is the mission of the college
-      - does college have any vision
-
+      - does college have any mission
+      - does the college have any mission
   - intent: q43
     examples: |
-      - what are acheivements of college
+      - what are achievements of college
       - What are the milestones achieved by the college
-
-  - intent: q44
-    examples: |
-      - How big is the campus
-      - area span of campus
-
   - intent: q45
     examples: |
       - do the students play any sports
       - Is there a sports facility
       - what sports is played in college
-
   - intent: q46
     examples: |
       - Is the college recognized by AICTE
+      - is the college is recognized
       - what is college AICTE code
       - does the college have a AICTE code
       - does AICTE recognize cambridge
-
   - intent: q47
     examples: |
       - Is the college affiliated to VTU
-
+      - college affiliation
+      - collge is affiliated to which university
   - intent: q48
     examples: |
       - id there any site for online application facility
       - Is there an online application facility
-
   - intent: q49
     examples: |
       - When will the college become autonomous
       - is the college planning to become autonomous
-
   - intent: q50
     examples: |
       - How can I join the college
       - can i join through management quota
       - can i join through COMED-K
+      - can i join through COMED
+      - can i join through COMED K
       - what are the ways to join the college
-
+      - how can i get admission in this college
   - intent: q51
     examples: |
       - How many departments are there in the college
       - what is number of departments in cambridge
-
+      - how many branches are there in the college
+      - how many branches
   - intent: q52
     examples: |
       - Which engineering departments are there in the college
       - What are the branches of engineering in the college
       - engineering branches
       - tell the branches available
-
+      - what are the branches available in the college
+      - branches available
   - intent: q53
     examples: |
       - What is the CET rank required to join AI and ML department in the college
+      - What is the CET rank required to join Artificial intelligence and Machine learning department in the college
       - CET cut off for AI ML branch
       - AI ML course cut off
       - what rank is needed to join AI ML
-
+      - CET cut off for Artificial intelligence and Machine learning branch
+      - Artificial intelligence and Machine learning course cut off
+      - what rank is needed to join Artificial intelligence and Machine learning
   - intent: q54
     examples: |
       - What is the CET rank required to join EEE department in the college
       - CET cut off for EEE branch
       - EEE course cut off
       - what rank is needed to join EEE
-
+      - What is the CET rank required to join Electrical and Electronics Engineering department in the college
+      - CET cut off for Electrical and Electronics Engineering branch
+      - Electrical and Electronics Engineering course cut off
+      - what rank is needed to join Electrical and Electronics Engineering
   - intent: q55
     examples: |
       - What is the CET rank required to join ECE department in the college
       - CET cut off for ECE branch
       - ECE course cut off
       - what rank is needed to join ECE
-
+      - What is the CET rank required to join Electronics and Communication Engineering department in the college
+      - CET cut off for Electronics and Communication Engineering branch
+      - Electronics and Communication Engineering course cut off
+      - what rank is needed to join Electronics and Communication Engineering
   - intent: q56
     examples: |
       - What is the CET rank required to join ISE department in the college
       - CET cut off for ISE branch
       - ISE course cut off
       - what rank is needed to join ISE
-
+      - What is the CET rank required to join Information science engineering department in the college
+      - CET cut off for Information science engineering branch
+      - Information science engineering course cut off
+      - what rank is needed to join Information science engineering
   - intent: q57
     examples: |
       - What is the CET rank required to join CSE department in the college
       - CET cut off for CSE branch
       - CSE course cut off
       - what rank is needed to join CSE
-
+      - What is the CET rank required to join Computer Science Engineering department in the college
+      - CET cut off for Computer Science Engineering branch
+      - Computer Science Engineering course cut off
+      - what rank is needed to join Computer Science Engineering
   - intent: q58
     examples: |
       - What is the CET rank required to join Mechanical department in the college
       - CET cut off for mechanical branch
       - mechanical course cut off
       - what rank is needed to join mechanical
-
   - intent: q59
     examples: |
       - What is the CET rank required to join civil department in the college
       - CET cut off for civil branch
       - civil course cut off
       - what rank is needed to join civil
-
   - intent: q60
     examples: |
       - How many seats are there in AI and ML department
       - number of seats in AI and ML department
-
+      - How many seats are there in Artificial intelligence and Machine learning department
+      - number of seats in Artificial intelligence and Machine learning department
   - intent: q61
     examples: |
       - How many seats are there in CSE department
@@ -462,61 +450,73 @@ nlu:
       - seats available in cse
       - seats in computer science
       - available seats in cse
-
+      - How many seats are there in Computer Science Engineering department
+      - number of seats in Computer Science Engineering department
+      - seats available in Computer Science Engineering
+      - available seats in Computer Science Engineering
   - intent: q62
     examples: |
       - How many seats are there in ISE department
       - number of seats in ISE department
-
+      - How many seats are there in Information science engineering department
+      - number of seats in Information science engineering department
   - intent: q63
     examples: |
       - How many seats are there in EEE department
       - number of seats in EEE department
-
+      - How many seats are there in Electrical and Electronics Engineering department
+      - number of seats in Electrical and Electronics Engineering department
   - intent: q64
     examples: |
       - How many seats are there in ECE department
       - number of seats in ECE department
-
+      - How many seats are there in Electronics and Communication Engineering department
+      - number of seats in Electronics and Communication Engineering department
   - intent: q65
     examples: |
       - How many seats are there in mechanical department
       - number of seats in mechanical department
-
   - intent: q66
     examples: |
       - How many seats are there in civil departments
       - number of seats in civil department
-
   - intent: q68
     examples: |
       - What is the fee structure in the college
       - fees in cambridge
-
+      - what is fees of the college
+      - what is fees
+      - What is the field structure in the college
+      - field in cambridge
+      - what is field of the college
+      - what is field
+      - What is the piece structure in the college
+      - piece in cambridge
+      - what is piece of the college
+      - what is piece
   - intent: q70
     examples: |
       - Is there any fee reduction for high CET rankers
       - Will high CET rank holders get any fee reduction
       - fees relaxation for cet rank holders
       - fees concession for cet rankers
-
+      - Is there any fee reduction for high rankers
   - intent: q71
     examples: |
       - Can the fee be paid online
-      - can we pay the fee online 
+      - can we pay the fee online
       - does the college accept online mode of payment
       - online payment
-
   - intent: q72
     examples: |
       - Is the college NAAC accredited
       - what is the college's NAAC accreditation
-
+      - Is the college NAC
+      - Is the college NAAC
   - intent: q73
     examples: |
       - Is the college NBA accredited
       - does the college have NBA accreditation
-
   - intent: q74
     examples: |
       - What is the ARIIA ranking

@@ -1,38 +1,29 @@
 version: "3.1"
-
 intents:
-  - greet
-  - goodbye
   - bot_challenge
+  - goodbye
+  - greet
   - q1
-  - q2
-  - q3
-  - q4
-  - q5
-  - q6
-  - q7
-  - q8
-  - q9
   - q10
   - q11
   - q12
-  - q13
   - q14
   - q15
   - q16
   - q17
   - q18
   - q19
+  - q2
   - q20
   - q21
   - q22
   - q23
   - q24
   - q25
-  - q26
   - q27
   - q28
   - q29
+  - q3
   - q30
   - q31
   - q32
@@ -43,6 +34,7 @@ intents:
   - q37
   - q38
   - q39
+  - q4
   - q40
   - q41
   - q42
@@ -53,6 +45,7 @@ intents:
   - q47
   - q48
   - q49
+  - q5
   - q50
   - q51
   - q52
@@ -63,6 +56,7 @@ intents:
   - q57
   - q58
   - q59
+  - q6
   - q60
   - q61
   - q62
@@ -71,280 +65,180 @@ intents:
   - q65
   - q66
   - q68
+  - q7
   - q70
   - q71
   - q72
   - q73
   - q74
-
+  - q8
+  - q9
 responses:
   utter_greet:
-    - text: "Hey! what is your query"
-
+    - text: Hey! what is your query
   utter_goodbye:
-    - text: "Bye"
-
+    - text: Bye
   utter_iamabot:
-    - text: "I am a your assistant for admission related queries. i am developed by cambridge institute of technology."
-
+    - text: I am a your assistant for admission related queries. i am developed by cambridge institute of technology.
   utter_q1:
-    - text:
-        "AI and Machine Learning (ML) technology have become a major part of the armoury for many industries whether it be private companies, financial services, healthcare, or governments.
-        These data-driven tools are used to make ever more important decisions that can have a far-reaching impact on individuals and societies."
-
+    - text: AI and Machine Learning (ML) technology have become a major part of the armoury for many industries whether it be private companies, financial services, healthcare, or governments. These data-driven tools are used to make ever more important decisions that can have a far-reaching impact on individuals and societies.
   utter_q2:
-    - text: "No. We have excellent faculty members and instructors with us who will make the course very easy to learn and understand. Anyone who wants to learn machine learning and make a career in it can easily learn AI and ML. As a subject, Machine Learning is a fusion of concepts from Mathematics, Computer Science, and Statistics."
-
+    - text: No. We have excellent faculty members and instructors with us who will make the course very easy to learn and understand. Anyone who wants to learn machine learning and make a career in it can easily learn AI and ML. As a subject, Machine Learning is a fusion of concepts from Mathematics, Computer Science, and Statistics.
   utter_q3:
-    - text: "Artificial Intelligence (AI) is the branch of computer science that emphasizes the development of intelligence machines, thinking and working like humans. For example, speech recognition, problem-solving, learning and planning."
-
+    - text: Artificial Intelligence (AI) is the branch of computer science that emphasizes the development of intelligence machines, thinking and working like humans. For example, speech recognition, problem-solving, learning and planning.
   utter_q4:
-    - text:
-        "Yes. Almost everyone who has a computer, smartphone, or other smart device is already using AI to make life easier:
-        1.	Siri and Cortana act as your personal assistants using voice processing
-        2.	Facebook recommends photo tags using image recognition
-        3.	Amazon recommends products using machine learning algorithms
-        4.	Waze suggests optimal driving routes using a combination of predictive models, forecasting, and optimisation techniques"
-
+    - text: "Yes. Almost everyone who has a computer, smartphone, or other smart device is already using AI to make life easier: 1.\tSiri and Cortana act as your personal assistants using voice processing 2.\tFacebook recommends photo tags using image recognition 3.\tAmazon recommends products using machine learning algorithms 4.\tWaze suggests optimal driving routes using a combination of predictive models, forecasting, and optimisation techniques"
   utter_q5:
-    - text: "Machine learning is the core driver of AI. It’s the concept of having computers learn from data with minimal programming."
-
+    - text: Machine learning is the core driver of AI. It’s the concept of having computers learn from data with minimal programming.
   utter_q6:
-    - text: "Machine learning works with structured data to detect patterns that provide insight. Everyday examples are personalised recommendations from services like Amazon or Netflix. In the financial arena, machine learning predicts bad loans, finds risky applicants, and generates credit scores."
-
+    - text: Machine learning works with structured data to detect patterns that provide insight. Everyday examples are personalised recommendations from services like Amazon or Netflix. In the financial arena, machine learning predicts bad loans, finds risky applicants, and generates credit scores.
   utter_q7:
-    - text: "The main difference between machine learning and artificial intelligence is that the former is a subset of the latter. To put it simply, AI encompasses all machine learning but not all artificial intelligence practices are associated with machine learning."
-
+    - text: The main difference between machine learning and artificial intelligence is that the former is a subset of the latter. To put it simply, AI encompasses all machine learning but not all artificial intelligence practices are associated with machine learning.
   utter_q8:
-    - text: "The main difference between machine learning and artificial intelligence is that the former is a subset of the latter. To put it simply, AI encompasses all machine learning but not all artificial intelligence practices are associated with machine learning."
-
+    - text: The main difference between machine learning and artificial intelligence is that the former is a subset of the latter. To put it simply, AI encompasses all machine learning but not all artificial intelligence practices are associated with machine learning.
   utter_q9:
-    - text:
-        "Step 1.	Set concrete goals or deadlines. Machine learning is a rich field that's expanding every year.
-        Step 2.	Walk before you run.
-        Step 3.	Alternate between practice and theory.
-        Step 4.	Write a few algorithms from scratch.
-        Step 5.	Seek different perspectives.
-        Step 6.	Tie each algorithm to value.
-        Step 7.	Don't believe the hype.
-        Step 8.	Ignore the show-offs."
-
+    - text: "Step 1.\tSet concrete goals or deadlines. Machine learning is a rich field that's expanding every year. Step 2.\tWalk before you run. Step 3.\tAlternate between practice and theory. Step 4.\tWrite a few algorithms from scratch. Step 5.\tSeek different perspectives. Step 6.\tTie each algorithm to value. Step 7.\tDon't believe the hype. Step 8.\tIgnore the show-offs."
   utter_q10:
-    - text:
-        "Step 1: Adjust Mindset. Believe you can practice and apply machine learning.
-        Step 2: Pick a Process. Use a systemic process to work through problems.
-        Step 3: Pick a Tool. Select a tool for your level and map it onto your process.
-        Step 4: Practice on Datasets.
-        Step 5: Build a Portfolio.
-        If you're an absolute beginner, start with some introductory Python courses and when you're a bit more confident, move into data science, machine learning and AI."
-
+    - text: "Step 1: Adjust Mindset. Believe you can practice and apply machine learning. Step 2: Pick a Process. Use a systemic process to work through problems. Step 3: Pick a Tool. Select a tool for your level and map it onto your process. Step 4: Practice on Datasets. Step 5: Build a Portfolio. If you're an absolute beginner, start with some introductory Python courses and when you're a bit more confident, move into data science, machine learning and AI."
   utter_q11:
-    - text: "1.	Knowledge of Programming Language.
-        2.	Good Knowledge of Mathematics.
-        3.	Learn the Concept of Machine Learning.
-        4.	Knowledge of Data Structure and Algorithms. "
-
+    - text: "1.\tKnowledge of Programming Language. 2.\tGood Knowledge of Mathematics. 3.\tLearn the Concept of Machine Learning. 4.\tKnowledge of Data Structure and Algorithms. "
   utter_q12:
-    - text: "Artificial intelligence is a technology that enables a machine to simulate human behavior. Machine learning is a subset of AI which allows a machine to automatically learn from past data without programming explicitly. The goal of AI is to make a smart computer system like humans to solve complex problems."
-
-  utter_q13:
-    - text: "In a nutshell, Machine learning helps us automate rules or decision-making processes with the help of mathematics, code, and data. Various Industries are now using Machine Learning Algorithms to increase their revenue by making predictions about their customer's behavior and upcoming trends in the market. Automatic Recommendations in your mobile keyboard and e-commerce websites, Google Voice Assistant, Self-driving Cars, and stock prediction are some examples that are built using machine learning."
-
+    - text: Artificial intelligence is a technology that enables a machine to simulate human behavior. Machine learning is a subset of AI which allows a machine to automatically learn from past data without programming explicitly. The goal of AI is to make a smart computer system like humans to solve complex problems.
   utter_q14:
-    - text: "A machine learning engineer is a highly qualified professional who uses machine learning and software development skills to build and design scalable machine learning systems that can automate predictive models. They shall have good knowledge of system design, Machine Learning Algorithms, Development and Statistics."
-
+    - text: A machine learning engineer is a highly qualified professional who uses machine learning and software development skills to build and design scalable machine learning systems that can automate predictive models. They shall have good knowledge of system design, Machine Learning Algorithms, Development and Statistics.
   utter_q15:
     - text: "In Machine Learning, there are a variety of job roles that can be assigned depending on industry needs. Once you finish B.E. AI&ML course, you will possess an in-demand set of skills critical to today's career opportunities, which include: Machine Learning Scientist, Machine Learning Engineer, Human-Centered Machine Learning Designer, Research Analyst, Data Analytics, Analytics Lead or Manager or Consultant, Statistical Programming Specialist, Hadoop Developer, and many more."
-
   utter_q16:
-    - text: "As a fresher in Machine Learning Engineer, you can expect to earn between 4 to 8 lakhs per annum. An experienced professional data scientist 3 to 5 years experience makes more than 10 lakhs per annum by virtue of their skills and expertise. Their skill development and learning capabilities largely determine their salary increases."
-
+    - text: As a fresher in Machine Learning Engineer, you can expect to earn between 4 to 8 lakhs per annum. An experienced professional data scientist 3 to 5 years experience makes more than 10 lakhs per annum by virtue of their skills and expertise. Their skill development and learning capabilities largely determine their salary increases.
   utter_q17:
-    - text: "Almost all of the big companies like Google, Amazon, Facebook, Netflix have a requirement of good Machine Learning engineers. Machine learning is being applied in almost all the industries where data can be used to make predictions be it healthcare, IT, finance."
-
+    - text: Almost all of the big companies like Google, Amazon, Facebook, Netflix have a requirement of good Machine Learning engineers. Machine learning is being applied in almost all the industries where data can be used to make predictions be it healthcare, IT, finance.
   utter_q18:
-    - text: "AI is used in all industries, from marketing to supply chain, finance, food-processing sector. According to a McKinsey survey, financial services and high tech communication are leading the AI fields."
-
+    - text: AI is used in all industries, from marketing to supply chain, finance, food-processing sector. According to a McKinsey survey, financial services and high tech communication are leading the AI fields.
   utter_q19:
-    - text: "Some of the major applications of machine learning include speech recognition, self-driving cars, product recommendations, stock market trading, online fraud detection, email spam filtering, chatbots and voice assistance."
-
+    - text: Some of the major applications of machine learning include speech recognition, self-driving cars, product recommendations, stock market trading, online fraud detection, email spam filtering, chatbots and voice assistance.
   utter_q20:
-    - text: "Python and R are the most used languages in Machine learning."
-
+    - text: Python and R are the most used languages in Machine learning.
   utter_q21:
-    - text:
-        "Almost everyone who has a computer, smartphone, or other smart device is already using AI to make life easier:
-        1.	Siri and Cortana act as your personal assistants using voice processing
-        2.	Facebook recommends photo tags using image recognition
-        3.	Amazon recommends products using machine learning algorithms
-        4.	Waze suggests optimal driving routes using a combination of predictive models, forecasting, and optimisation techniques"
-
+    - text: "Almost everyone who has a computer, smartphone, or other smart device is already using AI to make life easier: 1.\tSiri and Cortana act as your personal assistants using voice processing 2.\tFacebook recommends photo tags using image recognition 3.\tAmazon recommends products using machine learning algorithms 4.\tWaze suggests optimal driving routes using a combination of predictive models, forecasting, and optimisation techniques"
   utter_q22:
-    - text: "Cambridge Institute of Technology (CIT) located in KR Puram, north of Bengaluru is a NAAC and NBA accredited institution. CIT has on an average 3000+ students and 170 faculties. CIT has 7 BTech courses, MCA, MBA and MTech courses along with 7 advanced research labs where scholars pursue their PhD. The BTech courses offered at CIT include AIML, CSE, ISE, ECE, EEE, Mech, Civil. Only MTech in computer science is offered."
-
+    - text: Cambridge Institute of Technology (CIT) located in KR Puram, north of Bengaluru is a NAAC and NBA accredited institution. CIT has on an average 3000+ students and 170 faculties. CIT has 7 BTech courses, MCA, MBA and MTech courses along with 7 advanced research labs where scholars pursue their PhD. The BTech courses offered at CIT include AIML, CSE, ISE, ECE, EEE, Mech, Civil. Only MTech in computer science is offered.
   utter_q23:
-    - text: "CIT campus is sprawling lush green 12 acre campus adjoining our own science college and ICSE school. CIT has both girls and boys hostels, canteens, Cafeday and a bakery. The college has cricket, volleyball, basketball and football grounds. It also has a gym and indoor tennis ground. During Covid-19, our college was one of the first to install disinfection tunnels designed, developed and operated by our own faculties and students."
-
+    - text: CIT campus is sprawling lush green 16 acre campus adjoining our own science college and ICSE school. CIT has both girls and boys hostels, canteens, Cafeday and a bakery. The college has cricket, volleyball, basketball and football grounds. It also has a gym and indoor tennis ground. During Covid-19, our college was one of the first to install disinfection tunnels designed, developed and operated by our own faculties and students.
   utter_q24:
-    - text: "Our faculties have PhD degrees from Germany, UK and such developed countries. The average teaching experience of our faculties is more than 10 years. Our college has bagged gold medals, silver medals from VTU, Most of the time our pass percentage is asymptotically close to 100%. We are very strict in academics. Our campus is no smoking, no alcohol and no drugs campus. The students found with such substances will be summarily suspended and removed from the hostel immediately."
-
+    - text: Our faculties have PhD degrees from Germany, UK and such developed countries. The average teaching experience of our faculties is more than 10 years. Our college has bagged gold medals, silver medals from VTU, Most of the time our pass percentage is asymptotically close to 100%. We are very strict in academics. Our campus is no smoking, no alcohol and no drugs campus. The students found with such substances will be summarily suspended and removed from the hostel immediately.
   utter_q25:
-    - text: "As our college is committed to holistic development of the students, starting from soft skills such as spoken english, technical writing to top notch technical training such as project management, IPR management apart from highly specialized courses such as drone computing are offered to students from second year itself to hone their skills continually."
-
-  utter_q26:
-    - text: "The management quota fees differ from course to course. For AIML, the yearly fee is around 5 lakhs Indian rupees. Most of the courses, the fee starts from 2.5 lakhs."
-
+    - text: As our college is committed to holistic development of the students, starting from soft skills such as spoken english, technical writing to top notch technical training such as project management, IPR management apart from highly specialized courses such as drone computing are offered to students from second year itself to hone their skills continually.
   utter_q27:
-    - text: "The college even during Covid-19 has placed more than 70% of the eligible candidates. Some of the brighter students opted for higher studies at IIT, IIMs and in foreign countries also. Every year there are specific placement training courses provided to students based on their career goals."
-
+    - text: The college even during Covid-19 has placed more than 70% of the eligible candidates. Some of the brighter students opted for higher studies at IIT, IIMs and in foreign countries also. Every year there are specific placement training courses provided to students based on their career goals.
   utter_q28:
-    - text: "The highest package so far is 16 lakhs and the average package differs from circuit branches and others. Mostly it is around 5 lakhs."
-
+    - text: The highest package so far is 16 lakhs and the average package differs from circuit branches and others. Mostly it is around 5 lakhs.
   utter_q29:
-    - text: "Last year CET cutoff ranks are as follows    1000 For AIML,   2000   For CSE,   3000    For ISE,     4000   For ECE,    5000   For EEE,      6000    For Mech and,    7000    For Civil"
-
+    - text: Last year CET cutoff ranks are as follows
+        28283   For AIML,
+        21328   For CSE,
+        32382   For ISE,
+        37593   For ECE,
+        41780   For EEE,
+        49610   For Mech and,
+        40512   For Civil
   utter_q30:
-    - text: "Last year Comedk cutoff ranks are as follows    1000 For AIML,   2000   For CSE,   3000    For ISE,     4000   For ECE,    5000   For EEE,      6000    For Mech and,    7000    For Civil"
-
+    - text: Last year Comedk cutoff ranks are as follows
+        20732   For AIML,
+        14454   For CSE,
+        19300   For ISE,
+        36301   For ECE,
+        41733   For EEE,
+        39374   For Mech and,
+        29597   For Civil
   utter_q31:
-    - text: "VTU is a government affiliating university for all engineering colleges in Karnataka. Private universities are mostly run by a private trust or organization."
-
+    - text: VTU is a government affiliating university for all engineering colleges in Karnataka. Private universities are mostly run by a private trust or organization.
   utter_q32:
-    - text: "Technically there is no difference between Main campus and north campus. For those who prefer to be closer to the city, main campus is better. For those who love serene pollution free environment, north campus is preferable."
-
+    - text: Technically there is no difference between Main campus and north campus. For those who prefer to be closer to the city, main campus is better. For those who love serene pollution free environment, north campus is preferable.
   utter_q33:
     - text: The Cambridge Institute of Technology was started in 2007 in KR Puram, Bengaluru by Umesh Educational Trust.
-
   utter_q34:
     - text: Yes. CIT is a private engineering college.
-
   utter_q35:
     - text: Yes. CIT is a part of group of institutions where we have a ICSE school, one science and arts college and two engineering colleges.
-
   utter_q36:
     - text: One of the engineering colleges is in KR Puram, Bengaluru and other is near Devanahalli (10 kilometer from Kempe Gowda International Airport)
-
   utter_q37:
     - text: Byappanahalli metro station is 5 km from the college. KR Puram railway station is less than 2 km from the college.
-
   utter_q38:
     - text: Yes. There are more than 10 buses which cover the length and breadth of the city.
-
   utter_q39:
     - text: www.cambridge.edu.in
-
   utter_q40:
     - text: Yes. The college has hostels for boys and girls separately on campus.
-
   utter_q41:
     - text: The vision of the college is to become a premier institute transforming our students to be global professionals.
-
   utter_q42:
-    - text: The missions of the college are to
-        1. Develop competent Human Resources, and create state-of-the-art infrastructure to impart quality education and to support research.
-        2. Adopt tertiary approach in teaching  learning pedagogy that transforms students to become competent professionals and entrepreneurs.
-        3. Nurture and train students to develop the qualities of global professionals.
-
+    - text: The missions of the college are to 1. Develop competent Human Resources, and create state-of-the-art infrastructure to impart quality education and to support research. 2. Adopt tertiary approach in teaching  learning pedagogy that transforms students to become competent professionals and entrepreneurs. 3. Nurture and train students to develop the qualities of global professionals.
   utter_q43:
-    - text: The college bagged the following awards and achievements
-        1. CIT is rated in the “Diamond” category by QSI-gauge.
-        2. CIT is ranked 7th in the emerging private engineering colleges at the national level by The week magazine.
-        3. CIT is ranked 10th in the private engineering colleges at the state level by The week magazine.
-        4. CIT is awarded as the best emerging engineering college in the south India by ASSOCHAM
-        5. CIT is ranked 68th across the country by Data quest.
-        6. CIT is ranked 25th across the country by Silicon valley.
-        7. 4 star rating from MIC-AICTE, which is the highest rating
-
-  utter_q44:
-    - text: The college has sprawling area of 16 acres with lot of trees.
-
+    - text: College is 15 years old and it is NBA and NAAC accredited
   utter_q45:
     - text: There are many grounds including cricket ground and indoor games for tennis along with well equipped Gymnasium also.
-
   utter_q46:
     - text: Yes, the college is recognized by AICTE and the AICTE code is  1-6142911
-
   utter_q47:
     - text: Yes, however soon we will become an autonomous college, then also affiliated to VTU.
-
   utter_q48:
     - text: Yes. Kindly visit our website engg.cambridge.edu.in
-
   utter_q49:
     - text: It will become autonomous in next year.
-
   utter_q50:
     - text: There are three ways to get admission in the college. You can take either CET or COMED-K or approach the management for management quota.
-
   utter_q51:
     - text: There are 7 UG engineering department, one MBA department and one MCA department apart from the basic sciences department.
-
   utter_q52:
     - text: CIT has AI and ML, Computer science, Electrical and Electronics, Electronics and communication, Information science, Mechanical and Civil engineering departments.
-
   utter_q53:
     - text: The CET rank required to get admission in AI and ML department is 28283.
-
   utter_q54:
     - text: The CET rank required to get admission in EEE department is 41780.
-
   utter_q55:
     - text: The CET rank required to get admission in ECE department is 37593.
-
   utter_q56:
     - text: The CET rank required to get admission in ISE department is 32382.
-
   utter_q57:
     - text: The CET rank required to get admission in CSE department is 21328.
-
   utter_q58:
     - text: The CET rank required to get admission in mechanical department is 49610.
-
   utter_q59:
     - text: The CET rank required to get admission in civil department is 40512.
-
   utter_q60:
     - text: There are 60 seats in AI and ML department.
-
   utter_q61:
     - text: There are 180 seats in CSE department.
-
   utter_q62:
     - text: There are 120 seats in ISE department.
-
   utter_q63:
     - text: There are 60 seats in EEE department.
-
   utter_q64:
     - text: There are 180 seats in ECE department.
-
   utter_q65:
     - text: There are 60 seats in mechanical department.
-
   utter_q66:
     - text: There are 60 seats in civil department.
-
   utter_q68:
-    - text: It varies from department to department. We also have scholarships.
-
+    - text: It varies from department to department. We also have scholarships. For more details contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
   utter_q70:
     - text: Yes. Kindly contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
-
   utter_q71:
     - text: Yes. Kindly contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
-
   utter_q72:
     - text: Yes. The college is NAAC accredited with B+ grade. We have applied now again and hope to get A+.
-
   utter_q73:
     - text: Yes. college is NBA accredited
-
   utter_q74:
     - text: The college is elevated to “Promising” Category in ARIIA ranking.
-
   utter_default:
     - text: I am unable to understand, can you please reframe the sentence
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+actions:
+  - utter_q18
+  - utter_q4
+  - utter_q41
+  - utter_q42
