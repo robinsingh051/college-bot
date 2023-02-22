@@ -1,4 +1,4 @@
-FROM python:3.7.7-stretch AS BASE
+FROM python:3.8-buster AS BASE
 
 RUN apt-get update \
     && apt-get --assume-yes --no-install-recommends install \
@@ -18,7 +18,12 @@ RUN pip install -U pip setuptools wheel
 RUN pip install -U spacy
 RUN python -m spacy download en_core_web_md
 
+COPY ./actions /app/actions
+
 ADD config.yml config.yml
 ADD domain.yml domain.yml
 ADD credentials.yml credentials.yml
 ADD endpoints.yml endpoints.yml
+
+EXPOSE 5005
+CMD ["--help"]
