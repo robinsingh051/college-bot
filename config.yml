@@ -24,7 +24,7 @@ pipeline:
   #   "max_cross_validation_folds": 5
   #   "scoring_function": "f1_weighted"
   - name: DIETClassifier
-    epochs: 300
+    epochs: 100
     constrain_similarities: true
   - name: EntitySynonymMapper
   - name: ResponseSelector
@@ -32,7 +32,8 @@ pipeline:
     constrain_similarities: true
   - name: FallbackClassifier
     threshold: 0.3
-    ambiguity_threshold: 0.05
+    ambiguity_threshold: 0.01
+    fallback_action_name: "utter_default"
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/

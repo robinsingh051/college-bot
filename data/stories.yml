@@ -706,3 +706,13 @@ stories:
       - action: utter_q42
       - intent: q4
       - action: utter_q4
+
+  - story: interactive_story_2
+    steps:
+      - intent: q107
+      - action: utter_q107
+      - intent: q105
+      - action: utter_q105
+      - intent: q103
+      - action: utter_q103
+      - intent: greet
