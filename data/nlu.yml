@@ -521,3 +521,866 @@ nlu:
     examples: |
       - What is the ARIIA ranking
       - which category is the college in the ARIIA ranking
+  - intent: q75
+    examples: |
+      - What are the types of rooms in the hostel
+      - Can you tell me about the different types of rooms available at the hostel?
+      - What kind of accommodations can I expect to find at the hostel?
+      - I am curious about the variety of rooms at the hostel. Could you provide some information?
+      - Are there different types of rooms available for guests at the hostel?
+      - What are the room options at the hostel?
+      - Could you describe the different kinds of rooms that the hostel offers?
+      - I am interested in the different types of accommodations available at the hostel. Can you fill me in?
+      - What kinds of rooms can guests choose from at the hostel?
+      - Can you give me an overview of the various types of rooms at the hostel?
+      - What's the range of room types that the hostel provides?
+  - intent: q76
+    examples: |
+      - What are the facilities provided by the college hostel
+      - What amenities does the college hostel offer to its residents?
+      - Could you list the services provided by the college hostel?
+      - What are the available facilities at the college hostel?
+      - Can you tell me about the resources provided by the college hostel?
+      - What are the provisions available to students at the college hostel?
+      - What kind of equipment and services are available at the college hostel?
+      - Could you give me an overview of the amenities offered by the college hostel?
+      - What are the features of the college hostel in terms of services and facilities?
+      - Can you provide me with a breakdown of the facilities offered by the college hostel?
+      - Could you describe the available amenities at the college hostel?
+  - intent: q77
+    examples: |
+      - Who is the chairman of the college
+      - Who holds the position of the chairman at the college?
+      - Could you tell me the name of the individual who is the chairman of the college?
+      - Who is in charge as the chairman of the college?
+      - Can you provide me with the name of the person who holds the position of chairman at the college?
+      - Who is the head of the college as the chairman?
+      - May I know the name of the chairman of the college?
+      - Who leads the college in the role of chairman?
+      - Who serves as the chairman of the college?
+      - Could you inform me about the person holding the position of chairman at the college?
+      - Who presides over the college as the chairman?
+  - intent: q78
+    examples: |
+      - Who is the principal of the college
+      - Can you tell me the name of the principal of the college?
+      - May I know the person in charge of the college as the principal?
+      - Who is currently serving as the principal of the college?
+      - Could you provide me with the identity of the college principal?
+      - Who holds the position of principal at the college?
+      - Who is responsible for overseeing the college as the principal?
+      - Can you give me information on the individual serving as the principal of the college?
+      - Who leads the college in the role of principal?
+  - intent: q79
+    examples: |
+      - Who is the HOD of computer science department
+      - Who is the head of the computer science department?
+      - Can you tell me the name of the person who heads the computer science department?
+      - Who leads the computer science department in the role of HOD?
+      - Could you provide me with the name of the HOD of the computer science department?
+      - Who is currently serving as the HOD of the computer science department?
+      - Who holds the position of HOD in the computer science department?
+      - Can you give me information on the individual serving as the HOD of the computer science department?
+      - Who is the HOD of cs department
+      - Who is the head of the cs department?
+      - Can you tell me the name of the person who heads the cs department?
+      - Who leads the cs department in the role of HOD?
+      - Could you provide me with the name of the HOD of the cs department?
+      - Who is currently serving as the HOD of the cs department?
+      - Who holds the position of HOD in the cs department?
+      - Can you give me information on the individual serving as the HOD of the cs department?
+  - intent: q80
+    examples: |
+      - Who is the HOD of information science department
+      - Who is the head of the information science department?
+      - Can you tell me the name of the person who heads the information science department?
+      - Who leads the information science department in the role of HOD?
+      - Could you provide me with the name of the HOD of the information science department?
+      - Who is currently serving as the HOD of the information science department?
+      - Who holds the position of HOD in the information science department?
+      - Can you give me information on the individual serving as the HOD of the information science department?
+      - Who is the HOD of ise department
+      - Who is the head of the ise department?
+      - Can you tell me the name of the person who heads the ise department?
+      - Who leads the ise department in the role of HOD?
+      - Could you provide me with the name of the HOD of the ise department?
+      - Who is currently serving as the HOD of the ise department?
+      - Who holds the position of HOD in the ise department?
+      - Can you give me information on the individual serving as the HOD of the ise department?
+
+  - intent: q81
+    examples: |
+      - Who is the HOD of civil department
+      - Who is the head of the civil department?
+      - Can you tell me the name of the person who heads the civil department?
+      - Who leads the civil department in the role of HOD?
+      - Could you provide me with the name of the HOD of the civil department?
+      - Who is currently serving as the HOD of the civil department?
+      - Who holds the position of HOD in the civil department?
+      - Can you give me information on the individual serving as the HOD of the civil department?
+
+  - intent: q82
+    examples: |
+      - Who is the HOD of mechanical department
+      - Who is the head of the mechanical department?
+      - Can you tell me the name of the person who heads the mechanical department?
+      - Who leads the mechanical department in the role of HOD?
+      - Could you provide me with the name of the HOD of the mechanical department?
+      - Who is currently serving as the HOD of the mechanical department?
+      - Who holds the position of HOD in the mechanical department?
+      - Can you give me information on the individual serving as the HOD of the mechanical department?
+      - Who is the HOD of mech department
+      - Who is the head of the mech department?
+      - Can you tell me the name of the person who heads the mech department?
+      - Who leads the mech department in the role of HOD?
+      - Could you provide me with the name of the HOD of the mech department?
+      - Who is currently serving as the HOD of the mech department?
+      - Who holds the position of HOD in the mech department?
+      - Can you give me information on the individual serving as the HOD of the mech department?
+
+  - intent: q83
+    examples: |
+      - Who is the HOD of electronics and communication department
+      - Who is the head of the electronics and communication department?
+      - Can you tell me the name of the person who heads the electronics and communication department?
+      - Who leads the electronics and communication department in the role of HOD?
+      - Could you provide me with the name of the HOD of the electronics and communication department?
+      - Who is currently serving as the HOD of the electronics and communication department?
+      - Who holds the position of HOD in the electronics and communication department?
+      - Can you give me information on the individual serving as the HOD of the electronics and communication department?
+      - Who is the HOD of ece department
+      - Who is the head of the ece department?
+      - Can you tell me the name of the person who heads the ece department?
+      - Who leads the ece department in the role of HOD?
+      - Could you provide me with the name of the HOD of the ece department?
+      - Who is currently serving as the HOD of the ece department?
+      - Who holds the position of HOD in the ece department?
+      - Can you give me information on the individual serving as the HOD of the ece department?
+
+  - intent: q84
+    examples: |
+      - Who is the HOD of artificial intelligence and machine learning department
+      - Who is the head of the artificial intelligence and machine learning department?
+      - Can you tell me the name of the person who heads the artificial intelligence and machine learning department?
+      - Who leads the artificial intelligence and machine learning department in the role of HOD?
+      - Could you provide me with the name of the HOD of the artificial intelligence and machine learning department?
+      - Who is currently serving as the HOD of the artificial intelligence and machine learning department?
+      - Who holds the position of HOD in the artificial intelligence and machine learning department?
+      - Can you give me information on the individual serving as the HOD of the artificial intelligence and machine learning department?
+      - Who is the HOD of aiml department
+      - Who is the head of the aiml department?
+      - Can you tell me the name of the person who heads the aiml department?
+      - Who leads the aiml department in the role of HOD?
+      - Could you provide me with the name of the HOD of the aiml department?
+      - Who is currently serving as the HOD of the aiml department?
+      - Who holds the position of HOD in the aiml department?
+      - Can you give me information on the individual serving as the HOD of the aiml department?
+
+  - intent: q85
+    examples: |
+      - Who is the HOD of electrical and electronics engineering department
+      - Who is the head of the electrical and electronics engineering department?
+      - Can you tell me the name of the person who heads the electrical and electronics engineering department?
+      - Who leads the electrical and electronics engineering department in the role of HOD?
+      - Could you provide me with the name of the HOD of the electrical and electronics engineering department?
+      - Who is currently serving as the HOD of the electrical and electronics engineering department?
+      - Who holds the position of HOD in the electrical and electronics engineering department?
+      - Can you give me information on the individual serving as the HOD of the electrical and electronics engineering department?
+      - Who is the HOD of eee department
+      - Who is the head of the eee department?
+      - Can you tell me the name of the person who heads the eee department?
+      - Who leads the eee department in the role of HOD?
+      - Could you provide me with the name of the HOD of the eee department?
+      - Who is currently serving as the HOD of the eee department?
+      - Who holds the position of HOD in the eee department?
+      - Can you give me information on the individual serving as the HOD of the eee department?
+
+  - intent: q86
+    examples: |
+      - What is the strength of each class
+      - How many students are there in each class?
+      - Can you tell me the number of students in each class?
+      - What is the student capacity of each class?
+      - May I know how many pupils are there in every class?
+      - What is the enrollment size of each class?
+      - How many learners are present in each class?
+      - Could you provide me with the strength of each class in terms of student numbers?
+      - What is the student headcount in each class?
+      - Can you tell me the student population of each class?
+      - What is the number of students that make up each class?
+
+  - intent: q87
+    examples: |
+      - What is the student to faculty ratio
+      - How many students are assigned to each teacher?
+      - Can you tell me the proportion of students to teachers?
+      - What is the number of students per teacher?
+      - May I know the student-teacher ratio at this school?
+      - What is the average number of pupils assigned to each teacher?
+      - How many learners are typically supervised by a single teacher?
+      - Could you provide me with information on the student-teacher ratio?
+      - What is the relationship between the number of students and teachers?
+      - Can you give me details about the proportion of students to each teacher?
+      - How many students does each teacher typically have under their supervision?
+
+  - intent: q88
+    examples: |
+      - What measures are taken to ensure that the college is ragging free
+      - How does the college prevent ragging on campus?
+      - Can you describe the steps taken by the college to eliminate ragging?
+      - What measures are in place to ensure a ragging-free environment in the college?
+      - May I know what the college is doing to prevent ragging?
+      - What steps have been taken to make sure that there is no ragging in the college?
+      - Could you provide me with information on the anti-ragging measures implemented by the college?
+      - What steps does the college take to enforce a zero-tolerance policy towards ragging?
+      - How is the college actively working towards preventing ragging incidents?
+      - Can you tell me about the policies and actions in place to prevent ragging on campus?
+      - What steps does the college take to educate students about the harmful effects of ragging and prevent such incidents from happening?
+
+  - intent: q89
+    examples: |
+      - How many students are there in the college
+      - What is the student population of the college?
+      - Can you tell me how many students are currently enrolled in the college?
+      - What is the total number of students studying at the college?
+      - May I know the current student headcount of the college?
+      - How many learners are there in the college?
+      - What is the number of students studying in the college?
+      - Can you provide me with information on the college's student strength?
+      - How many pupils are there in the college?
+      - What is the enrollment size of the college?
+      - What is the total number of students attending classes at the college?
+
+  - intent: q90
+    examples: |
+      - When does the placement season start in the college
+      - When do the college placements begin?
+      - Can you tell me the date when the placement season starts in the college?
+      - What is the schedule for the college placement season?
+      - May I know the start date of the college recruitment season?
+      - When does the college typically kick off its placement season?
+      - What is the timeline for the college placement process?
+      - Could you provide me with information on when the college placement drive starts?
+      - When do companies typically start recruiting from the college?
+      - Can you tell me the timeframe for the college placement season?
+      - What is the commencement date for the college placement process
+
+  - intent: q91
+    examples: |
+      - Is there any placement training provided in the college
+      - Does the college offer placement training to students?
+      - Is there any program in the college that focuses on preparing students for placements?
+      - What kind of placement training does the college provide to its students?
+      - May I know if the college has any placement training initiatives?
+      - Are there any workshops or training sessions provided by the college to help students prepare for placements?
+      - Could you provide me with information on the college's placement training programs?
+      - Does the college have a dedicated placement training cell?
+      - Are there any courses or programs that are designed to help students with placements?
+      - What kind of support does the college offer to students in terms of placement training?
+      - Is there any career guidance or counselling provided to students to help them prepare for placements?
+
+  - intent: q92
+    examples: |
+      - Does college offer any internships to students?
+      - What are the internship facilities that the college provides
+      - Can you tell me about the college's internship program?
+      - What kind of internships does the college offer to its students?
+      - May I know the details of the internship facilities provided by the college?
+      - Could you provide me with information on the college's internship opportunities?
+      - What are the options for internships available to students in the college?
+      - Does the college have tie-ups with companies for internships?
+      - What kind of support does the college offer to students for internships?
+      - Are there any courses or programs that are designed to help students secure internships?
+      - Can you tell me about any success stories of the college's internship program?
+      - How does the college assist students in finding and applying for internships?
+
+  - intent: q93
+    examples: |
+      - What are the equipments used for teaching
+      - Can you provide me with information on the teaching equipment used by the college?
+      - What kind of teaching aids are available in the college?
+      - May I know the technology and equipment used for teaching in the college?
+      - Could you tell me about the audio-visual equipment available in the college for teaching purposes?
+      - What are the teaching tools and resources used by the faculty members in the college?
+      - How does the college incorporate technology into its teaching methods?
+      - What is the approach of the college towards using technology for teaching?
+
+  - intent: q94
+    examples: |
+      - What is the way you make sure every eligible student of the college is placed
+      - How does the college ensure that all eligible students are placed?
+      -  What measures does the college take to ensure every student is placed in a suitable job?
+      - Could you provide me with information on the college's approach to ensuring the placement of all eligible students?
+      - What kind of support does the college offer to students to increase their chances of being placed?
+      - May I know about the strategies or initiatives the college takes to make sure every eligible student is placed?
+      - Does the college have a placement cell dedicated to helping students find jobs?
+      - How does the college monitor the placement progress of its students?
+      - What is the college's policy on ensuring the placement of eligible students?
+      - Are there any courses or programs that are designed to help students secure jobs?
+      - Can you tell me about any success stories of the college's placement efforts?
+
+  - intent: q95
+    examples: |
+      - what are the transportation fees
+      - Could you provide me with information on the transportation fees charged by the college?
+      - What is the cost of transportation to and from the college?
+      - May I know about the fees associated with college transportation services?
+      - What kind of transportation options are available for students, and what are the associated fees?
+      - How much does it cost for transportation facilities provided by the college?
+      - Can you tell me about any discounts or concessions offered for transportation fees?
+      - What is the mode of payment for transportation fees, and when are they due?
+      - Are there any additional fees or charges associated with transportation services?
+      - What is the frequency of transportation services, and how does it affect the fees?
+      - Can you provide me with a detailed breakdown of the transportation fees charged by the college
+
+  - intent: q96
+    examples: |
+      - How is security ensured in the college
+      - What kind of security measures does the college have in place?
+      - Can you tell me about the safety and security protocols followed by the college?
+      - How does the college ensure the safety and security of its students and staff?
+      - What kind of security personnel are employed by the college, and what are their responsibilities?
+      - May I know about the surveillance systems and access controls used by the college to maintain security?
+      - Does the college conduct regular safety drills or training sessions for students and staff?
+      - What is the college's policy on handling emergencies and crisis situations?
+      - Are there any restrictions or rules that students are expected to follow to ensure safety?
+      - How does the college handle complaints or incidents related to safety and security?
+
+  - intent: q97
+    examples: |
+      - how is sanitation maintained in the college
+      - Can you tell me about the sanitation measures taken by the college?
+      - How does the college ensure cleanliness and hygiene on campus?
+      - What kind of sanitation facilities are available for students and staff?
+      - May I know about the cleaning schedule and frequency for different areas of the college?
+      - What kind of cleaning products and equipment are used by the college for maintaining sanitation?
+      - Does the college have any specific policies or guidelines related to sanitation?
+      - Are there any penalties or consequences for violating the sanitation rules in the college?
+      - How does the college handle sanitation issues reported by students or staff members?
+      - What kind of training or education is provided to the staff responsible for maintaining sanitation?
+
+  - intent: q98
+    examples: |
+      - Does the college have gym facility
+      - Is there a gym on campus?
+      - Does the college offer fitness facilities?
+      - Are there workout facilities available at the college?
+      - Is there a fitness center at the college?
+      - Can students access a gym at the college?
+
+  - intent: q99
+    examples: |
+      - How does the college encourage physical fitness
+      - What programs or resources does the college offer to promote physical fitness among students?
+      - In what ways does the college support a healthy and active lifestyle for students?
+      - Can you describe the college's approach to promoting physical fitness among students?
+      - What initiatives has the college implemented to encourage students to prioritize physical activity?
+      - How does the college incorporate physical fitness into campus life?
+      - Are there any specific programs or events that the college hosts to promote physical fitness among students?
+      - Does the college partner with any organizations or businesses to provide fitness-related resources or opportunities to students?
+      - What facilities or equipment does the college provide to support physical fitness on campus?
+
+  - intent: q100
+    examples: |
+      - What are the sports played in the college
+      - What athletic programs are available at the college?
+      - Can you tell me about the sports teams that the college has?
+      - What are the recreational sports options available for students at the college?
+      - Are there any intramural sports leagues at the college?
+      - Which sports are played competitively at the college?
+      - Can you provide a list of the sports offered at the college?
+      - What are the most popular sports played by students at the college?
+      - Are there any unique or non-traditional sports offered at the college?
+
+  - intent: q101
+    examples: |
+      - is there a sports quota in the college
+      - Does the college have a sports quota for admissions?
+      - Is there a special admission process for athletes at the college?
+      - Are student-athletes given preferential treatment in the college admissions process?
+      - Does the college reserve spots in its athletic teams for recruited athletes?
+      - Are there any academic or performance requirements for student-athletes to maintain their eligibility to play sports at the college?
+      - Is there a specific policy or guideline for recruiting athletes at the college?
+      - Does the college offer scholarships or financial aid to student-athletes?
+      - Are there any specific benefits or perks offered to student-athletes at the college?
+
+  - intent: q102
+    examples: |
+      - Are there any overdue charges in library
+      - Can you check if there are any overdue charges on my library account?
+      - How do I find out if I have any overdue charges at the library?
+      - Is there a way to check my library account online for any overdue charges?
+      - Can you tell me if there are any late fees associated with my library account?
+      - Is there a phone number I can call to inquire about any overdue charges on my library account?
+      - What is the library's policy on late returns and overdue charges?
+      - Are there any penalties or fines for returning library materials late?
+      - How long does it typically take for overdue charges to be applied to a library account?
+
+  - intent: q103
+    examples: |
+      - For how many days can a student borrow a book
+      - What is the borrowing period for books at the library for students?
+      - How long can a student check out a book from the library?
+      - What is the loan period for books borrowed by students from the library?
+      - Can you tell me how many days a student can keep a book they borrow from the library?
+
+  - intent: q104
+    examples: |
+      - What are the library timings?
+      - What are the opening and closing hours of the library?
+      - Can you tell me the daily schedule for the library?
+      - What time does the library open and close on weekdays/weekends?
+      - Is the library open during holidays or breaks?
+      - How late is the library open on weekdays/weekends?
+      - Are there any changes to the library hours during exam periods or special events?
+      - Is there a specific time when the library is busiest or quietest?
+      - Can you provide a complete schedule of the library hours for the current week or month?
+
+  - intent: q105
+    examples: |
+      - What are the facilities provided by the library?
+      - What resources and services are available at the library?
+      - Can you describe the facilities offered by the library?
+      - What kind of study spaces are available at the library?
+      - Does the library provide access to online databases and e-books?
+      - Are there any technology resources available at the library, such as computers or printers?
+      - Does the library offer any specialized collections or archives?
+      - Are there any multimedia resources available at the library, such as DVDs or audio books?
+      - Does the library offer any assistance or support for research and information literacy?
+
+  - intent: q106
+    examples: |
+      - Tell me about the library collections
+      - What types of materials are included in the library's collections?
+      - Can you tell me more about the library's book collection?
+      - Are there any unique or rare items in the library's collections?
+      - How many volumes are included in the library's collections?
+      - Does the library have a special collection or archive?
+      - Are there any electronic resources included in the library's collections?
+      - How often are new materials added to the library's collections?
+      - Can you tell me more about the process for selecting materials to add to the library's collections?
+
+  - intent: q107
+    examples: |
+      - How many books are totally present in the library
+      - Can you tell me the total number of books available in the library?
+      - How large is the library's book collection?
+      - Is there an estimate of how many books are in the library's collection?
+      - Can you provide any information about the size of the library's collection, such as the number of volumes or titles?
+      - How does the library keep track of the total number of books in its collection?
+      - Is there a way for me to browse or search the entire collection of books at the library?
+      - Are there any special collections or archives within the library's total book collection?
+      - Has the size of the library's book collection grown or changed over time?
+
+  - intent: q108
+    examples: |
+      - What are the postgraduate Courses available in the college
+      - Can you tell me about the postgraduate programs offered by the college?
+      - What are the available postgraduate courses at the college?
+      - Is there a list of postgraduate programs that the college offers?
+      - What kind of master's degrees are available at the college?
+      - Are there any doctoral programs available at the college?
+      - What are the admission requirements for postgraduate programs at the college?
+      - Can you provide me with more information about specific postgraduate courses or programs that interest me?
+      - Are there any professional or vocational programs available at the postgraduate level at the college?
+
+  - intent: q109
+    examples: |
+      - What are the cultural events hosted for the PG students
+      - What kind of cultural events are organized for postgraduate students at the college?
+      - Can you tell me more about the cultural events and activities available to postgraduate students?
+      - Is there a calendar of cultural events and activities that postgraduate students can participate in?
+      - Are there any student organizations or groups that organize cultural events for postgraduate students?
+      - What types of performances or exhibitions are typically included in the cultural events for postgraduate students?
+      - How often are cultural events and activities held for postgraduate students?
+      - Are there any workshops or other educational opportunities offered as part of the cultural events for postgraduate students?
+      - How can postgraduate students get involved in planning or participating in cultural events at the college?
+
+  - intent: q110
+    examples: |
+      - What is the pattern of exam conducted to assess the students.
+      - Can you describe the exam format used to assess students at the college?
+      - What is the structure of the exams used to evaluate student performance?
+      - Are there different types of exams used to assess students at the college?
+      - What is the weighting of exams in the overall assessment of student performance?
+      - Are exams the only method used to evaluate student progress or are there other assessments used as well?
+      - Are there any practical or project-based assessments used in addition to exams?
+      - Are there any special accommodations made for students with disabilities during exams?
+      - Can you provide more information about the grading system used to evaluate student performance on exams?
+
+  - intent: q111
+    examples: |
+      - What is the percentage of students who graduate from the college?
+      - Can you provide information about the graduation rate at the college?
+      - Is there data available on the number of students who successfully complete their degree programs at the college?
+      - How does the college define and calculate its graduation rate?
+      - Are there any factors that might affect the graduation rate at the college?
+      - What steps does the college take to support students and increase graduation rates?
+      - Are there any programs or initiatives in place to improve the graduation rate at the college?
+      - Can you provide information about the graduation rate for specific programs or departments within the college?
+
+  - intent: q112
+    examples: |
+      - When is the deadline for submitting the enrollment application?
+      - What is the enrollment application deadline for the college?
+      - When is the deadline for submitting an application to enroll in the college?
+      - Is there a specific date by which enrollment applications must be submitted?
+      - Are there any early or late enrollment application deadlines for the college?
+      - Can you provide information on the enrollment application process and deadlines for specific programs or departments within the college?
+      - Is there a rolling admissions process or are enrollment applications reviewed at specific times during the year?
+      - Are there any requirements or materials that must be submitted along with the enrollment application?
+      - Can enrollment applications be submitted online or is it necessary to submit a hard copy?
+
+  - intent: q113
+    examples: |
+      - Can I apply for multiple programs?
+      - Is it possible to apply for multiple programs at the college?
+      - Can I submit an application for more than one program at the same time?
+      - Are there any limitations on the number of programs for which I can apply?
+      - Can I apply for both undergraduate and postgraduate programs at the same time?
+      - Are there any additional fees or requirements for submitting multiple program applications?
+      - Will submitting multiple program applications affect my chances of being admitted to any of the programs?
+      - How should I prioritize my application choices if I am applying for multiple programs?
+      - Can I make changes to my program choices after I have submitted my application?
+
+  - intent: q114
+    examples: |
+      - Can I apply as an international student?
+      - Is it possible for international students to apply to the college?
+      - Are there any special requirements or procedures for international students who wish to apply?
+      - Can international students apply to any program at the college or are there limitations?
+      - Are there any language proficiency requirements for international students?
+      - Are there any additional fees or expenses associated with applying as an international student?
+      - What types of visas or documentation are required for international students who are admitted to the college?
+      - Are there any scholarships or financial aid options available specifically for international students?
+      - Can international students receive assistance with the application process from the college or its staff?
+
+  - intent: q115
+    examples: |
+      - What types of scholarships or financial aid are available to students at the college?
+      - How do I apply for scholarships or financial aid?
+      - What are the eligibility requirements for scholarships or financial aid?
+      - Is there a deadline for applying for scholarships or financial aid?
+      - Can scholarships or financial aid be renewed each year?
+      - Are there any special scholarships or financial aid programs for students from underrepresented groups?
+      - Can scholarships or financial aid be used for study abroad programs or other educational opportunities outside of the college?
+      - How are scholarship or financial aid recipients selected and how much funding is typically awarded?
+      - tell me about scholarships or financial aid provided
+
+  - intent: q116
+    examples: |
+      - What are the documents required in the admission process?
+      - What documents are required for the admission process at the college?
+      - Is there a checklist of required documents for the admission process?
+      - Are there any additional documents required for specific programs or departments?
+      - What is the process for submitting required documents?
+      - Are there any specific formatting requirements for the documents?
+      - Can documents be submitted electronically or is it necessary to submit hard copies?
+      - Is there a deadline for submitting required documents for the admission process?
+      - Can I submit additional documents or information after I have already submitted my application?
+
+  - intent: q117
+    examples: |
+      - What is the eligibility for admission to this college?
+      - What are the general eligibility requirements for admission to the college?
+      - Are there any specific academic requirements for admission to the college?
+      - Are there any specific requirements for admission to individual programs or departments within the college?
+      - Are there any age or citizenship requirements for admission?
+      - Are there any language proficiency requirements for admission?
+      - Are there any prerequisite courses or prior experience required for admission?
+      - Are there any other factors that are considered in the admission process, such as extracurricular activities or community service?
+
+  - intent: q118
+    examples: |
+      - How much percentage should I have in my 12th to get an admission in the college.
+      - Is there a minimum percentage required in 12th grade for admission to the college?
+      - What is the average percentage of students admitted to the college?
+      - Are there any specific subject requirements for admission to the college?
+      - Are there any exceptions or special considerations for students who may not meet the minimum percentage requirement?
+      - Is there a way to improve my chances of admission if I do not meet the minimum percentage requirement?
+      - Can I still apply to the college if I do not meet the minimum percentage requirement?
+      - Is there any flexibility in the minimum percentage requirement depending on the program or department I am applying to?
+
+  - intent: q119
+    examples: |
+      - How can I submit the application form?
+      - How can I obtain an application form for the college?
+      - Is there an online application process or do I need to submit a paper application?
+      - What is the process for submitting an application form?
+      - Are there any fees associated with submitting an application?
+      - Is there a deadline for submitting the application form?
+      - Can I submit the application form electronically or is it necessary to submit a hard copy?
+      - Are there any specific formatting or submission requirements for the application form?
+      - Can I track the status of my application after submitting the form?
+
+  - intent: q120
+    examples: |
+      - Can I track my application status online?
+      - Is there an online portal where I can track the status of my application?
+      - How long does it take for the application status to be updated?
+      - What information will I need to access my application status online?
+      - Are there any technical requirements or software needed to access the application status portal?
+      - Will I receive any notification when there is an update to my application status?
+      - Can I contact the admissions office to inquire about the status of my application if I am unable to access the online portal?
+      - Are there any security measures in place to protect my personal information when I access the application status portal?
+      - Is the online application status portal available 24/7 or are there specific hours of operation?
+
+  - intent: q121
+    examples: |
+      - What is the fee for the application process?
+      - How much is the application fee for the college?
+      - Is the application fee the same for all programs or does it vary depending on the program?
+      - Can the application fee be waived for students who cannot afford it?
+      - What are the methods of payment for the application fee?
+      - Is the application fee refundable if my application is not accepted?
+      - Are there any other fees associated with the application process, such as transcript or test score submission fees?
+      - Is there a deadline for paying the application fee?
+      - Can I pay the application fee online or do I need to submit a check or money order?
+
+  - intent: q122
+    examples: |
+      - What is the fee structure for the program?
+      - What is the total cost of the program, including tuition and fees?
+      - Is there a breakdown of the costs for tuition, fees, and other expenses?
+      - Are there any additional fees or costs that I should be aware of, such as parking or lab fees?
+      - Are there any scholarships or financial aid options available to help with the cost of the program?
+      - Are there any payment plans or options for spreading out the cost of the program over time?
+
+  - intent: q123
+    examples: |
+      - How can I pay the fees?
+      - What are the accepted methods of payment for tuition and fees?
+      - Can I pay my tuition and fees online, in person, or by mail?
+      - Is there a payment plan option available to spread out the cost of tuition and fees over time?
+
+  - intent: q124
+    examples: |
+      - Can I get a refund if I withdraw my application?
+      - Is there a refund policy for withdrawing an application?
+      - Are there any deadlines or conditions for requesting a refund?
+      - What percentage of the application fee is refundable if I withdraw my application?
+      - Can I receive a refund if I am denied admission to the college?
+      - What is the process for requesting a refund?
+      - How long does it take to receive a refund once the request has been made?
+
+  - intent: q125
+    examples: |
+      - Can I transfer credits from another college to this college?
+      - What is the process for transferring credits from another college to this college?
+      - What are the eligibility criteria for transferring credits?
+      - Is there a limit to the number of credits that can be transferred?
+      - Are there any specific courses or programs that are not eligible for credit transfer?
+      - Will the transferred credits count towards my degree requirements or only as electives?
+      - Is there a minimum grade required for the transferred credits to be accepted?
+      - Is there a time limit for when credits can be transferred, or can I transfer credits from any time period?
+      - Will I need to provide official transcripts from the previous college, and is there a fee associated with this?
+
+  - intent: q126
+    examples: |
+      - What is the campus life like at cambridge?
+      - What extracurricular activities are available on campus?
+      - Are there any student clubs or organizations to join?
+      - What events and activities are held on campus throughout the year?
+      - Is there student housing available on or near campus?
+      - What dining options are available on campus?
+      - Is there a fitness center or gym on campus?
+      - What recreational facilities are available on campus, such as sports fields or courts?
+      - Are there any study abroad or international programs available for students?
+      - What is the student population like, and is there a diverse student body?
+      - Is there support for mental health and wellness services on campus?
+
+  - intent: q127
+    examples: |
+      - How can I schedule a campus tour or meet with an admissions representative?
+      - Is there an online booking system for campus tours or meetings with admissions representatives?
+      - Can I schedule a campus tour or meeting with an admissions representative by phone or email?
+      - Are campus tours or admissions meetings available during weekends or holidays?
+      - Can I request a personalized tour or meeting with a specific academic department or faculty member?
+      - Is there an information session or orientation program for prospective students?
+      - What should I expect during a campus tour or admissions meeting?
+      - Are there any materials or documents that I should bring with me to the campus tour or admissions meeting?
+      - Can I request to speak with current students or alumni during my visit?
+      - What accommodations are available for visitors, such as parking or transportation options?
+
+  - intent: q128
+    examples: |
+      - How diverse is your student body?
+      - What is the demographic breakdown of the student population?
+      - Is there a diverse range of cultures, backgrounds, and identities represented on campus?
+      - Are there any programs or initiatives in place to promote diversity and inclusion on campus?
+      - How do you support and celebrate diversity within the student body?
+      - Are there any multicultural student organizations or clubs on campus?
+      - Are there any diversity-related events or activities held on campus throughout the year?
+      - How do you ensure that all students feel included and valued on campus?
+      - Have there been any recent efforts or changes made to improve diversity and inclusion on campus?
+      - Can you provide any statistics or data regarding diversity on campus?
+      - How do you address issues of discrimination or bias that may arise within the student body?
+
+  - intent: q129
+    examples: |
+      - Are there any study abroad programs available for students?
+      - Does the college offer any study abroad programs?
+      - Are there opportunities for students to study abroad during their time at the college?
+      - What countries or regions are available for study abroad programs?
+      - How long are the study abroad programs and when do they typically take place?
+      - Are there any language requirements or prerequisites for participation in study abroad programs?
+      - How do I apply for a study abroad program and what is the application process like?
+      - What kind of financial aid or scholarships are available to help cover the cost of studying abroad?
+      - Are credits earned through study abroad programs transferable to the college?
+      - Are there any specific academic departments or majors that have study abroad opportunities available?
+      - Are there any cultural immersion programs available as part of the study abroad experience?
+
+  - intent: q130
+    examples: |
+      - WDo you have a special program for weaker students?
+      - Does the college offer any special programs for academically weaker students?
+      - What support services are available to help struggling students improve their grades?
+      - Are there any tutoring or mentoring programs offered by the college?
+      - What resources are available to help students who are struggling with a particular subject?
+      - Are there any academic advising programs that help students identify areas where they need improvement?
+      - Does the college offer any remedial courses for students who need extra help with certain subjects?
+      - Are there any extracurricular activities or clubs that are specifically designed for students who are struggling academically?
+
+  - intent: q131
+    examples: |
+      - Can i have regular updates on my child's progress?
+      - Is there a parent portal where I can view my child's academic progress and attendance?
+      - Are progress reports sent home or posted online regularly?
+      - Are there any online tools or apps available to help me track my child's progress?
+      - How does the school handle communication with parents who do not speak the primary language of instruction?
+      - What steps does the school take to ensure student privacy while still keeping parents informed about their progress?
+      - What is the school's policy on parent involvement in their child's education?
+      - How are academic or disciplinary concerns communicated to parents, and what is the process for addressing these issues?
+
+  - intent: q132
+    examples: |
+      - Is there a curfew for the hostels?
+      - What are the hostel timings?
+      - Is there a curfew for students staying in the hostel?
+      - How does the hostel ensure the safety and security of its students?
+      - What are the consequences of violating hostel rules and regulations?
+      - Is there a process for students to request exceptions to the curfew?
+      - What measures are in place to ensure that students can access the hostel in case of an emergency outside of curfew hours?
+      - Are there any restrictions on visitors to the hostel?
+      - How are students informed of any changes to hostel rules or timings?
+      - Are there any common spaces or facilities available to hostel students outside of curfew hours?
+      - How does the hostel handle student concerns or complaints related to curfew or other rules and regulations?
+
+  - intent: q133
+    examples: |
+      - Is there a dress code for classes?
+      - Is there a dress code policy for students in the college?
+      - Are there any restrictions on what students can wear to class?
+      - How is the dress code policy enforced in the college?
+      - Are there any specific guidelines for students regarding attire for practical classes or laboratory sessions?
+
+  - intent: q134
+    examples: |
+      - Can I have visitors stay overnight in my room?
+      - What is the policy for guests staying overnight in the student hostel?
+      - Are there any restrictions on the number of guests a student can have in their room?
+      - Is there a process for students to register their guests with the hostel authorities?
+      - Are there any guidelines for behavior and conduct of guests staying overnight in the hostel?
+      - How is the safety and security of hostel residents ensured in the presence of guests?
+      - What are the consequences for violating the overnight guest policy?
+      - Are there any restrictions on the age or gender of overnight guests?
+      - Are there any specific guidelines for visitors during exam periods or other academic events?
+      - Are there any exceptions to the overnight guest policy for special events or occasions?
+      - How does the college handle student concerns or complaints related to the overnight guest policy?
+
+  - intent: q135
+    examples: |
+      - Does the college have parking for students?
+      - Is there a designated parking area for students on campus?
+      - Can students bring their vehicles to college and park them on campus?
+      - Does the college provide parking facilities for students?
+      - Where can students park their cars while attending classes on campus?
+      - Is there a parking fee for students who bring their vehicles to campus?
+
+  - intent: q136
+    examples: |
+      - Does the college have a swimming pool?
+      - Is there a swimming pool available for students to use on campus?
+      - Does the college have its own swimming pool for students?
+      - Can students access a swimming pool on the college premises?
+      - Are there any swimming facilities provided by the college for students?
+      - Is there a recreational area on campus that includes a swimming pool?
+      - What are the sports facilities available for students, and does it include a swimming pool?
+      - Is there a swimming team at the college, indicating the presence of a pool?
+
+  - intent: q137
+    examples: |
+      - What is Male female faculty ratio
+      - What is the gender breakdown of the college's faculty?
+      - Can you tell me about the proportion of male and female faculty members at the college?
+      - Is there a gender disparity among the faculty members, or is the ratio balanced?
+      - Are there more male or female faculty members at the college?
+      - Could you provide information on the gender distribution of the teaching staff?
+      - How many male and female professors are employed by the college?
+
+  - intent: q138
+    examples: |
+      - What is Male female student ratio
+      - What is the gender distribution of students at the college?
+      - Are there more male or female students at the college?
+      - What percentage of the student body is male and what percentage is female?
+      - Is the student population at the college predominantly male or female?
+      - Can you tell me about the gender demographics of the student body
+
+  - intent: q139
+    examples: |
+      - How are a students mental health been taken care of?
+      - What mental health services are available for students at the college?
+      - How does the college support the mental well-being of its students?
+      - Are there counselling or therapy services provided for students at the college?
+      - In what ways does the college address the mental health needs of its students?
+      - What resources are available for students who are struggling with their mental health at the college?
+
+  - intent: q140
+    examples: |
+      - Are there any programs to guide students towards their goals?
+      - Does the college offer any programs to help students achieve their goals?
+      - Are there any career counselling services available for students?
+      - What resources are available for students to help them plan their future career paths?
+      - Does the college provide any support or guidance for students to explore their interests and potential career options?
+      - How does the college help students develop their skills and talents to pursue their career aspirations?
+  - intent: q141
+    examples: |
+      - About research labs.
+      - What kind of research labs are available in the college?
+      - Can you tell me about the equipment and facilities provided in the research labs?
+      - How are the research labs maintained and managed by the college?
+      - What kind of research projects are conducted in the labs, and by whom?
+      - May I know about any recent breakthroughs or achievements made by the research labs?
+      - Are there any specific guidelines or procedures that students or researchers need to follow while using the labs?
+      - What kind of training or assistance is provided to students or researchers to use the labs?
+      - How does the college ensure the safety of students and staff working in the research labs?
+      - Are there any collaborations or partnerships between the research labs and external organizations or institutions?
+      - Can you provide me with any information on how the research labs have contributed to the advancement of knowledge in their respective fields?
+
+  - intent: q142
+    examples: |
+      - How long does the typically take to complete the course?
+      - What is the duration of the course at the college?
+      - How many years does it take to complete the course?
+      - Can you give me an estimate of the time required to finish the course?
+      - What is the average time taken by students to complete the course?
+      - May I know the maximum time allowed to complete the course?
+      - Are there any factors that can affect the duration of the course, such as specializations or electives?
+      - Is there any flexibility in the course duration, such as part-time or extended options?
+      - How does the college help students complete the course within the expected time frame?
+      - Are there any prerequisites or requirements that need to be fulfilled before completing the course?
+      - Can you provide me with any statistics on the percentage of students who complete the course within the expected time frame?
+  - intent: q143
+    examples: |
+      - What is the hostel fees
+      - Can you tell me the fee structure for the college hostel?
+      - How much does it cost to stay in the college hostel?
+      - What is the hostel fee per semester/year?
+      - Are there any additional charges or deposits required for the hostel?
+      - May I know about the payment schedule for the hostel fees?
+      - How does the hostel fee compare to other colleges in the area?
+      - Are there any scholarships or financial aid available for hostel accommodation?
+      - How does the college ensure that the hostel fees are affordable for all students?
+      - Are there any penalties or consequences for late payment of hostel fees?
+      - Can you provide me with a breakdown of the hostel fees, such as food, accommodation, and other facilities?

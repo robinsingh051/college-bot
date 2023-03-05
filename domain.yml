@@ -73,6 +73,75 @@ intents:
   - q74
   - q8
   - q9
+  - q75
+  - q76
+  - q77
+  - q78
+  - q79
+  - q80
+  - q81
+  - q82
+  - q83
+  - q84
+  - q85
+  - q86
+  - q87
+  - q88
+  - q89
+  - q90
+  - q91
+  - q92
+  - q93
+  - q94
+  - q95
+  - q96
+  - q97
+  - q98
+  - q99
+  - q100
+  - q101
+  - q102
+  - q103
+  - q104
+  - q105
+  - q106
+  - q107
+  - q108
+  - q109
+  - q110
+  - q111
+  - q112
+  - q113
+  - q114
+  - q115
+  - q116
+  - q117
+  - q118
+  - q119
+  - q120
+  - q121
+  - q122
+  - q123
+  - q124
+  - q125
+  - q126
+  - q127
+  - q128
+  - q129
+  - q130
+  - q131
+  - q132
+  - q133
+  - q134
+  - q135
+  - q136
+  - q137
+  - q138
+  - q139
+  - q140
+  - q141
+  - q142
+  - q143
 responses:
   utter_greet:
     - text: Hey! what is your query
@@ -81,57 +150,57 @@ responses:
   utter_iamabot:
     - text: I am a your assistant for admission related queries. i am developed by cambridge institute of technology.
   utter_q1:
-    - text: AI and Machine Learning (ML) technology have become a major part of the armoury for many industries whether it be private companies, financial services, healthcare, or governments. These data-driven tools are used to make ever more important decisions that can have a far-reaching impact on individuals and societies.
+    - text: AI is the simulation of human intelligence in machines, while ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
   utter_q2:
-    - text: No. We have excellent faculty members and instructors with us who will make the course very easy to learn and understand. Anyone who wants to learn machine learning and make a career in it can easily learn AI and ML. As a subject, Machine Learning is a fusion of concepts from Mathematics, Computer Science, and Statistics.
+    - text: Learning AI and ML can be challenging, but it largely depends on the individual's prior knowledge, background, and learning style. With dedication, persistence, and the right resources, anyone can learn AI and ML.
   utter_q3:
-    - text: Artificial Intelligence (AI) is the branch of computer science that emphasizes the development of intelligence machines, thinking and working like humans. For example, speech recognition, problem-solving, learning and planning.
+    - text: AI, or Artificial Intelligence, is a branch of computer science that focuses on creating intelligent machines that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation.
   utter_q4:
-    - text: "Yes. Almost everyone who has a computer, smartphone, or other smart device is already using AI to make life easier: 1.\tSiri and Cortana act as your personal assistants using voice processing 2.\tFacebook recommends photo tags using image recognition 3.\tAmazon recommends products using machine learning algorithms 4.\tWaze suggests optimal driving routes using a combination of predictive models, forecasting, and optimisation techniques"
+    - text: Yes, you are most likely already using AI in your everyday life without even realizing it. AI is used in various applications such as voice assistants, search engines, and social media algorithms.
   utter_q5:
-    - text: Machine learning is the core driver of AI. It’s the concept of having computers learn from data with minimal programming.
+    - text: ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
   utter_q6:
-    - text: Machine learning works with structured data to detect patterns that provide insight. Everyday examples are personalised recommendations from services like Amazon or Netflix. In the financial arena, machine learning predicts bad loans, finds risky applicants, and generates credit scores.
+    - text: Some examples of machine learning include spam filters, voice recognition systems, and recommendation algorithms used by online platforms.
   utter_q7:
-    - text: The main difference between machine learning and artificial intelligence is that the former is a subset of the latter. To put it simply, AI encompasses all machine learning but not all artificial intelligence practices are associated with machine learning.
+    - text: AI is the simulation of human intelligence in machines, while ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
   utter_q8:
-    - text: The main difference between machine learning and artificial intelligence is that the former is a subset of the latter. To put it simply, AI encompasses all machine learning but not all artificial intelligence practices are associated with machine learning.
+    - text: AI is the simulation of human intelligence in machines, while ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
   utter_q9:
-    - text: "Step 1.\tSet concrete goals or deadlines. Machine learning is a rich field that's expanding every year. Step 2.\tWalk before you run. Step 3.\tAlternate between practice and theory. Step 4.\tWrite a few algorithms from scratch. Step 5.\tSeek different perspectives. Step 6.\tTie each algorithm to value. Step 7.\tDon't believe the hype. Step 8.\tIgnore the show-offs."
+    - text: My advice for someone starting their journey in ML/AI/Data Science would be to have a strong foundation in mathematics, particularly in statistics and linear algebra.
   utter_q10:
-    - text: "Step 1: Adjust Mindset. Believe you can practice and apply machine learning. Step 2: Pick a Process. Use a systemic process to work through problems. Step 3: Pick a Tool. Select a tool for your level and map it onto your process. Step 4: Practice on Datasets. Step 5: Build a Portfolio. If you're an absolute beginner, start with some introductory Python courses and when you're a bit more confident, move into data science, machine learning and AI."
+    - text: To get started in machine learning, you can begin by learning programming languages such as Python, understanding statistics and linear algebra.
   utter_q11:
-    - text: "1.\tKnowledge of Programming Language. 2.\tGood Knowledge of Mathematics. 3.\tLearn the Concept of Machine Learning. 4.\tKnowledge of Data Structure and Algorithms. "
+    - text: The AI basics you need to know include understanding what AI is, the difference between narrow and general AI, and the different types of machine learning algorithms.
   utter_q12:
-    - text: Artificial intelligence is a technology that enables a machine to simulate human behavior. Machine learning is a subset of AI which allows a machine to automatically learn from past data without programming explicitly. The goal of AI is to make a smart computer system like humans to solve complex problems.
+    - text: Artificial intelligence (AI) is a broader field that encompasses machine learning (ML).
   utter_q14:
-    - text: A machine learning engineer is a highly qualified professional who uses machine learning and software development skills to build and design scalable machine learning systems that can automate predictive models. They shall have good knowledge of system design, Machine Learning Algorithms, Development and Statistics.
+    - text: A Machine Learning Engineer builds, tests and deploys machine learning models to solve complex business problems, working at the intersection of software engineering and data science.
   utter_q15:
-    - text: "In Machine Learning, there are a variety of job roles that can be assigned depending on industry needs. Once you finish B.E. AI&ML course, you will possess an in-demand set of skills critical to today's career opportunities, which include: Machine Learning Scientist, Machine Learning Engineer, Human-Centered Machine Learning Designer, Research Analyst, Data Analytics, Analytics Lead or Manager or Consultant, Statistical Programming Specialist, Hadoop Developer, and many more."
+    - text: Some job titles in the machine learning domain include Machine Learning Engineer, Data Scientist, AI Researcher, and Data Analyst.
   utter_q16:
-    - text: As a fresher in Machine Learning Engineer, you can expect to earn between 4 to 8 lakhs per annum. An experienced professional data scientist 3 to 5 years experience makes more than 10 lakhs per annum by virtue of their skills and expertise. Their skill development and learning capabilities largely determine their salary increases.
+    - text: The average salary for machine learning engineers is around INR 1,000,000 per year in India.
   utter_q17:
-    - text: Almost all of the big companies like Google, Amazon, Facebook, Netflix have a requirement of good Machine Learning engineers. Machine learning is being applied in almost all the industries where data can be used to make predictions be it healthcare, IT, finance.
+    - text: There are many companies in India that hire machine learning engineers, including tech giants such as Amazon, Google, Microsoft, and IBM.
   utter_q18:
-    - text: AI is used in all industries, from marketing to supply chain, finance, food-processing sector. According to a McKinsey survey, financial services and high tech communication are leading the AI fields.
+    - text: Artificial intelligence is used in various industries such as healthcare, finance, retail, transportation, and more to automate processes, gain insights, and make predictions.
   utter_q19:
-    - text: Some of the major applications of machine learning include speech recognition, self-driving cars, product recommendations, stock market trading, online fraud detection, email spam filtering, chatbots and voice assistance.
+    - text: Machine learning has numerous applications across various industries, including natural language processing, computer vision, fraud detection, recommender systems, and autonomous vehicles.
   utter_q20:
     - text: Python and R are the most used languages in Machine learning.
   utter_q21:
-    - text: "Almost everyone who has a computer, smartphone, or other smart device is already using AI to make life easier: 1.\tSiri and Cortana act as your personal assistants using voice processing 2.\tFacebook recommends photo tags using image recognition 3.\tAmazon recommends products using machine learning algorithms 4.\tWaze suggests optimal driving routes using a combination of predictive models, forecasting, and optimisation techniques"
+    - text: Machine learning and artificial intelligence are present in everyday life, from virtual assistants like Siri and Alexa to recommendation systems on e-commerce websites and social media platforms.
   utter_q22:
-    - text: Cambridge Institute of Technology (CIT) located in KR Puram, north of Bengaluru is a NAAC and NBA accredited institution. CIT has on an average 3000+ students and 170 faculties. CIT has 7 BTech courses, MCA, MBA and MTech courses along with 7 advanced research labs where scholars pursue their PhD. The BTech courses offered at CIT include AIML, CSE, ISE, ECE, EEE, Mech, Civil. Only MTech in computer science is offered.
+    - text: CIT has 7 BTech courses, MCA, MBA and MTech courses along with 7 advanced research labs where scholars pursue their PhD. The BTech courses offered at CIT include AIML, CSE, ISE, ECE, EEE, Mech, Civil.
   utter_q23:
-    - text: CIT campus is sprawling lush green 16 acre campus adjoining our own science college and ICSE school. CIT has both girls and boys hostels, canteens, Cafeday and a bakery. The college has cricket, volleyball, basketball and football grounds. It also has a gym and indoor tennis ground. During Covid-19, our college was one of the first to install disinfection tunnels designed, developed and operated by our own faculties and students.
+    - text: CIT campus is a 16-acre green campus with both girls and boys hostels, canteens, and sports facilities, including cricket, volleyball, basketball, football grounds, a gym, and an indoor tennis ground.
   utter_q24:
-    - text: Our faculties have PhD degrees from Germany, UK and such developed countries. The average teaching experience of our faculties is more than 10 years. Our college has bagged gold medals, silver medals from VTU, Most of the time our pass percentage is asymptotically close to 100%. We are very strict in academics. Our campus is no smoking, no alcohol and no drugs campus. The students found with such substances will be summarily suspended and removed from the hostel immediately.
+    - text: CIT has highly qualified faculties with PhD degrees from developed countries and more than 10 years of teaching experience. The college has excellent academic standards and high pass percentage close to 100%.
   utter_q25:
-    - text: As our college is committed to holistic development of the students, starting from soft skills such as spoken english, technical writing to top notch technical training such as project management, IPR management apart from highly specialized courses such as drone computing are offered to students from second year itself to hone their skills continually.
+    - text: The college offers a wide range of courses to help students develop their soft and technical skills, including project management, IPR management, and specialized courses such as drone computing, starting from the second year.
   utter_q27:
-    - text: The college even during Covid-19 has placed more than 70% of the eligible candidates. Some of the brighter students opted for higher studies at IIT, IIMs and in foreign countries also. Every year there are specific placement training courses provided to students based on their career goals.
+    - text: The college has a good placement record with more than 70% eligible candidates placed, and offers specific placement training courses based on students' career goals.
   utter_q28:
-    - text: The highest package so far is 16 lakhs and the average package differs from circuit branches and others. Mostly it is around 5 lakhs.
+    - text: The highest package so far is 16 lakhs and the average package is around 5 lakhs.
   utter_q29:
     - text: Last year CET cutoff ranks are as follows
         28283   For AIML,
@@ -153,7 +222,7 @@ responses:
   utter_q31:
     - text: VTU is a government affiliating university for all engineering colleges in Karnataka. Private universities are mostly run by a private trust or organization.
   utter_q32:
-    - text: Technically there is no difference between Main campus and north campus. For those who prefer to be closer to the city, main campus is better. For those who love serene pollution free environment, north campus is preferable.
+    - text: There is no technical difference between Main campus and north campus, with Main campus being closer to the city and North campus offering a serene and pollution-free environment.
   utter_q33:
     - text: The Cambridge Institute of Technology was started in 2007 in KR Puram, Bengaluru by Umesh Educational Trust.
   utter_q34:
@@ -161,21 +230,21 @@ responses:
   utter_q35:
     - text: Yes. CIT is a part of group of institutions where we have a ICSE school, one science and arts college and two engineering colleges.
   utter_q36:
-    - text: One of the engineering colleges is in KR Puram, Bengaluru and other is near Devanahalli (10 kilometer from Kempe Gowda International Airport)
+    - text: One of the engineering colleges is in KR Puram, Bengaluru and other is near Devanahalli.
   utter_q37:
     - text: Byappanahalli metro station is 5 km from the college. KR Puram railway station is less than 2 km from the college.
   utter_q38:
     - text: Yes. There are more than 10 buses which cover the length and breadth of the city.
   utter_q39:
-    - text: www.cambridge.edu.in
+    - text: website of the college is www.cambridge.edu.in
   utter_q40:
     - text: Yes. The college has hostels for boys and girls separately on campus.
   utter_q41:
     - text: The vision of the college is to become a premier institute transforming our students to be global professionals.
   utter_q42:
-    - text: The missions of the college are to 1. Develop competent Human Resources, and create state-of-the-art infrastructure to impart quality education and to support research. 2. Adopt tertiary approach in teaching  learning pedagogy that transforms students to become competent professionals and entrepreneurs. 3. Nurture and train students to develop the qualities of global professionals.
+    - text: The college aims to develop competent human resources, adopt a tertiary approach to teaching and learning, and nurture students to become global professionals.
   utter_q43:
-    - text: College is 15 years old and it is NBA and NAAC accredited
+    - text: College is 15 years old and it is NBA and NAAC accredited.
   utter_q45:
     - text: There are many grounds including cricket ground and indoor games for tennis along with well equipped Gymnasium also.
   utter_q46:
@@ -232,6 +301,144 @@ responses:
     - text: Yes. college is NBA accredited
   utter_q74:
     - text: The college is elevated to “Promising” Category in ARIIA ranking.
+  utter_q75:
+    - text: There are two types of rooms available one is two sharing room and the other is three sharing room.
+  utter_q76:
+    - text: College Hostel provides spacious rooms for accommodation, hot water in the morning, Wi-Fi throughout the hostel building, and provides breakfast, lunch, snacks and dinner. Hostel mess also provides non veg on Wednesdays and Sundays.
+  utter_q77:
+    - text: Currently the chairman of our college is D K Mohan
+  utter_q78:
+    - text: Currently the principal of our college is Dr. G Indumathi
+  utter_q79:
+    - text: The HOD of computer science department is Dr. Shashi Kumar
+  utter_q80:
+    - text: The HOD of information science department is Dr. Preethi s
+  utter_q81:
+    - text: The HOD of civil department is Dr. SHANKAR B S
+  utter_q82:
+    - text: The HOD of mechanical department is Dr. Suneel Kumar N Kulkarni
+  utter_q83:
+    - text: The HOD of electronics and communication department is professor Shiva Panchaksheri T G
+  utter_q84:
+    - text: The HOD of AI and ML department is Dr. D Antony Louis Piriya kumar
+  utter_q85:
+    - text: the HOD of electrical and electronics engineering department is professor Hema A
+  utter_q86:
+    - text: the strength of the class can vary due to the difference in the intake of each department, usually each class contains 50 students.
+  utter_q87:
+    - text: This ratio can vary from department to department on an average the ratio is eight is to one.
+  utter_q88:
+    - text: The college has an Anti-Ragging Committee and an Anti-Ragging Squad to monitor and prevent ragging incidents.
+  utter_q89:
+    - text: college have more than 1000 students.
+  utter_q90:
+    - text: it usually starts after the 6th semester.
+  utter_q91:
+    - text: yes, college provide placement training for every eligible student.
+  utter_q92:
+    - text: Yes. College has several startups and fortune 500 companies also where students can intern.
+  utter_q93:
+    - text: Teachers use many techniques such as flipped class room and seminars to improve students.
+  utter_q94:
+    - text: we provide technical and soft skills training to train the students as per the requirements of the companies.
+  utter_q95:
+    - text: It depends on the distance so kindly contact transportation department.
+  utter_q96:
+    - text: The college has security guards posted at the entrance gates and the campus is also equipped with CCTV cameras to monitor the movements of individuals.
+  utter_q97:
+    - text: The housekeeping staff regularly cleans and disinfects the classrooms, labs, hostels, and common areas.
+  utter_q98:
+    - text: Yes, the college provides gym facility with a experienced trainer, the gym is located at fifth floor of main building.
+  utter_q99:
+    - text: The college encourages physical fitness by providing various sports facilities such as cricket, volleyball, basketball, football, gym, and indoor tennis ground.
+  utter_q100:
+    - text: CIT has facilities for various sports including cricket, volleyball, basketball, football, table tennis, and athletics. They also have a gym and an indoor tennis court.
+  utter_q101:
+    - text: CIT offers admissions to students under sports quota as per government rules and regulations.
+  utter_q102:
+    - text: Yes, But they are very minimal. Kindly don’t worry.
+  utter_q103:
+    - text: For 7 days student can borrow a book
+  utter_q104:
+    - text: Mon-Sat 8:30 to 4:30, excepting holidays
+  utter_q105:
+    - text: Study section and AV section are included
+  utter_q106:
+    - text: All the prescribed books of each subject taught in every department are available in multiple copies. Corresponding reference books are also available.
+  utter_q107:
+    - text: Totally more than 50,000 books are there apart from journals and magazines
+  utter_q108:
+    - text: CIT has 3 PG programmes namely MTech (CSE), MCA and MBA
+  utter_q109:
+    - text: PG students and UG students together celebrate the mega cultural event Chiguru. All prominent college including medical colleges in Bengaluru participate in this event.
+  utter_q110:
+    - text: 3 internal tests will be conducted for each subject and normalized to 40 marks in case of theory papers. Assignments are provided for evaluation.
+  utter_q111:
+    - text: It varies from department to department. Our college pass percentage is above 85% which is one of the best in Bengaluru.
+  utter_q112:
+    - text: It is decided by VTU and kindly refer the website of VTU or our college website also.
+  utter_q113:
+    - text: You can apply for as many programs as you wish. But you have to select one of the programs to join.
+  utter_q114:
+    - text: yes, you can apply.
+  utter_q115:
+    - text: All regular scholarships like SC/ST, EWS are provided to the eligible students. CIT also waives a percentage of tuition fee for eligible candidates.
+  utter_q116:
+    - text: CET rank certificate and 12 std/PUC marksheet. In case SC/ST/EWS, corresponding certificates are required and Aadhaar card is also required.
+  utter_q117:
+    - text: It varies from department to department. Candidates with higher CET rank will be preferred.
+  utter_q118:
+    - text: The minimum criteria are specified in CET prospectus. As per government norms, quota candidates will have different minimum criteria.
+  utter_q119:
+    - text: It Is an online form only. Kindly visit our college website.
+  utter_q120:
+    - text: Yes. You will also be called if mobile number is provided correctly.
+  utter_q121:
+    - text: The fee is very minimal and changes. Kindly refer to our website.
+  utter_q122:
+    - text: It depends on programmes. Roughly around 2 to 5 lakhs Indian rupees.
+  utter_q123:
+    - text: You can pay online or through cash also at the counter in the finance section.
+  utter_q124:
+    - text: It will be dealt case to case basis. Normally, after the admission is closed, it will not be refunded.
+  utter_q125:
+    - text: Currently No. It may be approved later.
+  utter_q126:
+    - text: Campus life at Cambridge Institute of Technology Bangalore is described as having a sprawling lush green 16-acre campus with various facilities including hostels, canteens, gym, sports grounds, and indoor facilities.
+  utter_q127:
+    - text: yes you can schedule your campus tour by contacting Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
+  utter_q128:
+    - text: Roughly 40 to 50% of our students are girls. Around 20% students are from outside Karnataka. We do have foreign students.
+  utter_q129:
+    - text: we are ready accelerate this process in the near future.
+  utter_q130:
+    - text: Yes. They will have special coaching apart from the normal teaching and lab hours.
+  utter_q131:
+    - text: Yes. There is parent teacher meeting every semester. You are also most welcome to visit our campus and meet the faculties when they are not in the class.
+  utter_q132:
+    - text: We maintain strict discipline. Before 8:30 pm all students should come inside hostel.
+  utter_q133:
+    - text: Yes. Monday and Fridays the dress code is compulsory and on other days also restrictions are there.
+  utter_q134:
+    - text: No. you can not have visitors to stay overnight in your room.
+  utter_q135:
+    - text: Yes. Ample parking is available.
+  utter_q136:
+    - text: No. But we have horse raiding facility on campus.
+  utter_q137:
+    - text: Male female faculty ratio is 50:50
+  utter_q138:
+    - text: Male female student ratio is 60:40
+  utter_q139:
+    - text: Well-being of a student is our aim. Counsellors are there to assist any student at any hour.
+  utter_q140:
+    - text: Yes. Each student has a mentor. They can discuss.
+  utter_q141:
+    - text: We have many research labs including drone lab.
+  utter_q142:
+    - text: All UG programmes are for 4 years and PG programmes for 2 years.
+  utter_q143:
+    - text: Hostel fees is not much. for more details kindly visit finance department.
   utter_default:
     - text: I am unable to understand, can you please reframe the sentence
 session_config:
