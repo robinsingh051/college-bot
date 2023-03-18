@@ -10,7 +10,6 @@ RUN apt-get update \
         vim
 
 WORKDIR /app
-USER 1001
 
 RUN pip install --no-cache-dir --upgrade pip
 RUN pip install rasa==3.1
