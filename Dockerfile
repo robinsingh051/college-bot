@@ -10,20 +10,14 @@ RUN apt-get update \
         vim
 
 WORKDIR /app
+USER 1001
 
 RUN pip install --no-cache-dir --upgrade pip
-
 RUN pip install rasa==3.1
-RUN pip install -U pip setuptools wheel
-RUN pip install -U spacy
+RUN pip install -U spacy==3.2.4
 RUN python -m spacy download en_core_web_md-3.2.0
 
-COPY ./actions /app/actions
-
-ADD config.yml config.yml
-ADD domain.yml domain.yml
-ADD credentials.yml credentials.yml
-ADD endpoints.yml endpoints.yml
+COPY . .
 
 EXPOSE 5005
 CMD ["--help"]
