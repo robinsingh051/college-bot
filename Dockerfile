@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir --upgrade pip
 RUN pip install rasa==3.1
 RUN pip install -U pip setuptools wheel
 RUN pip install -U spacy
-RUN python -m spacy download en_core_web_md
+RUN python -m spacy download en_core_web_md-3.2.0
 
 COPY ./actions /app/actions
 
