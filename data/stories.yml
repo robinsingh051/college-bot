@@ -696,6 +696,16 @@ stories:
       - intent: q143
       - action: utter_q143
 
+  - story: q144 path
+    steps:
+      - intent: q144
+      - action: utter_q144
+
+  - story: q145 path
+    steps:
+      - intent: q145
+      - action: utter_q145
+
   - story: interactive_story_1
     steps:
       - intent: q18
