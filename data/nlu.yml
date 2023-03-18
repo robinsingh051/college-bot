@@ -209,6 +209,7 @@ nlu:
       - Placement Activities and Placement offers.
       - what are the Placement Activities
       - placement stats
+      - give me placement stats
       - placement statistics
       - how many students placed last year
   - intent: q28
@@ -526,7 +527,6 @@ nlu:
       - What are the room options at the hostel?
       - Could you describe the different kinds of rooms that the hostel offers?
       - I am interested in the different types of accommodations available at the hostel. Can you fill me in?
-      - What kinds of rooms can guests choose from at the hostel?
       - Can you give me an overview of the various types of rooms at the hostel?
       - What's the range of room types that the hostel provides?
   - intent: q76
@@ -801,7 +801,7 @@ nlu:
       - Can you tell me about any success stories of the college's placement efforts?
   - intent: q95
     examples: |
-      - what is the transportation fee
+      - what is the transportation fees
       - Could you provide me with information on the transportation fees charged by the college?
       - What is the cost of transportation to and from the college?
       - May I know about the fees associated with college transportation services?

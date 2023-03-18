@@ -1,446 +1,446 @@
-version: "3.1"
-intents:
-  - bot_challenge
-  - goodbye
-  - greet
-  - q1
-  - q10
-  - q100
-  - q101
-  - q102
-  - q103
-  - q104
-  - q105
-  - q106
-  - q107
-  - q108
-  - q109
-  - q11
-  - q110
-  - q111
-  - q112
-  - q113
-  - q114
-  - q115
-  - q116
-  - q117
-  - q118
-  - q119
-  - q12
-  - q120
-  - q121
-  - q122
-  - q123
-  - q124
-  - q125
-  - q126
-  - q127
-  - q128
-  - q129
-  - q130
-  - q131
-  - q132
-  - q133
-  - q134
-  - q135
-  - q136
-  - q137
-  - q138
-  - q139
-  - q14
-  - q140
-  - q141
-  - q142
-  - q143
-  - q144
-  - q145
-  - q15
-  - q16
-  - q17
-  - q18
-  - q19
-  - q2
-  - q20
-  - q21
-  - q22
-  - q23
-  - q24
-  - q25
-  - q27
-  - q28
-  - q29
-  - q3
-  - q30
-  - q31
-  - q32
-  - q33
-  - q34
-  - q35
-  - q36
-  - q37
-  - q38
-  - q39
-  - q4
-  - q40
-  - q41
-  - q42
-  - q43
-  - q44
-  - q45
-  - q46
-  - q47
-  - q48
-  - q49
-  - q5
-  - q50
-  - q51
-  - q52
-  - q53
-  - q54
-  - q55
-  - q56
-  - q57
-  - q58
-  - q59
-  - q6
-  - q60
-  - q61
-  - q62
-  - q63
-  - q64
-  - q65
-  - q66
-  - q68
-  - q7
-  - q70
-  - q71
-  - q72
-  - q73
-  - q74
-  - q75
-  - q76
-  - q77
-  - q78
-  - q79
-  - q8
-  - q80
-  - q81
-  - q82
-  - q83
-  - q84
-  - q85
-  - q86
-  - q87
-  - q88
-  - q89
-  - q9
-  - q90
-  - q91
-  - q92
-  - q93
-  - q94
-  - q95
-  - q96
-  - q97
-  - q98
-  - q99
-responses:
-  utter_greet:
-    - text: Hey! what is your query
-  utter_goodbye:
-    - text: Bye
-  utter_iamabot:
-    - text: I am a your assistant for admission related queries. i am developed by cambridge institute of technology.
-  utter_q1:
-    - text: AI is the simulation of human intelligence in machines, while ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
-  utter_q2:
-    - text: Learning AI and ML can be challenging, but it largely depends on the individual's prior knowledge, background, and learning style. With dedication, persistence, and the right resources, anyone can learn AI and ML.
-  utter_q3:
-    - text: AI, or Artificial Intelligence, is a branch of computer science that focuses on creating intelligent machines that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation.
-  utter_q4:
-    - text: Yes, you are most likely already using AI in your everyday life without even realizing it. AI is used in various applications such as voice assistants, search engines, and social media algorithms.
-  utter_q5:
-    - text: ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
-  utter_q6:
-    - text: Some examples of machine learning include spam filters, voice recognition systems, and recommendation algorithms used by online platforms.
-  utter_q7:
-    - text: AI is the simulation of human intelligence in machines, while ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
-  utter_q8:
-    - text: AI is the simulation of human intelligence in machines, while ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
-  utter_q9:
-    - text: My advice for someone starting their journey in ML/AI/Data Science would be to have a strong foundation in mathematics, particularly in statistics and linear algebra.
-  utter_q10:
-    - text: To get started in machine learning, you can begin by learning programming languages such as Python, understanding statistics and linear algebra.
-  utter_q11:
-    - text: The AI basics you need to know include understanding what AI is, the difference between narrow and general AI, and the different types of machine learning algorithms.
-  utter_q12:
-    - text: Artificial intelligence (AI) is a broader field that encompasses machine learning (ML).
-  utter_q14:
-    - text: A Machine Learning Engineer builds, tests and deploys machine learning models to solve complex business problems, working at the intersection of software engineering and data science.
-  utter_q15:
-    - text: Some job titles in the machine learning domain include Machine Learning Engineer, Data Scientist, AI Researcher, and Data Analyst.
-  utter_q16:
-    - text: The average salary for machine learning engineers is around INR 1,000,000 per year in India.
-  utter_q17:
-    - text: There are many companies in India that hire machine learning engineers, including tech giants such as Amazon, Google, Microsoft, and IBM.
-  utter_q18:
-    - text: Artificial intelligence is used in various industries such as healthcare, finance, retail, transportation, and more to automate processes, gain insights, and make predictions.
-  utter_q19:
-    - text: Machine learning has numerous applications across various industries, including natural language processing, computer vision, fraud detection, recommender systems, and autonomous vehicles.
-  utter_q20:
-    - text: Python and R are the most used languages in Machine learning.
-  utter_q21:
-    - text: Machine learning and artificial intelligence are present in everyday life, from virtual assistants like Siri and Alexa to recommendation systems on e-commerce websites and social media platforms.
-  utter_q22:
-    - text: CIT has 7 BTech courses, MCA, MBA and MTech courses along with 7 advanced research labs where scholars pursue their PhD. The BTech courses offered at CIT include AIML, CSE, ISE, ECE, EEE, Mech, Civil.
-  utter_q23:
-    - text: CIT campus is a 16-acre green campus with both girls and boys hostels, canteens, and sports facilities, including cricket, volleyball, basketball, football grounds, a gym, and an indoor tennis ground.
-  utter_q24:
-    - text: CIT has highly qualified faculties with PhD degrees from developed countries and more than 10 years of teaching experience. The college has excellent academic standards and high pass percentage close to 100%.
-  utter_q25:
-    - text: The college offers a wide range of courses to help students develop their soft and technical skills, including project management, IPR management, and specialized courses such as drone computing, starting from the second year.
-  utter_q27:
-    - text: The college has a good placement record with more than 70% eligible candidates placed, and offers specific placement training courses based on students' career goals.
-  utter_q28:
-    - text: The highest package so far is 16 lakhs and the average package is around 5 lakhs.
-  utter_q29:
-    - text: Last year CET cutoff ranks are as follows 28283   For AIML, 21328   For CSE, 32382   For ISE, 37593   For ECE, 41780   For EEE, 49610   For Mech and, 40512   For Civil
-  utter_q30:
-    - text: Last year Comedk cutoff ranks are as follows 20732   For AIML, 14454   For CSE, 19300   For ISE, 36301   For ECE, 41733   For EEE, 39374   For Mech and, 29597   For Civil
-  utter_q31:
-    - text: VTU is a government affiliating university for all engineering colleges in Karnataka. Private universities are mostly run by a private trust or organization.
-  utter_q32:
-    - text: There is no technical difference between Main campus and north campus, with Main campus being closer to the city and North campus offering a serene and pollution-free environment.
-  utter_q33:
-    - text: The Cambridge Institute of Technology was started in 2007 in KR Puram, Bengaluru by Umesh Educational Trust.
-  utter_q34:
-    - text: Yes. CIT is a private engineering college.
-  utter_q35:
-    - text: Yes. CIT is a part of group of institutions where we have a ICSE school, one science and arts college and two engineering colleges.
-  utter_q36:
-    - text: One of the engineering colleges is in KR Puram, Bengaluru and other is near Devanahalli.
-  utter_q37:
-    - text: Byappanahalli metro station is 5 km from the college. KR Puram railway station is less than 2 km from the college.
-  utter_q38:
-    - text: Yes. There are more than 10 buses which cover the length and breadth of the city.
-  utter_q39:
-    - text: website of the college is www.cambridge.edu.in
-  utter_q40:
-    - text: Yes. The college has hostels for boys and girls separately on campus.
-  utter_q41:
-    - text: The vision of the college is to become a premier institute transforming our students to be global professionals.
-  utter_q42:
-    - text: The college aims to develop competent human resources, adopt a tertiary approach to teaching and learning, and nurture students to become global professionals.
-  utter_q43:
-    - text: College is 15 years old and it is NBA and NAAC accredited.
-  utter_q45:
-    - text: There are many grounds including cricket ground and indoor games for tennis along with well equipped Gymnasium also.
-  utter_q46:
-    - text: Yes, the college is recognized by AICTE and the AICTE code is  1-6142911
-  utter_q47:
-    - text: Yes, however soon we will become an autonomous college, then also affiliated to VTU.
-  utter_q48:
-    - text: Yes. Kindly visit our website engg.cambridge.edu.in
-  utter_q49:
-    - text: It will become autonomous in next year.
-  utter_q50:
-    - text: There are three ways to get admission in the college. You can take either CET or COMED-K or approach the management for management quota.
-  utter_q51:
-    - text: There are 7 UG engineering department, one MBA department and one MCA department apart from the basic sciences department.
-  utter_q52:
-    - text: CIT has AI and ML, Computer science, Electrical and Electronics, Electronics and communication, Information science, Mechanical and Civil engineering departments.
-  utter_q53:
-    - text: The CET rank required to get admission in AI and ML department is 28283.
-  utter_q54:
-    - text: The CET rank required to get admission in EEE department is 41780.
-  utter_q55:
-    - text: The CET rank required to get admission in ECE department is 37593.
-  utter_q56:
-    - text: The CET rank required to get admission in ISE department is 32382.
-  utter_q57:
-    - text: The CET rank required to get admission in CSE department is 21328.
-  utter_q58:
-    - text: The CET rank required to get admission in mechanical department is 49610.
-  utter_q59:
-    - text: The CET rank required to get admission in civil department is 40512.
-  utter_q60:
-    - text: There are 60 seats in AI and ML department.
-  utter_q61:
-    - text: There are 180 seats in CSE department.
-  utter_q62:
-    - text: There are 120 seats in ISE department.
-  utter_q63:
-    - text: There are 60 seats in EEE department.
-  utter_q64:
-    - text: There are 180 seats in ECE department.
-  utter_q65:
-    - text: There are 60 seats in mechanical department.
-  utter_q66:
-    - text: There are 60 seats in civil department.
-  utter_q68:
-    - text: It varies from department to department. We also have scholarships. For more details contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
-  utter_q70:
-    - text: Yes. Kindly contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
-  utter_q71:
-    - text: Yes. Kindly contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
-  utter_q72:
-    - text: Yes. The college is NAAC accredited with B+ grade. We have applied now again and hope to get A+.
-  utter_q73:
-    - text: Yes. college is NBA accredited
-  utter_q74:
-    - text: The college is elevated to “Promising” Category in ARIIA ranking.
-  utter_q75:
-    - text: There are two types of rooms available one is two sharing room and the other is three sharing room.
-  utter_q76:
-    - text: College Hostel provides spacious rooms for accommodation, hot water in the morning, Wi-Fi throughout the hostel building, and provides breakfast, lunch, snacks and dinner. Hostel mess also provides non veg on Wednesdays and Sundays.
-  utter_q77:
-    - text: Currently the chairman of our college is D K Mohan
-  utter_q78:
-    - text: Currently the principal of our college is Dr. G Indumathi
-  utter_q79:
-    - text: The HOD of computer science department is Dr. Shashi Kumar
-  utter_q80:
-    - text: The HOD of information science department is Dr. Preethi s
-  utter_q81:
-    - text: The HOD of civil department is Dr. SHANKAR B S
-  utter_q82:
-    - text: The HOD of mechanical department is Dr. Suneel Kumar N Kulkarni
-  utter_q83:
-    - text: The HOD of electronics and communication department is professor Shiva Panchaksheri T G
-  utter_q84:
-    - text: The HOD of AI and ML department is Dr. D Antony Louis Piriya kumar
-  utter_q85:
-    - text: the HOD of electrical and electronics engineering department is professor Hema A
-  utter_q86:
-    - text: the strength of the class can vary due to the difference in the intake of each department, usually each class contains 50 students.
-  utter_q87:
-    - text: This ratio can vary from department to department on an average the ratio is eight is to one.
-  utter_q88:
-    - text: The college has an Anti-Ragging Committee and an Anti-Ragging Squad to monitor and prevent ragging incidents.
-  utter_q89:
-    - text: college have more than 1000 students.
-  utter_q90:
-    - text: it usually starts after the 6th semester.
-  utter_q91:
-    - text: yes, college provide placement training for every eligible student.
-  utter_q92:
-    - text: Yes. College has several startups and fortune 500 companies also where students can intern.
-  utter_q93:
-    - text: Teachers use many techniques such as flipped class room and seminars to improve students.
-  utter_q94:
-    - text: we provide technical and soft skills training to train the students as per the requirements of the companies.
-  utter_q95:
-    - text: The fees varies depending on the distance, ranging from 20,000 for distances between 0 and 5 km, to 46,000 for distances greater than 66 km.
-  utter_q96:
-    - text: The college has security guards posted at the entrance gates and the campus is also equipped with CCTV cameras to monitor the movements of individuals.
-  utter_q97:
-    - text: The housekeeping staff regularly cleans and disinfects the classrooms, labs, hostels, and common areas.
-  utter_q98:
-    - text: Yes, the college provides gym facility with a experienced trainer, the gym is located at fifth floor of main building.
-  utter_q99:
-    - text: college encourage fitness through various sports, gym and yoga classes
-  utter_q100:
-    - text: CIT has differen sports facilities like cricket, volleyball, basketball, throw ball, cricket, football and indoor games like table tennis,  badminton, carrom and chess
-  utter_q101:
-    - text: CIT offers admissions to students under sports quota as per government rules and regulations.
-  utter_q102:
-    - text: Yes, it is 5 rupees per day
-  utter_q103:
-    - text: student can borrow books for 14 days
-  utter_q104:
-    - text: Monday to Friday 8:30 AM to 8:00 PM, Saturday 8:30 AM to 4:00 PM and Sunday 9:00 AM to 4:00 PM
-  utter_q105:
-    - text: Book borrow, online resources, reference service, newspaper, magazines, print journals and browsing facility.
-  utter_q106:
-    - text: All the prescribed books of each subject taught in every department are available in multiple copies. Corresponding reference books are also available.
-  utter_q107:
-    - text: 6000 titles and 32500 volumes are available
-  utter_q108:
-    - text: CIT has 3 PG programmes namely MTech (CSE), MCA and MBA
-  utter_q109:
-    - text: PG students and UG students together celebrate the mega cultural event Chiguru. All prominent college including medical colleges in Bengaluru participate in this event.
-  utter_q110:
-    - text: 3 internal tests will be conducted for each subject and normalized to 40 marks in case of theory papers. Assignments are provided for evaluation.
-  utter_q111:
-    - text: It varies from department to department. Our college pass percentage is above 85% which is one of the best in Bengaluru.
-  utter_q112:
-    - text: It is decided by VTU and kindly refer the website of VTU or our college website also.
-  utter_q113:
-    - text: You can apply for as many programs as you wish. But you have to select one of the programs to join.
-  utter_q114:
-    - text: yes, you can apply.
-  utter_q115:
-    - text: All regular scholarships like SC/ST, EWS are provided to the eligible students. CIT also waives a percentage of tuition fee for eligible candidates.
-  utter_q116:
-    - text: CET rank certificate and 12 std/PUC marksheet. In case SC/ST/EWS, corresponding certificates are required and Aadhaar card is also required.
-  utter_q117:
-    - text: It varies from department to department. Candidates with higher CET rank will be preferred.
-  utter_q118:
-    - text: The minimum criteria are specified in CET prospectus. As per government norms, quota candidates will have different minimum criteria.
-  utter_q119:
-    - text: It Is an online form only. Kindly visit our college website.
-  utter_q120:
-    - text: Yes. You will also be called if mobile number is provided correctly.
-  utter_q121:
-    - text: The fee is very minimal and changes. Kindly refer to our website.
-  utter_q122:
-    - text: It depends on programmes. Roughly around 2 to 5 lakhs Indian rupees.
-  utter_q123:
-    - text: You can pay online or through cash also at the counter in the finance section.
-  utter_q124:
-    - text: It will be dealt case to case basis. Normally, after the admission is closed, it will not be refunded.
-  utter_q125:
-    - text: Currently No. It may be approved later.
-  utter_q126:
-    - text: Campus life at Cambridge Institute of Technology Bangalore is described as having a sprawling lush green 16-acre campus with various facilities including hostels, canteens, gym, sports grounds, and indoor facilities.
-  utter_q127:
-    - text: yes you can schedule your campus tour by contacting Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
-  utter_q128:
-    - text: Roughly 40 to 50% of our students are girls. Around 20% students are from outside Karnataka. We do have foreign students.
-  utter_q129:
-    - text: we are ready accelerate this process in the near future.
-  utter_q130:
-    - text: Yes. They will have special coaching apart from the normal teaching and lab hours.
-  utter_q131:
-    - text: Yes. There is parent teacher meeting every semester. You are also most welcome to visit our campus and meet the faculties when they are not in the class.
-  utter_q132:
-    - text: We maintain strict discipline. Before 8:30 pm all students should come inside hostel.
-  utter_q133:
-    - text: Yes. Monday and Fridays the dress code is compulsory and on other days also restrictions are there.
-  utter_q134:
-    - text: No. you can not have visitors to stay overnight in your room.
-  utter_q135:
-    - text: Yes. Ample parking is available.
-  utter_q136:
-    - text: No. But we have horse raiding facility on campus.
-  utter_q137:
-    - text: Male female faculty ratio is 50:50
-  utter_q138:
-    - text: Male female student ratio is 60:40
-  utter_q139:
-    - text: Well-being of a student is our aim. Counsellors are there to assist any student at any hour.
-  utter_q140:
-    - text: Yes. Each student has a mentor. They can discuss.
-  utter_q141:
-    - text: We have many research labs including drone lab.
-  utter_q142:
-    - text: All UG programmes are for 4 years and PG programmes for 2 years.
-  utter_q143:
-    - text: Hostel fees is not much. for more details kindly visit finance department.
-  utter_q144:
-    - text: Student can borrow 5 books at a time.
-  utter_q145:
-    - text: one more time student can renew for 14 days.
-  utter_default:
-    - text: I am unable to understand, can you please reframe the sentence
+version: '3.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- bot_challenge
+- goodbye
+- greet
+- q1
+- q10
+- q100
+- q101
+- q102
+- q103
+- q104
+- q105
+- q106
+- q107
+- q108
+- q109
+- q11
+- q110
+- q111
+- q112
+- q113
+- q114
+- q115
+- q116
+- q117
+- q118
+- q119
+- q12
+- q120
+- q121
+- q122
+- q123
+- q124
+- q125
+- q126
+- q127
+- q128
+- q129
+- q130
+- q131
+- q132
+- q133
+- q134
+- q135
+- q136
+- q137
+- q138
+- q139
+- q14
+- q140
+- q141
+- q142
+- q143
+- q144
+- q145
+- q15
+- q16
+- q17
+- q18
+- q19
+- q2
+- q20
+- q21
+- q22
+- q23
+- q24
+- q25
+- q27
+- q28
+- q29
+- q3
+- q30
+- q31
+- q32
+- q33
+- q34
+- q35
+- q36
+- q37
+- q38
+- q39
+- q4
+- q40
+- q41
+- q42
+- q43
+- q44
+- q45
+- q46
+- q47
+- q48
+- q49
+- q5
+- q50
+- q51
+- q52
+- q53
+- q54
+- q55
+- q56
+- q57
+- q58
+- q59
+- q6
+- q60
+- q61
+- q62
+- q63
+- q64
+- q65
+- q66
+- q68
+- q7
+- q70
+- q71
+- q72
+- q73
+- q74
+- q75
+- q76
+- q77
+- q78
+- q79
+- q8
+- q80
+- q81
+- q82
+- q83
+- q84
+- q85
+- q86
+- q87
+- q88
+- q89
+- q9
+- q90
+- q91
+- q92
+- q93
+- q94
+- q95
+- q96
+- q97
+- q98
+- q99
+responses:
+  utter_greet:
+  - text: Hey! what is your query
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a your assistant for admission related queries. i am developed by cambridge institute of technology.
+  utter_q1:
+  - text: AI is the simulation of human intelligence in machines, while ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
+  utter_q2:
+  - text: Learning AI and ML can be challenging, but it largely depends on the individual's prior knowledge, background, and learning style. With dedication, persistence, and the right resources, anyone can learn AI and ML.
+  utter_q3:
+  - text: AI, or Artificial Intelligence, is a branch of computer science that focuses on creating intelligent machines that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation.
+  utter_q4:
+  - text: Yes, you are most likely already using AI in your everyday life without even realizing it. AI is used in various applications such as voice assistants, search engines, and social media algorithms.
+  utter_q5:
+  - text: ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
+  utter_q6:
+  - text: Some examples of machine learning include spam filters, voice recognition systems, and recommendation algorithms used by online platforms.
+  utter_q7:
+  - text: AI is the simulation of human intelligence in machines, while ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
+  utter_q8:
+  - text: AI is the simulation of human intelligence in machines, while ML is a subset of AI that focuses on the development of algorithms that can learn from and make predictions on data.
+  utter_q9:
+  - text: My advice for someone starting their journey in ML/AI/Data Science would be to have a strong foundation in mathematics, particularly in statistics and linear algebra.
+  utter_q10:
+  - text: To get started in machine learning, you can begin by learning programming languages such as Python, understanding statistics and linear algebra.
+  utter_q11:
+  - text: The AI basics you need to know include understanding what AI is, the difference between narrow and general AI, and the different types of machine learning algorithms.
+  utter_q12:
+  - text: Artificial intelligence (AI) is a broader field that encompasses machine learning (ML).
+  utter_q14:
+  - text: A Machine Learning Engineer builds, tests and deploys machine learning models to solve complex business problems, working at the intersection of software engineering and data science.
+  utter_q15:
+  - text: Some job titles in the machine learning domain include Machine Learning Engineer, Data Scientist, AI Researcher, and Data Analyst.
+  utter_q16:
+  - text: The average salary for machine learning engineers is around INR 1,000,000 per year in India.
+  utter_q17:
+  - text: There are many companies in India that hire machine learning engineers, including tech giants such as Amazon, Google, Microsoft, and IBM.
+  utter_q18:
+  - text: Artificial intelligence is used in various industries such as healthcare, finance, retail, transportation, and more to automate processes, gain insights, and make predictions.
+  utter_q19:
+  - text: Machine learning has numerous applications across various industries, including natural language processing, computer vision, fraud detection, recommender systems, and autonomous vehicles.
+  utter_q20:
+  - text: Python and R are the most used languages in Machine learning.
+  utter_q21:
+  - text: Machine learning and artificial intelligence are present in everyday life, from virtual assistants like Siri and Alexa to recommendation systems on e-commerce websites and social media platforms.
+  utter_q22:
+  - text: CIT has 7 BTech courses, MCA, MBA and MTech courses along with 7 advanced research labs where scholars pursue their PhD. The BTech courses offered at CIT include AIML, CSE, ISE, ECE, EEE, Mech, Civil.
+  utter_q23:
+  - text: CIT campus is a 16-acre green campus with both girls and boys hostels, canteens, and sports facilities, including cricket, volleyball, basketball, football grounds, a gym, and an indoor tennis ground.
+  utter_q24:
+  - text: CIT has highly qualified faculties with PhD degrees from developed countries and more than 10 years of teaching experience. The college has excellent academic standards and high pass percentage close to 100%.
+  utter_q25:
+  - text: The college offers a wide range of courses to help students develop their soft and technical skills, including project management, IPR management, and specialized courses such as drone computing, starting from the second year.
+  utter_q27:
+  - text: The college has a good placement record with more than 70% eligible candidates placed, and offers specific placement training courses based on students' career goals.
+  utter_q28:
+  - text: The highest package so far is 16 lakhs and the average package is around 5 lakhs.
+  utter_q29:
+  - text: Last year CET cutoff ranks are as follows 28283   For AIML, 21328   For CSE, 32382   For ISE, 37593   For ECE, 41780   For EEE, 49610   For Mech and, 40512   For Civil
+  utter_q30:
+  - text: Last year Comedk cutoff ranks are as follows 20732   For AIML, 14454   For CSE, 19300   For ISE, 36301   For ECE, 41733   For EEE, 39374   For Mech and, 29597   For Civil
+  utter_q31:
+  - text: VTU is a government affiliating university for all engineering colleges in Karnataka. Private universities are mostly run by a private trust or organization.
+  utter_q32:
+  - text: There is no technical difference between Main campus and north campus, with Main campus being closer to the city and North campus offering a serene and pollution-free environment.
+  utter_q33:
+  - text: The Cambridge Institute of Technology was started in 2007 in KR Puram, Bengaluru by Umesh Educational Trust.
+  utter_q34:
+  - text: Yes. CIT is a private engineering college.
+  utter_q35:
+  - text: Yes. CIT is a part of group of institutions where we have a ICSE school, one science and arts college and two engineering colleges.
+  utter_q36:
+  - text: One of the engineering colleges is in KR Puram, Bengaluru and other is near Devanahalli.
+  utter_q37:
+  - text: Byappanahalli metro station is 5 km from the college. KR Puram railway station is less than 2 km from the college.
+  utter_q38:
+  - text: Yes. There are more than 10 buses which cover the length and breadth of the city.
+  utter_q39:
+  - text: website of the college is www.cambridge.edu.in
+  utter_q40:
+  - text: Yes. The college has hostels for boys and girls separately on campus.
+  utter_q41:
+  - text: The vision of the college is to become a premier institute transforming our students to be global professionals.
+  utter_q42:
+  - text: The college aims to develop competent human resources, adopt a tertiary approach to teaching and learning, and nurture students to become global professionals.
+  utter_q43:
+  - text: College is 15 years old and it is NBA and NAAC accredited.
+  utter_q45:
+  - text: There are many grounds including cricket ground and indoor games for tennis along with well equipped Gymnasium also.
+  utter_q46:
+  - text: Yes, the college is recognized by AICTE and the AICTE code is  1-6142911
+  utter_q47:
+  - text: Yes, however soon we will become an autonomous college, then also affiliated to VTU.
+  utter_q48:
+  - text: Yes. Kindly visit our website engg.cambridge.edu.in
+  utter_q49:
+  - text: It will become autonomous in next year.
+  utter_q50:
+  - text: There are three ways to get admission in the college. You can take either CET or COMED-K or approach the management for management quota.
+  utter_q51:
+  - text: There are 7 UG engineering department, one MBA department and one MCA department apart from the basic sciences department.
+  utter_q52:
+  - text: CIT has AI and ML, Computer science, Electrical and Electronics, Electronics and communication, Information science, Mechanical and Civil engineering departments.
+  utter_q53:
+  - text: The CET rank required to get admission in AI and ML department is 28283.
+  utter_q54:
+  - text: The CET rank required to get admission in EEE department is 41780.
+  utter_q55:
+  - text: The CET rank required to get admission in ECE department is 37593.
+  utter_q56:
+  - text: The CET rank required to get admission in ISE department is 32382.
+  utter_q57:
+  - text: The CET rank required to get admission in CSE department is 21328.
+  utter_q58:
+  - text: The CET rank required to get admission in mechanical department is 49610.
+  utter_q59:
+  - text: The CET rank required to get admission in civil department is 40512.
+  utter_q60:
+  - text: There are 60 seats in AI and ML department.
+  utter_q61:
+  - text: There are 180 seats in CSE department.
+  utter_q62:
+  - text: There are 120 seats in ISE department.
+  utter_q63:
+  - text: There are 60 seats in EEE department.
+  utter_q64:
+  - text: There are 180 seats in ECE department.
+  utter_q65:
+  - text: There are 60 seats in mechanical department.
+  utter_q66:
+  - text: There are 60 seats in civil department.
+  utter_q68:
+  - text: It varies from department to department. We also have scholarships. For more details contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
+  utter_q70:
+  - text: Yes. Kindly contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
+  utter_q71:
+  - text: Yes. Kindly contact Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
+  utter_q72:
+  - text: Yes. The college is NAAC accredited with B+ grade. We have applied now again and hope to get A+.
+  utter_q73:
+  - text: Yes. college is NBA accredited
+  utter_q74:
+  - text: The college is elevated to “Promising” Category in ARIIA ranking.
+  utter_q75:
+  - text: There are two types of rooms available one is two sharing room and the other is three sharing room.
+  utter_q76:
+  - text: College Hostel provides spacious rooms for accommodation, hot water in the morning, Wi-Fi throughout the hostel building, and provides breakfast, lunch, snacks and dinner. Hostel mess also provides non veg on Wednesdays and Sundays.
+  utter_q77:
+  - text: Currently the chairman of our college is D K Mohan
+  utter_q78:
+  - text: Currently the principal of our college is Dr. G Indumathi
+  utter_q79:
+  - text: The HOD of computer science department is Dr. Shashi Kumar
+  utter_q80:
+  - text: The HOD of information science department is Dr. Preethi s
+  utter_q81:
+  - text: The HOD of civil department is Dr. SHANKAR B S
+  utter_q82:
+  - text: The HOD of mechanical department is Dr. Suneel Kumar N Kulkarni
+  utter_q83:
+  - text: The HOD of electronics and communication department is professor Shiva Panchaksheri T G
+  utter_q84:
+  - text: The HOD of AI and ML department is Dr. D Antony Louis Piriya kumar
+  utter_q85:
+  - text: the HOD of electrical and electronics engineering department is professor Hema A
+  utter_q86:
+  - text: the strength of the class can vary due to the difference in the intake of each department, usually each class contains 50 students.
+  utter_q87:
+  - text: This ratio can vary from department to department on an average the ratio is eight is to one.
+  utter_q88:
+  - text: The college has an Anti-Ragging Committee and an Anti-Ragging Squad to monitor and prevent ragging incidents.
+  utter_q89:
+  - text: college have more than 1000 students.
+  utter_q90:
+  - text: it usually starts after the 6th semester.
+  utter_q91:
+  - text: yes, college provide placement training for every eligible student.
+  utter_q92:
+  - text: Yes. College has several startups and fortune 500 companies also where students can intern.
+  utter_q93:
+  - text: Teachers use many techniques such as flipped class room and seminars to improve students.
+  utter_q94:
+  - text: we provide technical and soft skills training to train the students as per the requirements of the companies.
+  utter_q95:
+  - text: The fees varies depending on the distance, ranging from 20,000 for distances between 0 and 5 km, to 46,000 for distances greater than 66 km.
+  utter_q96:
+  - text: The college has security guards posted at the entrance gates and the campus is also equipped with CCTV cameras to monitor the movements of individuals.
+  utter_q97:
+  - text: The housekeeping staff regularly cleans and disinfects the classrooms, labs, hostels, and common areas.
+  utter_q98:
+  - text: Yes, the college provides gym facility with a experienced trainer, the gym is located at fifth floor of main building.
+  utter_q99:
+  - text: college encourage fitness through various sports, gym and yoga classes
+  utter_q100:
+  - text: CIT has differen sports facilities like cricket, volleyball, basketball, throw ball, cricket, football and indoor games like table tennis,  badminton, carrom and chess
+  utter_q101:
+  - text: CIT offers admissions to students under sports quota as per government rules and regulations.
+  utter_q102:
+  - text: Yes, it is 5 rupees per day
+  utter_q103:
+  - text: student can borrow books for 14 days
+  utter_q104:
+  - text: Monday to Friday 8:30 AM to 8:00 PM, Saturday 8:30 AM to 4:00 PM and Sunday 9:00 AM to 4:00 PM
+  utter_q105:
+  - text: Book borrow, online resources, reference service, newspaper, magazines, print journals and browsing facility.
+  utter_q106:
+  - text: All the prescribed books of each subject taught in every department are available in multiple copies. Corresponding reference books are also available.
+  utter_q107:
+  - text: 6000 titles and 32500 volumes are available
+  utter_q108:
+  - text: CIT has 3 PG programmes namely MTech (CSE), MCA and MBA
+  utter_q109:
+  - text: PG students and UG students together celebrate the mega cultural event Chiguru. All prominent college including medical colleges in Bengaluru participate in this event.
+  utter_q110:
+  - text: 3 internal tests will be conducted for each subject and normalized to 40 marks in case of theory papers. Assignments are provided for evaluation.
+  utter_q111:
+  - text: It varies from department to department. Our college pass percentage is above 85% which is one of the best in Bengaluru.
+  utter_q112:
+  - text: It is decided by VTU and kindly refer the website of VTU or our college website also.
+  utter_q113:
+  - text: You can apply for as many programs as you wish. But you have to select one of the programs to join.
+  utter_q114:
+  - text: yes, you can apply.
+  utter_q115:
+  - text: All regular scholarships like SC/ST, EWS are provided to the eligible students. CIT also waives a percentage of tuition fee for eligible candidates.
+  utter_q116:
+  - text: CET rank certificate and 12 std/PUC marksheet. In case SC/ST/EWS, corresponding certificates are required and Aadhaar card is also required.
+  utter_q117:
+  - text: It varies from department to department. Candidates with higher CET rank will be preferred.
+  utter_q118:
+  - text: The minimum criteria are specified in CET prospectus. As per government norms, quota candidates will have different minimum criteria.
+  utter_q119:
+  - text: It Is an online form only. Kindly visit our college website.
+  utter_q120:
+  - text: Yes. You will also be called if mobile number is provided correctly.
+  utter_q121:
+  - text: The fee is very minimal and changes. Kindly refer to our website.
+  utter_q122:
+  - text: It depends on programmes. Roughly around 2 to 5 lakhs Indian rupees.
+  utter_q123:
+  - text: You can pay online or through cash also at the counter in the finance section.
+  utter_q124:
+  - text: It will be dealt case to case basis. Normally, after the admission is closed, it will not be refunded.
+  utter_q125:
+  - text: Currently No. It may be approved later.
+  utter_q126:
+  - text: Campus life at Cambridge Institute of Technology Bangalore is described as having a sprawling lush green 16-acre campus with various facilities including hostels, canteens, gym, sports grounds, and indoor facilities.
+  utter_q127:
+  - text: yes you can schedule your campus tour by contacting Professor Karthik, Head of admissions. His email ID is admissions@cambridge.edu.in
+  utter_q128:
+  - text: Roughly 40 to 50% of our students are girls. Around 20% students are from outside Karnataka. We do have foreign students.
+  utter_q129:
+  - text: we are ready accelerate this process in the near future.
+  utter_q130:
+  - text: Yes. They will have special coaching apart from the normal teaching and lab hours.
+  utter_q131:
+  - text: Yes. There is parent teacher meeting every semester. You are also most welcome to visit our campus and meet the faculties when they are not in the class.
+  utter_q132:
+  - text: We maintain strict discipline. Before 8:30 pm all students should come inside hostel.
+  utter_q133:
+  - text: Yes. Monday and Fridays the dress code is compulsory and on other days also restrictions are there.
+  utter_q134:
+  - text: No. you can not have visitors to stay overnight in your room.
+  utter_q135:
+  - text: Yes. Ample parking is available.
+  utter_q136:
+  - text: No. But we have horse raiding facility on campus.
+  utter_q137:
+  - text: Male female faculty ratio is 50:50
+  utter_q138:
+  - text: Male female student ratio is 60:40
+  utter_q139:
+  - text: Well-being of a student is our aim. Counsellors are there to assist any student at any hour.
+  utter_q140:
+  - text: Yes. Each student has a mentor. They can discuss.
+  utter_q141:
+  - text: We have many research labs including drone lab.
+  utter_q142:
+  - text: All UG programmes are for 4 years and PG programmes for 2 years.
+  utter_q143:
+  - text: Hostel fees is not much. for more details kindly visit finance department.
+  utter_q144:
+  - text: Student can borrow 5 books at a time.
+  utter_q145:
+  - text: one more time student can renew for 14 days.
+  utter_default:
+  - text: I am unable to understand, can you please reframe the sentence
 actions:
-  - utter_q103
-  - utter_q105
-  - utter_q107
-  - utter_q18
-  - utter_q4
-  - utter_q41
-  - utter_q42
+- utter_q103
+- utter_q105
+- utter_q107
+- utter_q18
+- utter_q4
+- utter_q41
+- utter_q42
