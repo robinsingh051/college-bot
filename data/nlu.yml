@@ -801,7 +801,7 @@ nlu:
       - Can you tell me about any success stories of the college's placement efforts?
   - intent: q95
     examples: |
-      - what are the transportation fees
+      - what is the transportation fee
       - Could you provide me with information on the transportation fees charged by the college?
       - What is the cost of transportation to and from the college?
       - May I know about the fees associated with college transportation services?
