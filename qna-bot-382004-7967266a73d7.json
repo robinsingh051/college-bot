@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "qna-bot-382004",
+  "private_key_id": "7967266a73d74c8650c4818d412923d37b24ce63",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC+XxuB+Gry6qWB\nxgaRM/k1DCFGFYg3dfpFqupUZXpOfPRJ4of8wB9CAb/6UGD+VDZ3XF+6QP5SDqZT\ngNHjhBY6hHNQV3dst9V1Kg265qnyjr8o047IjxFRmo1rkjZJ8P1M7o7kTcQIY5TH\nPicexcjQLysffuHF1twR6Bm03jPfA9oDJjkWWJy6JwES0Z8S3ibpIHHJRFKLuiER\nJzIGsx8qtaGBhtYbyFd+wlHKiYDNkBbasdBS8eM2RD8xTe5M+t6Gu5FYKc2ICR8r\nc0VtHW9ELDbu88S1Iz1NB2ZVGAlKQBGwU0LjA54Zluw/uZSEVtXbfoFYYSl6VNul\nJZv73tGvAgMBAAECggEAAUbb252Q4KrtB4Bzra8wrk8/yOeJWENeYh9N581ZpG08\ngy294AxEMZa1WJlzA5ka7HVvV8+aIVcEHZvirTuyJmxwdMLrRvTF8DqjGqKCpIS4\nCiwX28ui3zRSQ3KVxRHQV/s/Jxhx0m4d2dUg3vJ3CjL3WKUXbfliV5xbSM3g2jrT\nuZ8DhXe9OZelpIhJxyuvk56pB+lMOvWEQIDLZueTaDRpLIhl+ULjKiHMIQMl9UlS\nGizWo3yhUHg2FGC1JgU9uR5E9gmwXNt5GVrPNBEne9V5y8z69oD3TxV9KSdUhf0O\nqKSZ1pcIRXdMirumxihA/oyvvy6mch4nPnm4jcw7aQKBgQDwlWwvO373FUO1Axvi\nnKfaeRw84Xi1FYjo2sINv9LVTQqv6C5h7NhBM/z5p8+W+rqZUKGT7Zde+axDrcie\n6jrCuWbyrCc0fTB0+czaTWyPsVjzCEgHd4T3e3oR5ttiXfXjz3EMfeffw7Z1tQvF\nBkaMGcLAzP1SzoKZwYs1D5fGFwKBgQDKkf7bYWuDDDTM5RPtcVfyyKnUm+O5KOss\nL9pg08RApd5Qi7RiVxVwW/e0+RIiFBsGi6YZtVVx3AofE9V43mVRw7Rm2gkRsPHe\noy4g9S7Lj79D8XXveuwDRZdmYdsMS4CHfPZ3Qd2+FfrQ9eFbcfqmfUS2RB4F1U4R\nYqNfLZeoKQKBgFYrHpl4NMxomFyP5X/v3grZD+0aULKDKQtFtvVXvDrbojVI8rvu\nKbKI3VXJ7gdEfGsHPygNlAbXZATFjLKmcC9oWmAWmuAo6p8rDV0vF/ALdDFvyOSr\nwTsmxZz905vSzYwvs2zm95LktUhJdRK3YbMyUtfdU+pBvvM1KBf0Isc3AoGARuAB\n/Zv+U+Gnb7EO4drwXJ/c2+iXKqeocNNlYs91MPFX8XKP8IBrnd5vssAamhXSxt2B\nhikt9iJ44Bq+bAXUCWGh8wKCfdAdMDqD30Ap2Us4LnuDOgEWJqborAe87nZUSBNu\n4JcJEIL8OLRu3uHoQuw9aFA4+O2C3Q5X/usiztECgYAEgaGiFLdEPK67cMIj5gSU\nMUm++llY2vhpl5Zzpuv3JuHsIcPif6qxqbxg2RhE1mQwR3H9yuogTIn7yUgra1F+\n1MOhesdXBfU1BMYaznn76MrfY4UgoxUktixQAZvLz0JfCptcsdjJ+B0rxTkMf0F0\nYt8vpUeeQ7GisNkHu8d8zw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "qna-service@qna-bot-382004.iam.gserviceaccount.com",
+  "client_id": "112222723195847611228",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/qna-service%40qna-bot-382004.iam.gserviceaccount.com"
+}
