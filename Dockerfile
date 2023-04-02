@@ -14,10 +14,7 @@ WORKDIR /app
 RUN pip install --no-cache-dir --upgrade pip
 RUN pip install rasa==3.1
 RUN pip install -U spacy==3.2.4
-RUN python -m spacy download en_core_web_md
-RUN pip install google-auth
-RUN pip install google-auth-oauthlib
-RUN pip install google-api-python-client
+RUN python -m spacy download en_core_web_lg
 
 COPY . .
 

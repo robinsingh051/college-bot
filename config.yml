@@ -7,25 +7,32 @@ pipeline:
   # If you'd like to customize it, uncomment and adjust the pipeline.
   # See https://rasa.com/docs/rasa/tuning-your-model for more information.
   - name: SpacyNLP
-    model: en_core_web_md
+    model: en_core_web_lg
     case_sensitive: False
   - name: SpacyTokenizer
   - name: SpacyFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
-  - name: CountVectorsFeaturizer
     analyzer: char_wb
     min_ngram: 1
-    max_ngram: 4
-  # - name: "SklearnIntentClassifier"
-  #   C: [1, 2, 5, 10, 20, 100]
-  #   kernels: ["linear"]
-  #   "gamma": [0.1]
-  #   "max_cross_validation_folds": 5
-  #   "scoring_function": "f1_weighted"
+    max_ngram: 8
   - name: DIETClassifier
     epochs: 100
-    constrain_similarities: true
+    batch_size: 64
+    validation_split: 0.2
+    early_stop_patience: 10
+    constrain_similarities: false
+    data_augmentation:
+      - random_insertion:
+          n: 3
+          prob: 0.1
+      - random_deletion:
+          prob: 0.1
+    augmentation_factor: 7
+    evaluate_on_number_of_examples: 0
+    evaluate_every_number_of_epochs: 5
+    tensorboard_log_directory: "./tensorboard"
+    tensorboard_log_level: "epoch"
   - name: EntitySynonymMapper
   - name: ResponseSelector
     epochs: 100
@@ -41,12 +48,16 @@ policies:
   # # No configuration for policies was provided. The following default policies were used to train your model.
   # # If you'd like to customize them, uncomment and adjust the policies.
   # # See https://rasa.com/docs/rasa/policies for more information.
-  - name: MemoizationPolicy
-  - name: RulePolicy
   - name: UnexpecTEDIntentPolicy
     max_history: 5
     epochs: 100
+  - name: MemoizationPolicy
   - name: TEDPolicy
     max_history: 5
     epochs: 100
     constrain_similarities: true
+    evaluate_on_number_of_examples: 0
+    evaluate_every_number_of_epochs: 5
+    tensorboard_log_directory: "./tensorboard"
+    tensorboard_log_level: "epoch"
+  - name: RulePolicy

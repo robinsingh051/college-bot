@@ -16,13 +16,6 @@ action_endpoint:
 # By default the conversations are stored in memory.
 # https://rasa.com/docs/rasa/tracker-stores
 
-tracker_store:
-  type: module
-  path: google_sheet_tracker_store.py
-  obj: GoogleSheetTrackerStore
-  spreadsheet_id: "1slewz0Nd0nAPdZpc-BusGdfZ62RB2LNyi-nu2yoh3GY"
-  sheet_name: "Sheet1"
-  credentials_file: "./qna-bot-382004-7967266a73d7.json"
 #tracker_store:
 #    type: redis
 #    url: <host of the redis instance, e.g. localhost>

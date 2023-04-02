@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style id="graph-style">
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.getElementById('graph-style').sheet.cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_q102];
+2 [class="", fontsize=12, label=utter_q103];
+3 [class="", fontsize=12, label=utter_q104];
+4 [class="", fontsize=12, label=utter_q105];
+5 [class="", fontsize=12, label=utter_q106];
+6 [class="", fontsize=12, label=utter_q107];
+7 [class="", fontsize=12, label=utter_q108];
+8 [class="", fontsize=12, label=utter_q109];
+9 [class="", fontsize=12, label=utter_q110];
+10 [class="", fontsize=12, label=utter_q111];
+11 [class="", fontsize=12, label=utter_q6];
+12 [class="", fontsize=12, label=utter_q112];
+13 [class="", fontsize=12, label=utter_q113];
+14 [class="", fontsize=12, label=utter_q114];
+15 [class="", fontsize=12, label=utter_q115];
+16 [class="", fontsize=12, label=utter_q116];
+17 [class="", fontsize=12, label=utter_q117];
+18 [class="", fontsize=12, label=utter_q118];
+19 [class="", fontsize=12, label=utter_q119];
+20 [class="", fontsize=12, label=utter_q120];
+21 [class="", fontsize=12, label=utter_q121];
+22 [class="", fontsize=12, label=utter_q7];
+23 [class="", fontsize=12, label=utter_q122];
+24 [class="", fontsize=12, label=utter_q123];
+25 [class="", fontsize=12, label=utter_q124];
+26 [class="", fontsize=12, label=utter_q125];
+27 [class="", fontsize=12, label=utter_q126];
+28 [class="", fontsize=12, label=utter_q127];
+29 [class="", fontsize=12, label=utter_q128];
+30 [class="", fontsize=12, label=utter_q129];
+31 [class="", fontsize=12, label=utter_q130];
+32 [class="", fontsize=12, label=utter_q131];
+33 [class="", fontsize=12, label=utter_q8];
+34 [class="", fontsize=12, label=utter_q132];
+35 [class="", fontsize=12, label=utter_q133];
+36 [class="", fontsize=12, label=utter_q134];
+37 [class="", fontsize=12, label=utter_q135];
+38 [class="", fontsize=12, label=utter_q136];
+39 [class="", fontsize=12, label=utter_q137];
+40 [class="", fontsize=12, label=utter_q138];
+41 [class="", fontsize=12, label=utter_q139];
+42 [class="", fontsize=12, label=utter_q140];
+43 [class="", fontsize=12, label=utter_q141];
+44 [class="", fontsize=12, label=utter_q9];
+45 [class="", fontsize=12, label=utter_q142];
+46 [class="", fontsize=12, label=utter_q143];
+47 [class="", fontsize=12, label=utter_q144];
+48 [class="", fontsize=12, label=utter_q145];
+49 [class="", fontsize=12, label=utter_q10];
+50 [class="", fontsize=12, label=utter_q11];
+51 [class="", fontsize=12, label=utter_q12];
+52 [class="", fontsize=12, label=utter_q14];
+53 [class="", fontsize=12, label=utter_q15];
+54 [class="", fontsize=12, label=utter_q16];
+55 [class="", fontsize=12, label=utter_q17];
+56 [class="", fontsize=12, label=utter_q18];
+57 [class="", fontsize=12, label=utter_q19];
+58 [class="", fontsize=12, label=utter_q20];
+59 [class="", fontsize=12, label=utter_q21];
+60 [class="", fontsize=12, label=utter_q22];
+61 [class="", fontsize=12, label=utter_q23];
+62 [class="", fontsize=12, label=utter_q24];
+63 [class="", fontsize=12, label=utter_q27];
+64 [class="", fontsize=12, label=utter_q28];
+65 [class="", fontsize=12, label=utter_q29];
+66 [class="", fontsize=12, label=utter_q30];
+67 [class="", fontsize=12, label=utter_q31];
+68 [class="", fontsize=12, label=utter_q32];
+69 [class="", fontsize=12, label=utter_q33];
+70 [class="", fontsize=12, label=utter_q34];
+71 [class="", fontsize=12, label=utter_q35];
+72 [class="", fontsize=12, label=utter_q36];
+73 [class="", fontsize=12, label=utter_q37];
+74 [class="", fontsize=12, label=utter_q38];
+75 [class="", fontsize=12, label=utter_q39];
+76 [class="", fontsize=12, label=utter_q40];
+77 [class="", fontsize=12, label=utter_q41];
+78 [class="", fontsize=12, label=utter_q42];
+79 [class="", fontsize=12, label=utter_q43];
+80 [class="", fontsize=12, label=utter_q45];
+81 [class="", fontsize=12, label=utter_q46];
+82 [class="", fontsize=12, label=utter_q47];
+83 [class="", fontsize=12, label=utter_q48];
+84 [class="", fontsize=12, label=utter_q49];
+85 [class="", fontsize=12, label=utter_greet];
+86 [class="", fontsize=12, label=utter_q50];
+87 [class="", fontsize=12, label=utter_q51];
+88 [class="", fontsize=12, label=utter_q52];
+89 [class="", fontsize=12, label=utter_q53];
+90 [class="", fontsize=12, label=utter_q54];
+91 [class="", fontsize=12, label=utter_q55];
+92 [class="", fontsize=12, label=utter_q56];
+93 [class="", fontsize=12, label=utter_q57];
+94 [class="", fontsize=12, label=utter_q58];
+95 [class="", fontsize=12, label=utter_q59];
+96 [class="", fontsize=12, label=utter_q1];
+97 [class="", fontsize=12, label=utter_q60];
+98 [class="", fontsize=12, label=utter_q61];
+99 [class="", fontsize=12, label=utter_q62];
+100 [class="", fontsize=12, label=utter_q63];
+101 [class="", fontsize=12, label=utter_q64];
+102 [class="", fontsize=12, label=utter_q65];
+103 [class="", fontsize=12, label=utter_q66];
+104 [class="", fontsize=12, label=utter_q68];
+105 [class="", fontsize=12, label=utter_q70];
+106 [class="", fontsize=12, label=utter_q71];
+107 [class="", fontsize=12, label=utter_q2];
+108 [class="", fontsize=12, label=utter_q72];
+109 [class="", fontsize=12, label=utter_q73];
+110 [class="", fontsize=12, label=utter_q74];
+111 [class="", fontsize=12, label=utter_q75];
+112 [class="", fontsize=12, label=utter_q76];
+113 [class="", fontsize=12, label=utter_q77];
+114 [class="", fontsize=12, label=utter_q78];
+115 [class="", fontsize=12, label=utter_q79];
+116 [class="", fontsize=12, label=utter_q80];
+117 [class="", fontsize=12, label=utter_q81];
+118 [class="", fontsize=12, label=utter_q3];
+119 [class="", fontsize=12, label=utter_q82];
+120 [class="", fontsize=12, label=utter_q83];
+121 [class="", fontsize=12, label=utter_q84];
+122 [class="", fontsize=12, label=utter_q85];
+123 [class="", fontsize=12, label=utter_q86];
+124 [class="", fontsize=12, label=utter_q87];
+125 [class="", fontsize=12, label=utter_q88];
+126 [class="", fontsize=12, label=utter_q89];
+127 [class="", fontsize=12, label=utter_q90];
+128 [class="", fontsize=12, label=utter_q91];
+129 [class="", fontsize=12, label=utter_q4];
+130 [class="", fontsize=12, label=utter_q92];
+131 [class="", fontsize=12, label=utter_q93];
+132 [class="", fontsize=12, label=utter_q94];
+133 [class="", fontsize=12, label=utter_q95];
+134 [class="", fontsize=12, label=utter_q96];
+135 [class="", fontsize=12, label=utter_q97];
+136 [class="", fontsize=12, label=utter_q98];
+137 [class="", fontsize=12, label=utter_q99];
+138 [class="", fontsize=12, label=utter_q100];
+139 [class="", fontsize=12, label=utter_q101];
+140 [class="", fontsize=12, label=utter_q5];
+141 [class="", fontsize=12, label="..."];
+142 [class="", fontsize=12, label=utter_goodbye];
+144 [class="", fontsize=12, label=utter_iamabot];
+146 [class="", fontsize=12, label=utter_default];
+147 [class=intent, fillcolor=lightblue, label="Can you tell me if there are any late fees associated with my library account?", shape=rect, style=filled];
+148 [class=intent, fillcolor=lightblue, label="What is the borrowing period for books at the library for students?", shape=rect, style=filled];
+149 [class=intent, fillcolor=lightblue, label="Can you tell me the daily schedule for the library?", shape=rect, style=filled];
+150 [class=intent, fillcolor=lightblue, label="Can you describe the facilities offered by the library?", shape=rect, style=filled];
+151 [class=intent, fillcolor=lightblue, label="Are there any unique or rare items in the library's collections?", shape=rect, style=filled];
+152 [class=intent, fillcolor=lightblue, label="How large is the library's book collection?", shape=rect, style=filled];
+153 [class=intent, fillcolor=lightblue, label="What are the available postgraduate courses at the college?", shape=rect, style=filled];
+154 [class=intent, fillcolor=lightblue, label="Are there any workshops or other educational opportunities offered as part of the cultural events for postgraduate students?", shape=rect, style=filled];
+155 [class=intent, fillcolor=lightblue, label="Are exams the only method used to evaluate student progress or are there other assessments used as well?", shape=rect, style=filled];
+156 [class=intent, fillcolor=lightblue, label="What is the percentage of students who graduate from the college?", shape=rect, style=filled];
+157 [class=intent, fillcolor=lightblue, label="examples of machine learning", shape=rect, style=filled];
+158 [class=intent, fillcolor=lightblue, label="Is there a rolling admissions process or are enrollment applications reviewed at specific times during the year?", shape=rect, style=filled];
+159 [class=intent, fillcolor=lightblue, label="Can I make changes to my program choices after I have submitted my application?", shape=rect, style=filled];
+160 [class=intent, fillcolor=lightblue, label="Are there any language proficiency requirements for international students?", shape=rect, style=filled];
+161 [class=intent, fillcolor=lightblue, label="How do I apply for scholarships or financial aid?", shape=rect, style=filled];
+162 [class=intent, fillcolor=lightblue, label="What documents are required for the admission process at the college?", shape=rect, style=filled];
+163 [class=intent, fillcolor=lightblue, label="Are there any prerequisite courses or prior experience required for admission?", shape=rect, style=filled];
+164 [class=intent, fillcolor=lightblue, label="Can I still apply to the college if I do not meet the minimum percentage requirement?", shape=rect, style=filled];
+165 [class=intent, fillcolor=lightblue, label="Can I track the status of my application after submitting the form?", shape=rect, style=filled];
+166 [class=intent, fillcolor=lightblue, label="Is the online application status portal available 24/7 or are there specific hours of operation?", shape=rect, style=filled];
+167 [class=intent, fillcolor=lightblue, label="Can I pay the application fee online or do I need to submit a check or money order?", shape=rect, style=filled];
+168 [class=intent, fillcolor=lightblue, label="how machine learning is different from artificial intelligence", shape=rect, style=filled];
+169 [class=intent, fillcolor=lightblue, label="Are there any scholarships or financial aid options available to help with the cost of the program?", shape=rect, style=filled];
+170 [class=intent, fillcolor=lightblue, label="Is there a payment plan option available to spread out the cost of tuition and fees over time?", shape=rect, style=filled];
+171 [class=intent, fillcolor=lightblue, label="Is there a refund policy for withdrawing an application?", shape=rect, style=filled];
+172 [class=intent, fillcolor=lightblue, label="What are the eligibility criteria for transferring credits?", shape=rect, style=filled];
+173 [class=intent, fillcolor=lightblue, label="Is there student housing available on or near campus?", shape=rect, style=filled];
+174 [class=intent, fillcolor=lightblue, label="Is there an online booking system for campus tours or meetings with admissions representatives?", shape=rect, style=filled];
+175 [class=intent, fillcolor=lightblue, label="How diverse is your student body?", shape=rect, style=filled];
+176 [class=intent, fillcolor=lightblue, label="How do I apply for a study abroad program and what is the application process like?", shape=rect, style=filled];
+177 [class=intent, fillcolor=lightblue, label="WDo you have a special program for weaker students?", shape=rect, style=filled];
+178 [class=intent, fillcolor=lightblue, label="How does the school handle communication with parents who do not speak the primary language of instruction?", shape=rect, style=filled];
+179 [class=intent, fillcolor=lightblue, label="what is difference between artificial intelligence and machine learning", shape=rect, style=filled];
+180 [class=intent, fillcolor=lightblue, label="How are students informed of any changes to hostel rules or timings?", shape=rect, style=filled];
+181 [class=intent, fillcolor=lightblue, label="Are there any specific guidelines for students regarding attire for practical classes or laboratory sessions?", shape=rect, style=filled];
+182 [class=intent, fillcolor=lightblue, label="Are there any guidelines for behavior and conduct of guests staying overnight in the hostel?", shape=rect, style=filled];
+183 [class=intent, fillcolor=lightblue, label="Is there a designated parking area for students on campus?", shape=rect, style=filled];
+184 [class=intent, fillcolor=lightblue, label="Does the college have its own swimming pool for students?", shape=rect, style=filled];
+185 [class=intent, fillcolor=lightblue, label="Can you tell me about the proportion of male and female faculty members at the college?", shape=rect, style=filled];
+186 [class=intent, fillcolor=lightblue, label="What is the gender distribution of students at the college?", shape=rect, style=filled];
+187 [class=intent, fillcolor=lightblue, label="In what ways does the college address the mental health needs of its students?", shape=rect, style=filled];
+188 [class=intent, fillcolor=lightblue, label="Does the college provide any support or guidance for students to explore their interests and potential career options?", shape=rect, style=filled];
+189 [class=intent, fillcolor=lightblue, label="Are there any collaborations or partnerships between the research labs and external organizations or institutions?", shape=rect, style=filled];
+190 [class=intent, fillcolor=lightblue, label="What kind of advice can you give someone who want to start his journey with ML/AI/Data Science?", shape=rect, style=filled];
+191 [class=intent, fillcolor=lightblue, label="How long does the typically take to complete the course?", shape=rect, style=filled];
+192 [class=intent, fillcolor=lightblue, label="May I know about the payment schedule for the hostel fees?", shape=rect, style=filled];
+193 [class=intent, fillcolor=lightblue, label="Is there a maximum number of books that a student can borrow per semester or academic year?", shape=rect, style=filled];
+194 [class=intent, fillcolor=lightblue, label="Is it possible to renew a book that has already been renewed multiple times, or is there a limit on the number of renewals?", shape=rect, style=filled];
+195 [class=intent, fillcolor=lightblue, label="how should i start learning machine learning", shape=rect, style=filled];
+196 [class=intent, fillcolor=lightblue, label="what are the basics of ai", shape=rect, style=filled];
+197 [class=intent, fillcolor=lightblue, label="how ai is related to ml", shape=rect, style=filled];
+198 [class=intent, fillcolor=lightblue, label="What does a Machine Learning Engineer do?", shape=rect, style=filled];
+199 [class=intent, fillcolor=lightblue, label="opportunities for an machine learning engineer", shape=rect, style=filled];
+200 [class=intent, fillcolor=lightblue, label="expected salary for ml engineer", shape=rect, style=filled];
+201 [class=intent, fillcolor=lightblue, label="in which companies i can work as Machine Learning Engineers", shape=rect, style=filled];
+202 [class=intent, fillcolor=lightblue, label="Where is AI used", shape=rect, style=filled];
+203 [class=intent, fillcolor=lightblue, label="whare ml is used", shape=rect, style=filled];
+204 [class=intent, fillcolor=lightblue, label="programming language for ml", shape=rect, style=filled];
+205 [class=intent, fillcolor=lightblue, label="How has the presence of AI changed our expectations of technology?", shape=rect, style=filled];
+206 [class=intent, fillcolor=lightblue, label="what are the courses available in cambridge", shape=rect, style=filled];
+207 [class=intent, fillcolor=lightblue, label="what are the facilities available in the campus", shape=rect, style=filled];
+208 [class=intent, fillcolor=lightblue, label="faculty information", shape=rect, style=filled];
+209 [class=intent, fillcolor=lightblue, label="Placement Activities and Placement offers.", shape=rect, style=filled];
+210 [class=intent, fillcolor=lightblue, label="Highest and Average Packages", shape=rect, style=filled];
+211 [class=intent, fillcolor=lightblue, label="c t cutoff", shape=rect, style=filled];
+212 [class=intent, fillcolor=lightblue, label="comed cutof", shape=rect, style=filled];
+213 [class=intent, fillcolor=lightblue, label="how private universities are different than vtu", shape=rect, style=filled];
+214 [class=intent, fillcolor=lightblue, label="what is difference between cambridge main campus and north campus", shape=rect, style=filled];
+215 [class=intent, fillcolor=lightblue, label="When was the college started", shape=rect, style=filled];
+216 [class=intent, fillcolor=lightblue, label="this college is private", shape=rect, style=filled];
+217 [class=intent, fillcolor=lightblue, label="Is cambridge a part of group of institutions", shape=rect, style=filled];
+218 [class=intent, fillcolor=lightblue, label="where are the branches of cambridge", shape=rect, style=filled];
+219 [class=intent, fillcolor=lightblue, label="Which is the nearest metro station to the main campus", shape=rect, style=filled];
+220 [class=intent, fillcolor=lightblue, label="bus facility", shape=rect, style=filled];
+221 [class=intent, fillcolor=lightblue, label="link of college website", shape=rect, style=filled];
+222 [class=intent, fillcolor=lightblue, label="Is there hostel in college", shape=rect, style=filled];
+223 [class=intent, fillcolor=lightblue, label="does college have any vision", shape=rect, style=filled];
+224 [class=intent, fillcolor=lightblue, label="What is the mission of the college", shape=rect, style=filled];
+225 [class=intent, fillcolor=lightblue, label="What are the milestones achieved by the college", shape=rect, style=filled];
+226 [class=intent, fillcolor=lightblue, label="do the students play any sports", shape=rect, style=filled];
+227 [class=intent, fillcolor=lightblue, label="Is the college recognized by AICTE", shape=rect, style=filled];
+228 [class=intent, fillcolor=lightblue, label="Is the college affiliated to VTU", shape=rect, style=filled];
+229 [class=intent, fillcolor=lightblue, label="id there any site for online application facility", shape=rect, style=filled];
+230 [class=intent, fillcolor=lightblue, label="is the college planning to become autonomous", shape=rect, style=filled];
+231 [class=intent, fillcolor=lightblue, label="good evening", shape=rect, style=filled];
+232 [class=intent, fillcolor=lightblue, label="what are the ways to join the college", shape=rect, style=filled];
+233 [class=intent, fillcolor=lightblue, label="what is number of departments in cambridge", shape=rect, style=filled];
+234 [class=intent, fillcolor=lightblue, label="What are the branches of engineering in the college", shape=rect, style=filled];
+235 [class=intent, fillcolor=lightblue, label="Artificial intelligence and Machine learning course cut off", shape=rect, style=filled];
+236 [class=intent, fillcolor=lightblue, label="What is the CET rank required to join EEE department in the college", shape=rect, style=filled];
+237 [class=intent, fillcolor=lightblue, label="what rank is needed to join Electronics and Communication Engineering", shape=rect, style=filled];
+238 [class=intent, fillcolor=lightblue, label="Information science engineering course cut off", shape=rect, style=filled];
+239 [class=intent, fillcolor=lightblue, label="Computer Science Engineering course cut off", shape=rect, style=filled];
+240 [class=intent, fillcolor=lightblue, label="what rank is needed to join mechanical", shape=rect, style=filled];
+241 [class=intent, fillcolor=lightblue, label="what rank is needed to join civil", shape=rect, style=filled];
+242 [class=intent, fillcolor=lightblue, label="what is artificial intelligence and machine learning", shape=rect, style=filled];
+243 [class=intent, fillcolor=lightblue, label="How many seats are there in Artificial intelligence and Machine learning department", shape=rect, style=filled];
+244 [class=intent, fillcolor=lightblue, label="seats available in Computer Science Engineering", shape=rect, style=filled];
+245 [class=intent, fillcolor=lightblue, label="number of seats in ISE department", shape=rect, style=filled];
+246 [class=intent, fillcolor=lightblue, label="number of seats in EEE department", shape=rect, style=filled];
+247 [class=intent, fillcolor=lightblue, label="How many seats are there in Electronics and Communication Engineering department", shape=rect, style=filled];
+248 [class=intent, fillcolor=lightblue, label="How many seats are there in mechanical department", shape=rect, style=filled];
+249 [class=intent, fillcolor=lightblue, label="How many seats are there in civil departments", shape=rect, style=filled];
+250 [class=intent, fillcolor=lightblue, label="piece in cambridge", shape=rect, style=filled];
+251 [class=intent, fillcolor=lightblue, label="fees relaxation for cet rank holders", shape=rect, style=filled];
+252 [class=intent, fillcolor=lightblue, label="Can the fee be paid online", shape=rect, style=filled];
+253 [class=intent, fillcolor=lightblue, label="is it hard to learn a", shape=rect, style=filled];
+254 [class=intent, fillcolor=lightblue, label="Is the college NAAC accredited", shape=rect, style=filled];
+255 [class=intent, fillcolor=lightblue, label="Is the college NBA accredited", shape=rect, style=filled];
+256 [class=intent, fillcolor=lightblue, label="which category is the college in the ARIIA ranking", shape=rect, style=filled];
+257 [class=intent, fillcolor=lightblue, label="Are there different types of rooms available for guests at the hostel?", shape=rect, style=filled];
+258 [class=intent, fillcolor=lightblue, label="What are the features of the college hostel in terms of services and facilities?", shape=rect, style=filled];
+259 [class=intent, fillcolor=lightblue, label="Who serves as the chairman of the college?", shape=rect, style=filled];
+260 [class=intent, fillcolor=lightblue, label="Who leads the college in the role of principal?", shape=rect, style=filled];
+261 [class=intent, fillcolor=lightblue, label="Who is currently serving as the HOD of the computer science department?", shape=rect, style=filled];
+262 [class=intent, fillcolor=lightblue, label="Who leads the ise department in the role of HOD?", shape=rect, style=filled];
+263 [class=intent, fillcolor=lightblue, label="Who holds the position of HOD in the civil department?", shape=rect, style=filled];
+264 [class=intent, fillcolor=lightblue, label="what is artificial intelligence", shape=rect, style=filled];
+265 [class=intent, fillcolor=lightblue, label="Who is the head of the mech department?", shape=rect, style=filled];
+266 [class=intent, fillcolor=lightblue, label="Who is the head of the electronics and communication department?", shape=rect, style=filled];
+267 [class=intent, fillcolor=lightblue, label="Who is the head of the artificial intelligence and machine learning department?", shape=rect, style=filled];
+268 [class=intent, fillcolor=lightblue, label="Who leads the eee department in the role of HOD?", shape=rect, style=filled];
+269 [class=intent, fillcolor=lightblue, label="Can you tell me the student population of each class?", shape=rect, style=filled];
+270 [class=intent, fillcolor=lightblue, label="Can you tell me the proportion of students to teachers?", shape=rect, style=filled];
+271 [class=intent, fillcolor=lightblue, label="How does the college prevent ragging on campus?", shape=rect, style=filled];
+272 [class=intent, fillcolor=lightblue, label="What is the student population of the college?", shape=rect, style=filled];
+273 [class=intent, fillcolor=lightblue, label="What is the schedule for the college placement season?", shape=rect, style=filled];
+274 [class=intent, fillcolor=lightblue, label="What kind of support does the college offer to students in terms of placement training?", shape=rect, style=filled];
+275 [class=intent, fillcolor=lightblue, label="Am I already using AI", shape=rect, style=filled];
+276 [class=intent, fillcolor=lightblue, label="Does college offer any internships to students?", shape=rect, style=filled];
+277 [class=intent, fillcolor=lightblue, label="Can you provide me with information on the teaching equipment used by the college?", shape=rect, style=filled];
+278 [class=intent, fillcolor=lightblue, label="Can you tell me about any success stories of the college's placement efforts?", shape=rect, style=filled];
+279 [class=intent, fillcolor=lightblue, label="Can you tell me about any discounts or concessions offered for transportation fees?", shape=rect, style=filled];
+280 [class=intent, fillcolor=lightblue, label="How does the college handle complaints or incidents related to safety and security?", shape=rect, style=filled];
+281 [class=intent, fillcolor=lightblue, label="How does the college ensure cleanliness and hygiene on campus?", shape=rect, style=filled];
+282 [class=intent, fillcolor=lightblue, label="Does the college offer fitness facilities?", shape=rect, style=filled];
+283 [class=intent, fillcolor=lightblue, label="What initiatives has the college implemented to encourage students to prioritize physical activity?", shape=rect, style=filled];
+284 [class=intent, fillcolor=lightblue, label="What are the most popular sports played by students at the college?", shape=rect, style=filled];
+285 [class=intent, fillcolor=lightblue, label="Does the college offer scholarships or financial aid to student-athletes?", shape=rect, style=filled];
+286 [class=intent, fillcolor=lightblue, label="what is ml", shape=rect, style=filled];
+287 [class=intent, fillcolor=lightblue, label="cee you later", shape=rect, style=filled];
+288 [class=intent, fillcolor=lightblue, label="are you a human?", shape=rect, style=filled];
+289 [class=intent, fillcolor=lightblue, label="/nlu_fallback", shape=rect, style=filled];
+0 -> 141  [class="", key=NONE, label=""];
+0 -> 147  [class="", key=0];
+0 -> 148  [class="", key=0];
+0 -> 149  [class="", key=0];
+0 -> 150  [class="", key=0];
+0 -> 151  [class="", key=0];
+0 -> 152  [class="", key=0];
+0 -> 153  [class="", key=0];
+0 -> 154  [class="", key=0];
+0 -> 155  [class="", key=0];
+0 -> 156  [class="", key=0];
+0 -> 157  [class="", key=0];
+0 -> 158  [class="", key=0];
+0 -> 159  [class="", key=0];
+0 -> 160  [class="", key=0];
+0 -> 161  [class="", key=0];
+0 -> 162  [class="", key=0];
+0 -> 163  [class="", key=0];
+0 -> 164  [class="", key=0];
+0 -> 165  [class="", key=0];
+0 -> 166  [class="", key=0];
+0 -> 167  [class="", key=0];
+0 -> 168  [class="", key=0];
+0 -> 169  [class="", key=0];
+0 -> 170  [class="", key=0];
+0 -> 171  [class="", key=0];
+0 -> 172  [class="", key=0];
+0 -> 173  [class="", key=0];
+0 -> 174  [class="", key=0];
+0 -> 175  [class="", key=0];
+0 -> 176  [class="", key=0];
+0 -> 177  [class="", key=0];
+0 -> 178  [class="", key=0];
+0 -> 179  [class="", key=0];
+0 -> 180  [class="", key=0];
+0 -> 181  [class="", key=0];
+0 -> 182  [class="", key=0];
+0 -> 183  [class="", key=0];
+0 -> 184  [class="", key=0];
+0 -> 185  [class="", key=0];
+0 -> 186  [class="", key=0];
+0 -> 187  [class="", key=0];
+0 -> 188  [class="", key=0];
+0 -> 189  [class="", key=0];
+0 -> 190  [class="", key=0];
+0 -> 191  [class="", key=0];
+0 -> 192  [class="", key=0];
+0 -> 193  [class="", key=0];
+0 -> 194  [class="", key=0];
+0 -> 195  [class="", key=0];
+0 -> 196  [class="", key=0];
+0 -> 197  [class="", key=0];
+0 -> 198  [class="", key=0];
+0 -> 199  [class="", key=0];
+0 -> 200  [class="", key=0];
+0 -> 201  [class="", key=0];
+0 -> 202  [class="", key=0];
+0 -> 203  [class="", key=0];
+0 -> 204  [class="", key=0];
+0 -> 205  [class="", key=0];
+0 -> 206  [class="", key=0];
+0 -> 207  [class="", key=0];
+0 -> 208  [class="", key=0];
+0 -> 209  [class="", key=0];
+0 -> 210  [class="", key=0];
+0 -> 211  [class="", key=0];
+0 -> 212  [class="", key=0];
+0 -> 213  [class="", key=0];
+0 -> 214  [class="", key=0];
+0 -> 215  [class="", key=0];
+0 -> 216  [class="", key=0];
+0 -> 217  [class="", key=0];
+0 -> 218  [class="", key=0];
+0 -> 219  [class="", key=0];
+0 -> 220  [class="", key=0];
+0 -> 221  [class="", key=0];
+0 -> 222  [class="", key=0];
+0 -> 223  [class="", key=0];
+0 -> 224  [class="", key=0];
+0 -> 225  [class="", key=0];
+0 -> 226  [class="", key=0];
+0 -> 227  [class="", key=0];
+0 -> 228  [class="", key=0];
+0 -> 229  [class="", key=0];
+0 -> 230  [class="", key=0];
+0 -> 231  [class="", key=0];
+0 -> 232  [class="", key=0];
+0 -> 233  [class="", key=0];
+0 -> 234  [class="", key=0];
+0 -> 235  [class="", key=0];
+0 -> 236  [class="", key=0];
+0 -> 237  [class="", key=0];
+0 -> 238  [class="", key=0];
+0 -> 239  [class="", key=0];
+0 -> 240  [class="", key=0];
+0 -> 241  [class="", key=0];
+0 -> 242  [class="", key=0];
+0 -> 243  [class="", key=0];
+0 -> 244  [class="", key=0];
+0 -> 245  [class="", key=0];
+0 -> 246  [class="", key=0];
+0 -> 247  [class="", key=0];
+0 -> 248  [class="", key=0];
+0 -> 249  [class="", key=0];
+0 -> 250  [class="", key=0];
+0 -> 251  [class="", key=0];
+0 -> 252  [class="", key=0];
+0 -> 253  [class="", key=0];
+0 -> 254  [class="", key=0];
+0 -> 255  [class="", key=0];
+0 -> 256  [class="", key=0];
+0 -> 257  [class="", key=0];
+0 -> 258  [class="", key=0];
+0 -> 259  [class="", key=0];
+0 -> 260  [class="", key=0];
+0 -> 261  [class="", key=0];
+0 -> 262  [class="", key=0];
+0 -> 263  [class="", key=0];
+0 -> 264  [class="", key=0];
+0 -> 265  [class="", key=0];
+0 -> 266  [class="", key=0];
+0 -> 267  [class="", key=0];
+0 -> 268  [class="", key=0];
+0 -> 269  [class="", key=0];
+0 -> 270  [class="", key=0];
+0 -> 271  [class="", key=0];
+0 -> 272  [class="", key=0];
+0 -> 273  [class="", key=0];
+0 -> 274  [class="", key=0];
+0 -> 275  [class="", key=0];
+0 -> 276  [class="", key=0];
+0 -> 277  [class="", key=0];
+0 -> 278  [class="", key=0];
+0 -> 279  [class="", key=0];
+0 -> 280  [class="", key=0];
+0 -> 281  [class="", key=0];
+0 -> 282  [class="", key=0];
+0 -> 283  [class="", key=0];
+0 -> 284  [class="", key=0];
+0 -> 285  [class="", key=0];
+0 -> 286  [class="", key=0];
+1 -> "-1"  [class="", key=NONE, label=""];
+2 -> "-1"  [class="", key=NONE, label=""];
+3 -> "-1"  [class="", key=NONE, label=""];
+4 -> "-1"  [class="", key=NONE, label=""];
+5 -> "-1"  [class="", key=NONE, label=""];
+6 -> "-1"  [class="", key=NONE, label=""];
+7 -> "-1"  [class="", key=NONE, label=""];
+8 -> "-1"  [class="", key=NONE, label=""];
+9 -> "-1"  [class="", key=NONE, label=""];
+10 -> "-1"  [class="", key=NONE, label=""];
+11 -> "-1"  [class="", key=NONE, label=""];
+12 -> "-1"  [class="", key=NONE, label=""];
+13 -> "-1"  [class="", key=NONE, label=""];
+14 -> "-1"  [class="", key=NONE, label=""];
+15 -> "-1"  [class="", key=NONE, label=""];
+16 -> "-1"  [class="", key=NONE, label=""];
+17 -> "-1"  [class="", key=NONE, label=""];
+18 -> "-1"  [class="", key=NONE, label=""];
+19 -> "-1"  [class="", key=NONE, label=""];
+20 -> "-1"  [class="", key=NONE, label=""];
+21 -> "-1"  [class="", key=NONE, label=""];
+22 -> "-1"  [class="", key=NONE, label=""];
+23 -> "-1"  [class="", key=NONE, label=""];
+24 -> "-1"  [class="", key=NONE, label=""];
+25 -> "-1"  [class="", key=NONE, label=""];
+26 -> "-1"  [class="", key=NONE, label=""];
+27 -> "-1"  [class="", key=NONE, label=""];
+28 -> "-1"  [class="", key=NONE, label=""];
+29 -> "-1"  [class="", key=NONE, label=""];
+30 -> "-1"  [class="", key=NONE, label=""];
+31 -> "-1"  [class="", key=NONE, label=""];
+32 -> "-1"  [class="", key=NONE, label=""];
+33 -> "-1"  [class="", key=NONE, label=""];
+34 -> "-1"  [class="", key=NONE, label=""];
+35 -> "-1"  [class="", key=NONE, label=""];
+36 -> "-1"  [class="", key=NONE, label=""];
+37 -> "-1"  [class="", key=NONE, label=""];
+38 -> "-1"  [class="", key=NONE, label=""];
+39 -> "-1"  [class="", key=NONE, label=""];
+40 -> "-1"  [class="", key=NONE, label=""];
+41 -> "-1"  [class="", key=NONE, label=""];
+42 -> "-1"  [class="", key=NONE, label=""];
+43 -> "-1"  [class="", key=NONE, label=""];
+44 -> "-1"  [class="", key=NONE, label=""];
+45 -> "-1"  [class="", key=NONE, label=""];
+46 -> "-1"  [class="", key=NONE, label=""];
+47 -> "-1"  [class="", key=NONE, label=""];
+48 -> "-1"  [class="", key=NONE, label=""];
+49 -> "-1"  [class="", key=NONE, label=""];
+50 -> "-1"  [class="", key=NONE, label=""];
+51 -> "-1"  [class="", key=NONE, label=""];
+52 -> "-1"  [class="", key=NONE, label=""];
+53 -> "-1"  [class="", key=NONE, label=""];
+54 -> "-1"  [class="", key=NONE, label=""];
+55 -> "-1"  [class="", key=NONE, label=""];
+56 -> "-1"  [class="", key=NONE, label=""];
+57 -> "-1"  [class="", key=NONE, label=""];
+58 -> "-1"  [class="", key=NONE, label=""];
+59 -> "-1"  [class="", key=NONE, label=""];
+60 -> "-1"  [class="", key=NONE, label=""];
+61 -> "-1"  [class="", key=NONE, label=""];
+62 -> "-1"  [class="", key=NONE, label=""];
+63 -> "-1"  [class="", key=NONE, label=""];
+64 -> "-1"  [class="", key=NONE, label=""];
+65 -> "-1"  [class="", key=NONE, label=""];
+66 -> "-1"  [class="", key=NONE, label=""];
+67 -> "-1"  [class="", key=NONE, label=""];
+68 -> "-1"  [class="", key=NONE, label=""];
+69 -> "-1"  [class="", key=NONE, label=""];
+70 -> "-1"  [class="", key=NONE, label=""];
+71 -> "-1"  [class="", key=NONE, label=""];
+72 -> "-1"  [class="", key=NONE, label=""];
+73 -> "-1"  [class="", key=NONE, label=""];
+74 -> "-1"  [class="", key=NONE, label=""];
+75 -> "-1"  [class="", key=NONE, label=""];
+76 -> "-1"  [class="", key=NONE, label=""];
+77 -> "-1"  [class="", key=NONE, label=""];
+78 -> "-1"  [class="", key=NONE, label=""];
+79 -> "-1"  [class="", key=NONE, label=""];
+80 -> "-1"  [class="", key=NONE, label=""];
+81 -> "-1"  [class="", key=NONE, label=""];
+82 -> "-1"  [class="", key=NONE, label=""];
+83 -> "-1"  [class="", key=NONE, label=""];
+84 -> "-1"  [class="", key=NONE, label=""];
+85 -> "-1"  [class="", key=NONE, label=""];
+86 -> "-1"  [class="", key=NONE, label=""];
+87 -> "-1"  [class="", key=NONE, label=""];
+88 -> "-1"  [class="", key=NONE, label=""];
+89 -> "-1"  [class="", key=NONE, label=""];
+90 -> "-1"  [class="", key=NONE, label=""];
+91 -> "-1"  [class="", key=NONE, label=""];
+92 -> "-1"  [class="", key=NONE, label=""];
+93 -> "-1"  [class="", key=NONE, label=""];
+94 -> "-1"  [class="", key=NONE, label=""];
+95 -> "-1"  [class="", key=NONE, label=""];
+96 -> "-1"  [class="", key=NONE, label=""];
+97 -> "-1"  [class="", key=NONE, label=""];
+98 -> "-1"  [class="", key=NONE, label=""];
+99 -> "-1"  [class="", key=NONE, label=""];
+100 -> "-1"  [class="", key=NONE, label=""];
+101 -> "-1"  [class="", key=NONE, label=""];
+102 -> "-1"  [class="", key=NONE, label=""];
+103 -> "-1"  [class="", key=NONE, label=""];
+104 -> "-1"  [class="", key=NONE, label=""];
+105 -> "-1"  [class="", key=NONE, label=""];
+106 -> "-1"  [class="", key=NONE, label=""];
+107 -> "-1"  [class="", key=NONE, label=""];
+108 -> "-1"  [class="", key=NONE, label=""];
+109 -> "-1"  [class="", key=NONE, label=""];
+110 -> "-1"  [class="", key=NONE, label=""];
+111 -> "-1"  [class="", key=NONE, label=""];
+112 -> "-1"  [class="", key=NONE, label=""];
+113 -> "-1"  [class="", key=NONE, label=""];
+114 -> "-1"  [class="", key=NONE, label=""];
+115 -> "-1"  [class="", key=NONE, label=""];
+116 -> "-1"  [class="", key=NONE, label=""];
+117 -> "-1"  [class="", key=NONE, label=""];
+118 -> "-1"  [class="", key=NONE, label=""];
+119 -> "-1"  [class="", key=NONE, label=""];
+120 -> "-1"  [class="", key=NONE, label=""];
+121 -> "-1"  [class="", key=NONE, label=""];
+122 -> "-1"  [class="", key=NONE, label=""];
+123 -> "-1"  [class="", key=NONE, label=""];
+124 -> "-1"  [class="", key=NONE, label=""];
+125 -> "-1"  [class="", key=NONE, label=""];
+126 -> "-1"  [class="", key=NONE, label=""];
+127 -> "-1"  [class="", key=NONE, label=""];
+128 -> "-1"  [class="", key=NONE, label=""];
+129 -> "-1"  [class="", key=NONE, label=""];
+130 -> "-1"  [class="", key=NONE, label=""];
+131 -> "-1"  [class="", key=NONE, label=""];
+132 -> "-1"  [class="", key=NONE, label=""];
+133 -> "-1"  [class="", key=NONE, label=""];
+134 -> "-1"  [class="", key=NONE, label=""];
+135 -> "-1"  [class="", key=NONE, label=""];
+136 -> "-1"  [class="", key=NONE, label=""];
+137 -> "-1"  [class="", key=NONE, label=""];
+138 -> "-1"  [class="", key=NONE, label=""];
+139 -> "-1"  [class="", key=NONE, label=""];
+140 -> "-1"  [class="", key=NONE, label=""];
+141 -> 287  [class="", key=0];
+141 -> 288  [class="", key=0];
+141 -> 289  [class="", key=0];
+142 -> "-1"  [class="", key=NONE, label=""];
+144 -> "-1"  [class="", key=NONE, label=""];
+146 -> "-1"  [class="", key=NONE, label=""];
+147 -> 1  [class="", key=0];
+148 -> 2  [class="", key=0];
+149 -> 3  [class="", key=0];
+150 -> 4  [class="", key=0];
+151 -> 5  [class="", key=0];
+152 -> 6  [class="", key=0];
+153 -> 7  [class="", key=0];
+154 -> 8  [class="", key=0];
+155 -> 9  [class="", key=0];
+156 -> 10  [class="", key=0];
+157 -> 11  [class="", key=0];
+158 -> 12  [class="", key=0];
+159 -> 13  [class="", key=0];
+160 -> 14  [class="", key=0];
+161 -> 15  [class="", key=0];
+162 -> 16  [class="", key=0];
+163 -> 17  [class="", key=0];
+164 -> 18  [class="", key=0];
+165 -> 19  [class="", key=0];
+166 -> 20  [class="", key=0];
+167 -> 21  [class="", key=0];
+168 -> 22  [class="", key=0];
+169 -> 23  [class="", key=0];
+170 -> 24  [class="", key=0];
+171 -> 25  [class="", key=0];
+172 -> 26  [class="", key=0];
+173 -> 27  [class="", key=0];
+174 -> 28  [class="", key=0];
+175 -> 29  [class="", key=0];
+176 -> 30  [class="", key=0];
+177 -> 31  [class="", key=0];
+178 -> 32  [class="", key=0];
+179 -> 33  [class="", key=0];
+180 -> 34  [class="", key=0];
+181 -> 35  [class="", key=0];
+182 -> 36  [class="", key=0];
+183 -> 37  [class="", key=0];
+184 -> 38  [class="", key=0];
+185 -> 39  [class="", key=0];
+186 -> 40  [class="", key=0];
+187 -> 41  [class="", key=0];
+188 -> 42  [class="", key=0];
+189 -> 43  [class="", key=0];
+190 -> 44  [class="", key=0];
+191 -> 45  [class="", key=0];
+192 -> 46  [class="", key=0];
+193 -> 47  [class="", key=0];
+194 -> 48  [class="", key=0];
+195 -> 49  [class="", key=0];
+196 -> 50  [class="", key=0];
+197 -> 51  [class="", key=0];
+198 -> 52  [class="", key=0];
+199 -> 53  [class="", key=0];
+200 -> 54  [class="", key=0];
+201 -> 55  [class="", key=0];
+202 -> 56  [class="", key=0];
+203 -> 57  [class="", key=0];
+204 -> 58  [class="", key=0];
+205 -> 59  [class="", key=0];
+206 -> 60  [class="", key=0];
+207 -> 61  [class="", key=0];
+208 -> 62  [class="", key=0];
+209 -> 63  [class="", key=0];
+210 -> 64  [class="", key=0];
+211 -> 65  [class="", key=0];
+212 -> 66  [class="", key=0];
+213 -> 67  [class="", key=0];
+214 -> 68  [class="", key=0];
+215 -> 69  [class="", key=0];
+216 -> 70  [class="", key=0];
+217 -> 71  [class="", key=0];
+218 -> 72  [class="", key=0];
+219 -> 73  [class="", key=0];
+220 -> 74  [class="", key=0];
+221 -> 75  [class="", key=0];
+222 -> 76  [class="", key=0];
+223 -> 77  [class="", key=0];
+224 -> 78  [class="", key=0];
+225 -> 79  [class="", key=0];
+226 -> 80  [class="", key=0];
+227 -> 81  [class="", key=0];
+228 -> 82  [class="", key=0];
+229 -> 83  [class="", key=0];
+230 -> 84  [class="", key=0];
+231 -> 85  [class="", key=0];
+232 -> 86  [class="", key=0];
+233 -> 87  [class="", key=0];
+234 -> 88  [class="", key=0];
+235 -> 89  [class="", key=0];
+236 -> 90  [class="", key=0];
+237 -> 91  [class="", key=0];
+238 -> 92  [class="", key=0];
+239 -> 93  [class="", key=0];
+240 -> 94  [class="", key=0];
+241 -> 95  [class="", key=0];
+242 -> 96  [class="", key=0];
+243 -> 97  [class="", key=0];
+244 -> 98  [class="", key=0];
+245 -> 99  [class="", key=0];
+246 -> 100  [class="", key=0];
+247 -> 101  [class="", key=0];
+248 -> 102  [class="", key=0];
+249 -> 103  [class="", key=0];
+250 -> 104  [class="", key=0];
+251 -> 105  [class="", key=0];
+252 -> 106  [class="", key=0];
+253 -> 107  [class="", key=0];
+254 -> 108  [class="", key=0];
+255 -> 109  [class="", key=0];
+256 -> 110  [class="", key=0];
+257 -> 111  [class="", key=0];
+258 -> 112  [class="", key=0];
+259 -> 113  [class="", key=0];
+260 -> 114  [class="", key=0];
+261 -> 115  [class="", key=0];
+262 -> 116  [class="", key=0];
+263 -> 117  [class="", key=0];
+264 -> 118  [class="", key=0];
+265 -> 119  [class="", key=0];
+266 -> 120  [class="", key=0];
+267 -> 121  [class="", key=0];
+268 -> 122  [class="", key=0];
+269 -> 123  [class="", key=0];
+270 -> 124  [class="", key=0];
+271 -> 125  [class="", key=0];
+272 -> 126  [class="", key=0];
+273 -> 127  [class="", key=0];
+274 -> 128  [class="", key=0];
+275 -> 129  [class="", key=0];
+276 -> 130  [class="", key=0];
+277 -> 131  [class="", key=0];
+278 -> 132  [class="", key=0];
+279 -> 133  [class="", key=0];
+280 -> 134  [class="", key=0];
+281 -> 135  [class="", key=0];
+282 -> 136  [class="", key=0];
+283 -> 137  [class="", key=0];
+284 -> 138  [class="", key=0];
+285 -> 139  [class="", key=0];
+286 -> 140  [class="", key=0];
+287 -> 142  [class="", key=0];
+288 -> 144  [class="", key=0];
+289 -> 146  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>

@@ -15,7 +15,6 @@ nlu:
       - goodmorning
       - goodevening
       - good afternoon
-      - ./stop
   - intent: goodbye
     examples: |
       - cu
@@ -178,7 +177,17 @@ nlu:
       - language used for ml
   - intent: q21
     examples: |
-      - We hear that Machine Learning and Artificial Intelligence are somewhere near us. Where can we find artificial intelligence in everyday life?
+      - Where can we find artificial intelligence in everyday life
+      - In what ways is AI integrated into our daily lives
+      - What are some examples of AI that we encounter regularly?
+      - Can you name some instances where AI is used in everyday contexts?
+      - How has AI impacted the way we interact with technology?
+      - What are some common applications of AI in our daily routines?
+      - Where can we observe AI in action during our daily activities?
+      - Are there any products or services that rely on AI to operate?
+      - How has the presence of AI changed our expectations of technology?
+      - Can you describe some instances where AI has improved our daily experiences?
+      - In what ways has AI made everyday tasks easier or more efficient?
   - intent: q22
     examples: |
       - Courses offered in Cambridge.
@@ -201,9 +210,6 @@ nlu:
       - how good the teaching staff is
       - give me information of academics
       - academics information
-  - intent: q25
-    examples: |
-      - About Specialization courses
   - intent: q27
     examples: |
       - Placement Activities and Placement offers.

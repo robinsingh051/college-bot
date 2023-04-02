@@ -25,7 +25,7 @@ The purpose of this project is to implement an intelligent voice assistant to an
     pip install requests
     pip install vosk
     pip install pyttsx3
-    python -m spacy download en_core_web_md
+    python -m spacy download en_core_web_lg
 ```
 open terminal in this directory and run the following command to start rasa server
 ```bash

@@ -119,11 +119,6 @@ stories:
       - intent: q24
       - action: utter_q24
 
-  - story: q25 path
-    steps:
-      - intent: q25
-      - action: utter_q25
-
   - story: q27 path
     steps:
       - intent: q27
@@ -703,14 +698,3 @@ stories:
     steps:
       - intent: q145
       - action: utter_q145
-
-  - story: interactive_story_1
-    steps:
-      - intent: q18
-      - action: utter_q18
-      - intent: q41
-      - action: utter_q41
-      - intent: q42
-      - action: utter_q42
-      - intent: q4
-      - action: utter_q4
